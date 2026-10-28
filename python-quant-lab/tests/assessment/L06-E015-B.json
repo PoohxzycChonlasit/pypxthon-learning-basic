@@ -2,18 +2,56 @@
   {
     "args": [
       [
-        120,
+        100,
         null,
-        140,
+        110,
+        null,
+        90
+      ]
+    ],
+    "expected": {
+      "filled": [
+        100,
+        100,
+        110,
+        110,
+        90
+      ],
+      "filled_count": 2
+    },
+    "tolerance": 1e-08
+  },
+  {
+    "args": [
+      [
+        null,
+        2,
         null
       ]
     ],
     "expected": {
-      "clean": [
-        120,
-        140
+      "filled": [
+        null,
+        2,
+        2
       ],
-      "missing": 2
+      "filled_count": 1
+    },
+    "tolerance": 1e-08
+  },
+  {
+    "args": [
+      [
+        null,
+        null
+      ]
+    ],
+    "expected": {
+      "filled": [
+        null,
+        null
+      ],
+      "filled_count": 0
     },
     "tolerance": 1e-08
   },
@@ -22,22 +60,8 @@
       []
     ],
     "expected": {
-      "clean": [],
-      "missing": 0
-    },
-    "tolerance": 1e-08
-  },
-  {
-    "args": [
-      [
-        0
-      ]
-    ],
-    "expected": {
-      "clean": [
-        0
-      ],
-      "missing": 0
+      "filled": [],
+      "filled_count": 0
     },
     "tolerance": 1e-08
   }

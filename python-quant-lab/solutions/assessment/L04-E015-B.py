@@ -1,2 +1,3 @@
 def final_function_assessment(x, y):
-    return {'difference':x-y,'ratio':x/y if y else None}
+    total = x + y
+    return {"total": total, "average": total / 2, "larger": max(x, y)}

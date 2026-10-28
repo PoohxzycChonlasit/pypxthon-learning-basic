@@ -1,12 +1,25 @@
 [
   {
     "args": [
-      525,
-      500
+      10,
+      2
     ],
     "expected": {
-      "difference": 25,
-      "ratio": 1.05
+      "total": 12,
+      "average": 6.0,
+      "larger": 10
+    },
+    "tolerance": 1e-08
+  },
+  {
+    "args": [
+      -3,
+      7
+    ],
+    "expected": {
+      "total": 4,
+      "average": 2.0,
+      "larger": 7
     },
     "tolerance": 1e-08
   },
@@ -16,19 +29,21 @@
       0
     ],
     "expected": {
-      "difference": 0,
-      "ratio": null
+      "total": 0,
+      "average": 0.0,
+      "larger": 0
     },
     "tolerance": 1e-08
   },
   {
     "args": [
-      450,
-      500
+      2.5,
+      3.5
     ],
     "expected": {
-      "difference": -50,
-      "ratio": 0.9
+      "total": 6.0,
+      "average": 3.0,
+      "larger": 3.5
     },
     "tolerance": 1e-08
   }

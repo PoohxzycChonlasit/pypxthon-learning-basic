@@ -1,2 +1,15 @@
 def final_data_cleaning_assessment(values):
-    return {'clean': [x for x in values if x is not None], 'missing':sum(x is None for x in values)}
+    filled = []
+    filled_count = 0
+    last_value = None
+    for value in values:
+        if value is None:
+            if last_value is None:
+                filled.append(None)
+            else:
+                filled.append(last_value)
+                filled_count += 1
+        else:
+            last_value = value
+            filled.append(value)
+    return {"filled": filled, "filled_count": filled_count}

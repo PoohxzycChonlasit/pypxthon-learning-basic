@@ -1,31 +1,34 @@
 [
   {
     "args": [
-      " west,central,east "
+      " west - Apple - 12 "
     ],
     "expected": {
-      "fields": 3,
-      "normalized": "WEST,CENTRAL,EAST"
+      "region": "WEST",
+      "item": "apple",
+      "quantity": 12
     },
     "tolerance": 1e-08
   },
   {
     "args": [
-      "approved"
+      "north-widget-3"
     ],
     "expected": {
-      "fields": 1,
-      "normalized": "APPROVED"
+      "region": "NORTH",
+      "item": "widget",
+      "quantity": 3
     },
     "tolerance": 1e-08
   },
   {
     "args": [
-      ""
+      " South - Tea - 0 "
     ],
     "expected": {
-      "fields": 1,
-      "normalized": ""
+      "region": "SOUTH",
+      "item": "tea",
+      "quantity": 0
     },
     "tolerance": 1e-08
   }

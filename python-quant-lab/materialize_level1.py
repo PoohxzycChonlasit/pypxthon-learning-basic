@@ -55,13 +55,13 @@ def main():
             item["variant_expected"] = {"A": item["expected"], "B": "Expenses = housing + food + other; Remaining = income - Expenses; both have two decimal places"}
         prediction_prompts = {
             "L01-E002": "ยังไม่ต้องรันโค้ด ให้เขียนผลลัพธ์สองบรรทัดลงไฟล์คำตอบ .txt โดยหนึ่งผลลัพธ์ต่อบรรทัด สำหรับ print(8 + 2 * 3) และ print((8 + 2) * 3)",
-            "L01-E007": "ทายผลลัพธ์ของโค้ดในโจทย์ แล้วเขียนค่าที่แสดงลงไฟล์คำตอบ .txt โดยหนึ่งผลลัพธ์ต่อบรรทัด",
+            "L01-E007": "ทาย stdout ของโค้ดต่อไปนี้ แล้วเขียนผลสองบรรทัดลงไฟล์ .txt:\ncoins = 2\nprice = 3\nprint(coins * price)\nprint(\"BTC\")",
             "L01-E012": "ทายค่าที่ print แสดงจาก amount = 80, percent = 10, print(amount * percent / 100) แล้วเขียนค่าหนึ่งบรรทัดลงไฟล์คำตอบ .txt",
         }
         prediction_explanations = {
             "L01-E002": "บรรทัดแรกคูณก่อน: 2×3 ได้ 6 แล้วบวก 8 จึงได้ 14 บรรทัดที่สองคำนวณวงเล็บก่อน: 8+2 ได้ 10 แล้วคูณ 3 จึงได้ 30 ส่งคำตอบเป็นข้อความสองบรรทัดในไฟล์ .txt โดยไม่ต้องเขียน Python",
-            "L01-E007": "ค่าของ coins คือ 2 และ price คือ 3 จึงคูณกันได้ 6 คำสั่ง print ถัดไปแสดง BTC ในบรรทัดใหม่ ส่งผลทั้งสองบรรทัดลงไฟล์ข้อความคำตอบ",
-            "L01-E012": "แทนค่าตัวแปรในนิพจน์ได้ 80×10÷100 การคูณและหารมีลำดับเดียวกันและคำนวณซ้ายไปขวา ผลทางคณิตศาสตร์คือ 8 แต่ Python ใช้ / จึงแสดงเป็น 8.0 ส่งข้อความนี้ลงไฟล์คำตอบ",
+            "L01-E007": "อ่านคำสั่งจากบนลงล่าง ประเมินนิพจน์ใน print แรก แล้วคัดค่าที่แสดงในลำดับเดิมลงไฟล์คำตอบโดยไม่ใส่เครื่องหมายคำพูดรอบ string",
+            "L01-E012": "แทนค่าตัวแปร คูณจำนวนเงินด้วยเปอร์เซ็นต์แล้วหารด้วย 100; เครื่องหมาย / อาจให้ผลเป็นทศนิยม",
         }
         if item["id"] in prediction_prompts:
             item["problem"] = prediction_prompts[item["id"]]
@@ -115,7 +115,10 @@ def main():
                 write(ROOT / "tests" / "assessment" / f"{item['id']}-{variant}.json", json.dumps(cases, ensure_ascii=False, indent=2) + "\n")
                 solution = item["solution"] if variant == "A" else item["variant_solutions"][variant]
                 write(ROOT / "solutions" / "assessment" / f"{item['id']}-{variant}.py", solution)
-        write(ROOT / "lessons" / f"{item['id']}.md", f"# {item['id']} — {item['title']}\n\n## เป้าหมาย\n\n{item['objective']}\n\n## แนวคิด\n\n{item['lesson']}\n\n## ตัวอย่าง\n\n```python\n{item['example']}\n```\n\n## โจทย์\n\n{item['problem']}\n\n## รูปแบบ input/output\n\n{item['sample']}\n\nผลที่ต้องการ: {item['expected']}\n\nข้อควรระวัง: {item['pitfall']}\n")
+        problem_text = "ดู prompt ของ variant ปัจจุบันในระบบ" if item.get("assessment") else item["problem"]
+        sample_text = "ใช้ตัวอย่าง input/output ของ variant ปัจจุบัน" if item.get("assessment") else item["sample"]
+        expected_text = "ให้ยึดรูปแบบของ variant ที่แสดง; ใช้ reference ของ variant เดียวกันหลังทำเสร็จ" if item.get("assessment") else item["expected"]
+        write(ROOT / "lessons" / f"{item['id']}.md", f"# {item['id']} — {item['title']}\n\n## เป้าหมาย\n\n{item['objective']}\n\n## แนวคิด\n\n{item['lesson']}\n\n## ตัวอย่าง\n\n```python\n{item['example']}\n```\n\n## โจทย์\n\n{problem_text}\n\n## รูปแบบ input/output\n\n{sample_text}\n\nผลที่ต้องการ: {expected_text}\n\nข้อควรระวัง: {item['pitfall']}\n")
     write(ROOT / "curriculum.json", json.dumps(catalog, ensure_ascii=False, indent=2) + "\n")
     intro = "# Level 1 — Python พื้นฐาน\n\nระดับนี้ฝึก print, arithmetic, variables, strings, input, type conversion และการจัดรูปแบบข้อความตามลำดับ แบบทำนายผลให้ส่งคำตอบในตัวแปร `ANSWER` ของไฟล์โจทย์ ส่วนข้อเขียน/แก้/เติม/ประยุกต์ให้แก้ไฟล์ `.py` ตามโจทย์\n\n"
     write(ROOT / "lessons" / "level_01.md", intro + "\n".join(f"- [{i['id']} — {i['title']}]({i['id']}.md)" for i in ITEMS) + "\n")

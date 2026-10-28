@@ -1,25 +1,18 @@
 import math
 
-
 def final_offline_bot_assessment(event):
-    """Validate and account for one offline paper buy event."""
     if not isinstance(event, dict):
-        return {"orders": 0, "cash_after": 0, "live_trading": False}
-
-    original_cash = event.get("cash", 0)
+        return {"accepted": False, "cash_after": 0, "position_after": 0, "live_trading": False}
     try:
-        cash = float(original_cash)
+        cash = float(event.get("cash", 0))
+        position = float(event.get("position", 0))
         quantity = float(event.get("quantity", 0))
         price = float(event.get("price", 0))
     except (TypeError, ValueError):
-        return {"orders": 0, "cash_after": original_cash, "live_trading": False}
-
-    if not all(math.isfinite(value) for value in (cash, quantity, price)):
-        return {"orders": 0, "cash_after": original_cash, "live_trading": False}
-    if event.get("side") != "buy" or cash < 0 or quantity <= 0 or price <= 0:
-        return {"orders": 0, "cash_after": cash, "live_trading": False}
-
-    cost = quantity * price
-    if cost > cash:
-        return {"orders": 0, "cash_after": cash, "live_trading": False}
-    return {"orders": 1, "cash_after": cash - cost, "live_trading": False}
+        return {"accepted": False, "cash_after": 0, "position_after": 0, "live_trading": False}
+    valid = all(math.isfinite(x) for x in (cash, position, quantity, price))
+    valid = valid and cash >= 0 and position >= 0 and quantity > 0 and price > 0
+    valid = valid and event.get("side") == "sell" and position >= quantity
+    if not valid:
+        return {"accepted": False, "cash_after": cash, "position_after": position, "live_trading": False}
+    return {"accepted": True, "cash_after": cash + quantity * price, "position_after": position - quantity, "live_trading": False}

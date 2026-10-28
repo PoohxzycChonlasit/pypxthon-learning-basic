@@ -1,5 +1,5 @@
 [
-  "Hint 1: ระบุ output แต่ละช่องจาก prompt: ตรวจ event และคำนวณ cash หลังคำสั่งจำลองอย่างปลอดภัย.",
-  "Hint 2: ทำตามลำดับ: ตรวจ side, quantity, price, cash; buy ห้ามเกิน cash; sell เพิ่ม cash.",
-  "Hint 3: ตรวจขอบเขต: ทดสอบเงินซื้อไม่พอและยืนยันว่า cash_after ไม่ติดลบ."
+  "อ่านโครงสร้าง input และระบุ output fields ก่อนตรวจ event",
+  "ตรวจ side, quantity, price และ cash/position เฉพาะตาม prompt ปัจจุบัน",
+  "ทำตามกติกา accept/reject ก่อนเปลี่ยนยอด; live_trading ต้อง False"
 ]

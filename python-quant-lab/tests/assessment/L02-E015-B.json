@@ -2,16 +2,29 @@
   {
     "args": [
       [
-        -1,
-        0,
+        -3,
         2,
-        4
+        5,
+        8
       ]
     ],
     "expected": {
-      "count": 4,
-      "positive": 2,
-      "net": 5
+      "even_sum": 10,
+      "negative_count": 1
+    },
+    "tolerance": 1e-08
+  },
+  {
+    "args": [
+      [
+        0,
+        -4,
+        1
+      ]
+    ],
+    "expected": {
+      "even_sum": -4,
+      "negative_count": 1
     },
     "tolerance": 1e-08
   },
@@ -20,23 +33,21 @@
       []
     ],
     "expected": {
-      "count": 0,
-      "positive": 0,
-      "net": 0
+      "even_sum": 0,
+      "negative_count": 0
     },
     "tolerance": 1e-08
   },
   {
     "args": [
       [
-        -3,
-        -2
+        1,
+        3
       ]
     ],
     "expected": {
-      "count": 2,
-      "positive": 0,
-      "net": -5
+      "even_sum": 0,
+      "negative_count": 0
     },
     "tolerance": 1e-08
   }

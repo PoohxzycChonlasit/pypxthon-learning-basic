@@ -1,5 +1,5 @@
 [
-  "Hint 1: ระบุ output แต่ละช่องจาก prompt: คำนวณ gross, fee สองขา, net และป้าย offline paper.",
-  "Hint 2: ทำตามลำดับ: แยก gross กับ fee; หัก fee จาก gross; live_trading ต้อง False.",
-  "Hint 3: ตรวจขอบเขต: ใช้ราคาเข้า/ออกเท่ากันและกรณีขาดทุนเพื่อเช็ก fee."
+  "คำนวณ price change ก่อน แล้วสร้างเฉพาะ output ที่ prompt ปัจจุบันขอ",
+  "ตรวจ entry เป็นศูนย์ก่อนหาร; คำนวณ fee เฉพาะเมื่อ variant ระบุให้ทำ",
+  "ทดสอบ gain, loss, flat และ entry เป็นศูนย์; ตรวจ live_trading เป็น False"
 ]

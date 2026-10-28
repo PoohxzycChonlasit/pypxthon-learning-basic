@@ -46,5 +46,53 @@
     "name": "zero subtotal",
     "stdin": "0\n0.5\n0.07\n",
     "expected_stdout": "0.00\n"
+  },
+  {
+    "args": [
+      -1,
+      0.1,
+      0.07
+    ],
+    "expected": null,
+    "tolerance": 1e-08,
+    "name": "negative subtotal",
+    "stdin": "-1\n0.1\n0.07\n",
+    "expected_stdout": "INVALID\n"
+  },
+  {
+    "args": [
+      100,
+      -0.1,
+      0.07
+    ],
+    "expected": null,
+    "tolerance": 1e-08,
+    "name": "negative discount rate",
+    "stdin": "100\n-0.1\n0.07\n",
+    "expected_stdout": "INVALID\n"
+  },
+  {
+    "args": [
+      100,
+      0.1,
+      1.01
+    ],
+    "expected": null,
+    "tolerance": 1e-08,
+    "name": "tax rate above one",
+    "stdin": "100\n0.1\n1.01\n",
+    "expected_stdout": "INVALID\n"
+  },
+  {
+    "args": [
+      100,
+      0.1,
+      -0.01
+    ],
+    "expected": null,
+    "tolerance": 1e-08,
+    "name": "negative tax rate",
+    "stdin": "100\n0.1\n-0.01\n",
+    "expected_stdout": "INVALID\n"
   }
 ]

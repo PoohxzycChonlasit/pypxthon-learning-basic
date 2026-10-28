@@ -2,16 +2,17 @@
   {
     "args": [
       {
-        "cash": 250,
-        "quantity": 3,
+        "cash": 100,
+        "position": 3,
+        "quantity": 1,
         "price": 20,
-        "side": "buy",
-        "id": "stock-A"
+        "side": "sell"
       }
     ],
     "expected": {
-      "orders": 1,
-      "cash_after": 190,
+      "accepted": true,
+      "cash_after": 120,
+      "position_after": 2,
       "live_trading": false
     },
     "tolerance": 1e-08
@@ -19,33 +20,65 @@
   {
     "args": [
       {
-        "cash": 250,
+        "cash": 100,
+        "position": 0.5,
+        "quantity": 1,
+        "price": 20,
+        "side": "sell"
+      }
+    ],
+    "expected": {
+      "accepted": false,
+      "cash_after": 100,
+      "position_after": 0.5,
+      "live_trading": false
+    },
+    "tolerance": 1e-08
+  },
+  {
+    "args": [
+      {
+        "cash": 100,
+        "position": 2,
+        "quantity": 1,
+        "price": 20,
+        "side": "buy"
+      }
+    ],
+    "expected": {
+      "accepted": false,
+      "cash_after": 100,
+      "position_after": 2,
+      "live_trading": false
+    },
+    "tolerance": 1e-08
+  },
+  {
+    "args": [
+      {
+        "cash": 100,
+        "position": 2,
         "quantity": 0,
         "price": 20,
-        "side": "buy",
-        "id": "stock-B"
+        "side": "sell"
       }
     ],
     "expected": {
-      "orders": 0,
-      "cash_after": 250,
+      "accepted": false,
+      "cash_after": 100,
+      "position_after": 2,
       "live_trading": false
     },
     "tolerance": 1e-08
   },
   {
     "args": [
-      {
-        "cash": 40,
-        "quantity": 2,
-        "price": 25,
-        "side": "buy",
-        "id": "stock-C"
-      }
+      null
     ],
     "expected": {
-      "orders": 0,
-      "cash_after": 40,
+      "accepted": false,
+      "cash_after": 0,
+      "position_after": 0,
       "live_trading": false
     },
     "tolerance": 1e-08

@@ -110,7 +110,9 @@ def show_lesson(ex):
         problem = ex.get("variant_prompts", {}).get(variant, problem)
         sample = ex.get("variant_samples", {}).get(variant, sample)
         expected = ex.get("variant_expected", {}).get(variant, expected)
-    print(f"บทเรียน {ex['id']} — {ex['title']}\nเป้าหมาย: {ex['objective']}\n")
+    print(f"บทเรียน {ex['id']} — {ex['title']}\nเป้าหมาย: {ex['objective']}")
+    if ex.get("difficulty_tier"):
+        print(f"ความยาก: Tier {ex['difficulty_tier']} — {ex['difficulty_label']}\n")
     lesson_path = ROOT / "lessons" / f"{ex['id']}.md"
     if not lesson_path.is_file():
         lesson_path = ROOT / ex["lesson_file"]
@@ -126,7 +128,12 @@ def show_lesson(ex):
         print("ซ่อนผลลัพธ์ตัวอย่างไว้ เพื่อให้คุณตรวจความเข้าใจด้วยตนเอง")
     else:
         print(f"\nโจทย์: {problem}\nข้อมูลตัวอย่าง: {sample}\nผลลัพธ์ตัวอย่าง: {expected}\nข้อจำกัด: {ex['constraints']}")
-    print(f"\nไฟล์คำตอบ: {ex_path(ex, 'exercises')}")
+    answer_path = ex_path(ex, "exercises")
+    print(f"\nไฟล์คำตอบ: {answer_path}")
+    if ex.get("submission_mode") == "text_answer":
+        instruction_path = ROOT / "instructions" / f"level_{ex['level']:02d}" / f"{ex['id']}.md"
+        if instruction_path.is_file():
+            print(f"คำแนะนำที่เปิดควบคู่กัน: {instruction_path}")
 
 
 def run_check(ex, p):
@@ -159,11 +166,11 @@ def run_check(ex, p):
                     detail = "คำตอบยังไม่ตรงกับผลที่ทำนายไว้ ตรวจลำดับและบรรทัดว่างอีกครั้ง"
                 elif ex["submission_mode"] == "literal":
                     harness = 'import json,runpy,sys; ns=runpy.run_path(sys.argv[1]); actual=ns.get("ANSWER"); expected=json.loads(sys.stdin.read()); assert actual==expected, f"expected {expected!r}, got {actual!r}"'
-                    result = subprocess.run([sys.executable, "-X", "utf8", "-I", "-c", harness, str(file)], input=json.dumps(case["expected"]), text=True, encoding="utf-8", capture_output=True, timeout=4, cwd=ROOT)
+                    result = subprocess.run([sys.executable, "-B", "-X", "utf8", "-I", "-c", harness, str(file)], input=json.dumps(case["expected"]), text=True, encoding="utf-8", capture_output=True, timeout=4, cwd=ROOT)
                     success = result.returncode == 0
                     detail = result.stderr.strip()
                 else:
-                    result = subprocess.run([sys.executable, "-X", "utf8", "-I", str(file)], input=case.get("stdin", ""), text=True, encoding="utf-8", capture_output=True, timeout=4, cwd=ROOT)
+                    result = subprocess.run([sys.executable, "-B", "-X", "utf8", "-I", str(file)], input=case.get("stdin", ""), text=True, encoding="utf-8", capture_output=True, timeout=4, cwd=ROOT)
                     actual = result.stdout.replace("\r\n", "\n")
                     expected = case["expected_stdout"]
                     success = result.returncode == 0 and actual == expected
@@ -219,7 +226,7 @@ for i,c in enumerate(cases,1):
 print("PASS",len(cases))
 '''
     try:
-        result = subprocess.run([sys.executable, "-X", "utf8", "-I", "-c", harness, str(file), ex["function"]], input=json.dumps(cases), text=True, encoding="utf-8", capture_output=True, timeout=4, cwd=ROOT)
+        result = subprocess.run([sys.executable, "-B", "-X", "utf8", "-I", "-c", harness, str(file), ex["function"]], input=json.dumps(cases), text=True, encoding="utf-8", capture_output=True, timeout=4, cwd=ROOT)
     except subprocess.TimeoutExpired:
         result = None
     passed = result is not None and result.returncode == 0
@@ -288,19 +295,29 @@ def main():
         try:
             if ex.get("submission_mode") == "stdout":
                 case=ex["cases"][0]
-                result=subprocess.run([sys.executable,"-X","utf8","-I",str(file)],input=case.get("stdin",""),text=True,encoding="utf-8",capture_output=True,timeout=4,cwd=ROOT)
+                result=subprocess.run([sys.executable,"-B","-X","utf8","-I",str(file)],input=case.get("stdin",""),text=True,encoding="utf-8",capture_output=True,timeout=4,cwd=ROOT)
             else:
-                result=subprocess.run([sys.executable,"-X","utf8","-I","-c",harness,str(file),ex["function"]],input=json.dumps(ex["cases"]),text=True,encoding="utf-8",capture_output=True,timeout=4,cwd=ROOT)
+                result=subprocess.run([sys.executable,"-B","-X","utf8","-I","-c",harness,str(file),ex["function"]],input=json.dumps(ex["cases"]),text=True,encoding="utf-8",capture_output=True,timeout=4,cwd=ROOT)
             print("ผลทดลอง:", result.stdout.strip() if result.returncode==0 else result.stderr[-1500:])
         except subprocess.TimeoutExpired:
             print("โปรแกรมใช้เวลาเกิน 4 วินาที")
     elif args.command == "open":
         path=ex_path(ex,"exercises")
+        paths = [path]
+        if ex.get("submission_mode") == "text_answer":
+            instruction_path = ROOT / "instructions" / f"level_{ex['level']:02d}" / f"{ex['id']}.md"
+            if instruction_path.is_file():
+                paths.append(instruction_path)
         try:
-            subprocess.Popen(["code","-r",str(path)],cwd=ROOT)
-            print("เปิดไฟล์:",path)
+            editor_command = ["code", "-r", *[str(item) for item in paths]]
+            if sys.platform == "win32":
+                editor_command = ["cmd.exe", "/d", "/c", *editor_command]
+            subprocess.Popen(editor_command, cwd=ROOT)
+            for item in paths:
+                print("เปิดไฟล์:",item)
         except OSError:
-            print("เปิดไฟล์นี้ใน VS Code:",path)
+            for item in paths:
+                print("เปิดไฟล์นี้ใน VS Code:",item)
     elif args.command == "check": run_check(ex, p)
     elif args.command == "next":
         ix = all_ex.index(ex)

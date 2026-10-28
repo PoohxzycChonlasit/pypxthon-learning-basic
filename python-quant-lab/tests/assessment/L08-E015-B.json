@@ -1,42 +1,56 @@
 [
   {
     "args": [
-      200,
-      195,
-      0.1
+      100,
+      110,
+      0.5
     ],
     "expected": {
-      "gross": -0.5,
-      "fee": 0.0395,
-      "net": -0.5395,
+      "gross": 5.0,
+      "return_percent": 10.0,
+      "direction": "up",
       "live_trading": false
     },
     "tolerance": 1e-08
   },
   {
     "args": [
-      200,
-      210,
-      0.05
+      100,
+      90,
+      1
     ],
     "expected": {
-      "gross": 0.5,
-      "fee": 0.0205,
-      "net": 0.4795,
+      "gross": -10,
+      "return_percent": -10.0,
+      "direction": "down",
       "live_trading": false
     },
     "tolerance": 1e-08
   },
   {
     "args": [
-      5,
-      5,
-      0
+      0,
+      0,
+      2
     ],
     "expected": {
       "gross": 0,
-      "fee": 0,
-      "net": 0,
+      "return_percent": null,
+      "direction": "flat",
+      "live_trading": false
+    },
+    "tolerance": 1e-08
+  },
+  {
+    "args": [
+      50,
+      50,
+      3
+    ],
+    "expected": {
+      "gross": 0,
+      "return_percent": 0.0,
+      "direction": "flat",
       "live_trading": false
     },
     "tolerance": 1e-08

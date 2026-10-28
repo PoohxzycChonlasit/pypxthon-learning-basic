@@ -257,6 +257,21 @@ print(rows[0]["sku"], int(rows[0]["qty"]))
 ~~~
 ผลลัพธ์: <code>A1 2</code>; JSON อ่านด้วย json.loads(text) และเขียนด้วย json.dumps(data, ensure_ascii=False); พลาดบ่อย: ค่า CSV เป็น string จนกว่าจะ parse; ฝึก Level 5
 
+### SQLite ด้วย standard library
+
+`sqlite3` query ฐานข้อมูลในเครื่องโดยไม่ติดตั้ง package ใช้ parameterized query เมื่อมีค่าจากผู้ใช้ และปิด connection ด้วย `with`
+
+~~~python
+import sqlite3
+with sqlite3.connect(":memory:") as connection:
+    connection.execute("CREATE TABLE sales(month TEXT, amount REAL)")
+    connection.execute("INSERT INTO sales VALUES (?, ?)", ("2025-01", 12.5))
+    rows = connection.execute("SELECT month, SUM(amount) FROM sales GROUP BY month")
+    print(rows.fetchall())
+~~~
+
+ผลลัพธ์: <code>[('2025-01', 12.5)]</code>; type-along: เพิ่มอีกเดือนแล้วทำนายผล query ก่อนรัน; พลาดบ่อยคือประกอบ SQL ด้วย string, ลืมตรวจ schema หรือไม่กำหนดลำดับ `ORDER BY`; Related exercise: DA04 ใน [Data Analysis Practice Track](../tracks/data_analysis/README.md)
+
 ### Assertions, unittest และ debugging
 
 assert ยืนยันสมมติฐานในตัวอย่าง; unittest จัด test ที่รันซ้ำได้; ใช้ breakpoint หรือ print ชั่วคราวตรวจค่าระหว่างทาง
@@ -302,40 +317,62 @@ pip ติดตั้งแพ็กเกจเข้า interpreter ที่
 
 ## 7. ข้อมูล สถิติ และ Quant
 
-### NumPy
+### NumPy arrays และ vectorization
 
-NumPy เพิ่ม array และการคำนวณแบบ vectorized เหมาะกับตัวเลขจำนวนมาก เข้าใจสูตรก่อนใช้ array
+NumPy เก็บตัวเลขใน `ndarray` ที่มี shape และ dtype ชัดเจน ใช้เมื่อคำนวณตัวเลขหลายค่าพร้อมกันหรือใช้ broadcasting; อย่าแปลงเป็น array ก่อนเข้าใจสูตรและ missing-value rules
 
 ~~~python
-import numpy as np  # optional: ต้องติดตั้งก่อน
-prices = np.array([100.0, 110.0])
-print(prices / prices[0] - 1)
+import numpy as np
+measurements = np.array([[2.0, 3.0], [4.0, 5.0]])
+weights = np.array([10.0, 0.5])
+adjusted = measurements * weights
+print(adjusted.tolist())
 ~~~
-ผลลัพธ์เมื่อมี NumPy: <code>[0.  0.1]</code>; list กับ array มีพฤติกรรมคูณต่างกัน; optional และยังไม่จำเป็นกับ core course; ฝึก Level 6
 
-### pandas: Series, DataFrame, filtering, grouping, missing values และ rolling
+ผลลัพธ์: <code>[[20.0, 1.5], [40.0, 2.5]]</code> ทดลองเปลี่ยน weight แล้วทำนายผลก่อนรัน `array[:, 1]` เลือกคอลัมน์ที่สอง; `array[1:3]` เลือกแถวจาก index 1 ถึงก่อน 3; `np.mean`, `np.std(ddof=0)`, `np.min` และ `np.max` ใช้สรุปข้อมูล พลาดบ่อยคือ shape ของ weights ไม่ตรง, ใช้ `ddof=1` ทั้งที่โจทย์ถาม population deviation และไม่ตรวจ NaN/array ว่าง
 
-Series เป็นคอลัมน์; DataFrame เป็นตาราง; ใช้ read_csv, เลือกแถว, groupby, isna และ rolling เมื่อเหมาะสม
+**Type-along:** พิมพ์ตัวอย่างเอง เปลี่ยน `measurements` และ `weights` แล้วอธิบายว่า broadcasting ขยายเวกเตอร์อย่างไร Related graded exercises: [DA06–DA09](../tracks/data_analysis/README.md#start-and-open-the-exercises)
+
+### pandas: Series, DataFrame และการสำรวจข้อมูล
+
+Series คือคอลัมน์; DataFrame คือตารางที่มี schema, index และชนิดข้อมูล ใช้ `read_csv()` โหลด CSV; `head()` ดูตัวอย่าง; `info()` ตรวจ dtypes/non-null; `describe()` สรุปคอลัมน์ตัวเลข ใช้ `loc` เลือกด้วยเงื่อนไข และ `iloc` เลือกตามตำแหน่ง
 
 ~~~python
-import pandas as pd  # optional: ต้องติดตั้งก่อน
+import pandas as pd
 frame = pd.DataFrame({"team": ["A", "A", "B"], "sales": [2, 3, 5]})
+selected = frame.loc[frame["sales"] >= 3].sort_values("sales")
+print(selected.iloc[:, 0].tolist())
 print(frame.groupby("team")["sales"].sum().to_dict())
 ~~~
-ผลลัพธ์เมื่อมี pandas: <code>{'A': 5, 'B': 5}</code>; พลาดบ่อย: ใช้ rolling แล้วไม่ตรวจว่าหน้าต่างมีข้อมูลครบหรือไม่; optional; ฝึก Level 6
+
+ผลลัพธ์: <code>['A', 'B']</code> แล้ว <code>{'A': 5, 'B': 5}</code> ทดลองเปลี่ยนยอดและเงื่อนไขก่อนรัน `merge()` ใช้เชื่อมตารางด้วย key; `isna()` ตรวจ missing; `drop_duplicates()` ตรวจรายการซ้ำ; `pd.to_datetime(..., errors="coerce")` แปลงวันที่เสียเป็น missing เพื่อให้กักแถวไว้ตรวจ
+
+**Type-along:** เพิ่มแถวใหม่และกรอง `sales` อีก threshold หนึ่ง พิมพ์จำนวนแถวก่อน/หลังเพื่อยืนยันว่าข้อมูลถูกเลือกตามที่ตั้งใจ พลาดบ่อยคือคูณ string ก่อนแปลงตัวเลข, merge ที่เพิ่มแถวเพราะ key ซ้ำ, ลบ invalid rows โดยไม่บันทึกเหตุผล และคิดว่า `info()` คืน string ทั้งที่มันพิมพ์ลง buffer Related graded exercises: DA10–DA17 และ DA22 ใน [Data Analysis Track](../tracks/data_analysis/README.md)
+
+### Time series และการกันข้อมูลอนาคตรั่ว
+
+เรียง timestamp และตรวจช่องว่างก่อน resample `shift(1)` ให้ค่าก่อนหน้า; `rolling(window, min_periods=window)` ใช้หน้าต่างที่ครบ; `pct_change(fill_method=None)` ไม่เติมวันที่หายให้เอง แบ่ง train/test ตามเวลาและตรวจว่าเวลาสุดท้ายของ train มาก่อนเวลาต้นของ test ห้าม shuffle เพื่อแบ่งชุดเวลา
+
+~~~python
+daily = frame.set_index("timestamp")["close"].resample("D").last()
+features = daily.rolling(3, min_periods=3).mean()
+returns = daily.pct_change(fill_method=None)
+~~~
+
+ผลลัพธ์เป็น Series ที่คง index เวลา; วันที่ไม่มีข้อมูลและช่วง rolling ที่ยังไม่ครบจะเป็น missing ตามที่คาด พลาดบ่อยคือ forward-fill โดยไม่รู้ความหมาย, ใช้ `min_periods=1` ทั้งที่ต้องการหน้าต่างเต็ม หรือคำนวณ feature จากอนาคต Related exercises: DA15–DA16 และ Levels 9–10
 
 ### Matplotlib และ Plotly
 
-Matplotlib ทำกราฟคงที่ในรายงาน; Plotly ทำกราฟโต้ตอบได้ กราฟไม่แก้ข้อมูลผิดและไม่พิสูจน์เหตุ/ผล
+เลือกกราฟจากคำถาม: line แสดงแนวโน้มตามเวลา; bar เปรียบเทียบกลุ่ม; histogram แสดง distribution; scatter ดูความสัมพันธ์ของตัวเลขสองตัวแปร สำหรับ OHLCV ให้แสดง close/ช่วง high–low พร้อม volume แยกแกน/แถว Matplotlib เหมาะกับภาพนิ่งในรายงาน; Plotly ทำกราฟโต้ตอบและ HTML ได้ แต่เป็น optional extension
 
 ~~~python
-import matplotlib.pyplot as plt  # optional: ต้องติดตั้งก่อน
-plt.plot([1, 2, 3], [4, 2, 5])
-plt.xlabel("วัน")
-plt.ylabel("ยอดขาย")
-plt.show()
+import matplotlib.pyplot as plt
+fig, ax = plt.subplots()
+ax.plot([1, 2, 3], [4, 2, 5])
+ax.set(xlabel="วัน", ylabel="ยอดขาย")
 ~~~
-ผลลัพธ์เมื่อมี Matplotlib: เปิดกราฟเส้น 3 จุด; optional; ฝึก Level 6
+
+ตัวอย่างสร้าง line chart 3 จุด; ใช้ `fig.savefig(path)` เมื่อต้องตรวจ artifact ใน test ตรวจข้อมูลที่ plot และชื่อแกนแทนการเทียบ pixel ซึ่งขึ้นกับ font/backend พลาดบ่อยคือใช้กราฟที่ไม่ตรงกับชนิดข้อมูลหรือสรุปเหตุ/ผลจาก correlation Related exercises: DA18–DA19 และ DA23 (Plotly optional)
 
 ### Statistics, financial data และ backtesting
 

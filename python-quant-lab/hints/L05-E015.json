@@ -1,5 +1,5 @@
 [
-  "Hint 1: ระบุ output แต่ละช่องจาก prompt: normalize comma-separated text และคืนจำนวน field.",
-  "Hint 2: ทำตามลำดับ: strip, split, strip สมาชิก, uppercase แล้ว join กลับ.",
-  "Hint 3: ตรวจขอบเขต: ตรวจช่องว่างรอบนอกและหลาย field; อย่าแปลงเป็นตัวเลข."
+  "อ่านตัวคั่นและจำนวน field จาก prompt ก่อนเรียก split",
+  "ตัดช่องว่างของแต่ละ field แล้วแปลงเฉพาะค่าที่โจทย์กำหนด; คงลำดับ field",
+  "ตรวจช่องว่าง ตัวคั่น และชนิดข้อมูลของแต่ละ field ตาม prompt"
 ]

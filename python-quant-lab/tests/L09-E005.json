@@ -13,15 +13,15 @@
       ]
     ],
     "expected": {
-      "strategy_net": 0.04,
-      "benchmark_net": 0.02,
-      "excess": 0.02,
+      "strategy_net": 0.040094,
+      "benchmark_net": 0.0201,
+      "excess": 0.019994,
       "beats": true
     },
     "tolerance": 1e-08,
     "name": "กลยุทธ์สูงกว่า benchmark",
     "stdin": "[0.02,-0.01,0.03]\n[0.01,0.0,0.01]\n",
-    "expected_stdout": "strategy=0.0400 benchmark=0.0200 excess=0.0200 beats=True\n"
+    "expected_stdout": "strategy=0.0401 benchmark=0.0201 excess=0.0200 beats=True\n"
   },
   {
     "args": [
@@ -35,15 +35,15 @@
       ]
     ],
     "expected": {
-      "strategy_net": 0.01,
-      "benchmark_net": 0.03,
-      "excess": -0.02,
+      "strategy_net": 0.010000000000000009,
+      "benchmark_net": 0.0302,
+      "excess": -0.0202,
       "beats": false
     },
     "tolerance": 1e-08,
     "name": "benchmark สูงกว่า",
     "stdin": "[0.01,0.0]\n[0.02,0.01]\n",
-    "expected_stdout": "strategy=0.0100 benchmark=0.0300 excess=-0.0200 beats=False\n"
+    "expected_stdout": "strategy=0.0100 benchmark=0.0302 excess=-0.0202 beats=False\n"
   },
   {
     "args": [
@@ -73,14 +73,36 @@
       ]
     ],
     "expected": {
-      "strategy_net": 0.03,
-      "benchmark_net": 0.03,
+      "strategy_net": 0.030200000000000005,
+      "benchmark_net": 0.030200000000000005,
       "excess": 0.0,
       "beats": false
     },
     "tolerance": 1e-08,
     "name": "equal OOS results do not beat benchmark",
     "stdin": "[0.01,0.02]\n[0.01,0.02]\n",
-    "expected_stdout": "strategy=0.0300 benchmark=0.0300 excess=0.0000 beats=False\n"
+    "expected_stdout": "strategy=0.0302 benchmark=0.0302 excess=0.0000 beats=False\n"
+  },
+  {
+    "args": [
+      [
+        0.1,
+        0.2
+      ],
+      [
+        0.0,
+        0.05
+      ]
+    ],
+    "expected": {
+      "strategy_net": 0.32,
+      "benchmark_net": 0.05,
+      "excess": 0.27,
+      "beats": true
+    },
+    "tolerance": 1e-08,
+    "name": "compounds unequal-period simple returns",
+    "stdin": "[0.1,0.2]\n[0.0,0.05]\n",
+    "expected_stdout": "strategy=0.3200 benchmark=0.0500 excess=0.2700 beats=True\n"
   }
 ]

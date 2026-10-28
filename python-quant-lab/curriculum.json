@@ -32,7 +32,9 @@
     ],
     "assessment": false,
     "submission_mode": "stdout",
-    "explanation": "เรียก `print()` พร้อม string หนึ่งค่า Python จะแสดงตัวอักษรใน string โดยไม่แสดงเครื่องหมายคำพูด และจบบรรทัดให้อัตโนมัติ ตรวจให้สะกดและเว้นวรรคตรงกับโจทย์"
+    "explanation": "เรียก `print()` พร้อม string หนึ่งค่า Python จะแสดงตัวอักษรใน string โดยไม่แสดงเครื่องหมายคำพูด และจบบรรทัดให้อัตโนมัติ ตรวจให้สะกดและเว้นวรรคตรงกับโจทย์",
+    "difficulty_tier": 1,
+    "difficulty_label": "ง่ายมาก — แนวคิดเดียว"
   },
   {
     "id": "L01-E002",
@@ -69,7 +71,9 @@
     "assessment": false,
     "submission_mode": "text_answer",
     "explanation": "บรรทัดแรกคูณก่อน: 2*3 ได้ 6 แล้วบวก 8 จึงได้ 14 บรรทัดที่สองคำนวณวงเล็บก่อน: 8+2 ได้ 10 แล้วคูณ 3 จึงได้ 30 ส่งคำตอบเป็นข้อความสองบรรทัดในไฟล์ .txt โดยไม่ต้องเขียน Python",
-    "answer_file": "answers/level_01/L01-E002.txt"
+    "answer_file": "answers/level_01/L01-E002.txt",
+    "difficulty_tier": 1,
+    "difficulty_label": "ง่ายมาก — แนวคิดเดียว"
   },
   {
     "id": "L01-E003",
@@ -106,7 +110,9 @@
     ],
     "assessment": false,
     "submission_mode": "stdout",
-    "explanation": "`price` และ `quantity` เก็บจำนวนเต็ม บรรทัดคำนวณนำค่าทั้งสองมาคูณแล้วผูกผลไว้กับชื่อ `total` จากนั้น `print(total)` แสดง 12 การคำนวณแยกเป็นตัวแปรทำให้อ่านและแก้โจทย์ง่ายขึ้น"
+    "explanation": "`price` และ `quantity` เก็บจำนวนเต็ม บรรทัดคำนวณนำค่าทั้งสองมาคูณแล้วผูกผลไว้กับชื่อ `total` จากนั้น `print(total)` แสดง 12 การคำนวณแยกเป็นตัวแปรทำให้อ่านและแก้โจทย์ง่ายขึ้น",
+    "difficulty_tier": 1,
+    "difficulty_label": "ง่ายมาก — แนวคิดเดียว"
   },
   {
     "id": "L01-E004",
@@ -143,7 +149,9 @@
     ],
     "assessment": false,
     "submission_mode": "stdout",
-    "explanation": "บรรทัดเดิมบวก 12 กับ 3 จึงได้ 15 การหาราคารวมของสินค้าราคาเท่ากันต้องคูณราคาแต่ละชิ้นด้วยจำนวนชิ้น การเปลี่ยน `+` เป็น `*` จึงให้ 36"
+    "explanation": "บรรทัดเดิมบวก 12 กับ 3 จึงได้ 15 การหาราคารวมของสินค้าราคาเท่ากันต้องคูณราคาแต่ละชิ้นด้วยจำนวนชิ้น การเปลี่ยน `+` เป็น `*` จึงให้ 36",
+    "difficulty_tier": 2,
+    "difficulty_label": "ง่าย — รวมแนวคิดคุ้นเคย"
   },
   {
     "id": "L01-E005",
@@ -180,7 +188,9 @@
     ],
     "assessment": false,
     "submission_mode": "stdout",
-    "explanation": "โปรแกรมกำหนด `unit_price` เป็น 25 และ `count` เป็น 4 จากนั้นคูณเพื่อหายอดก่อนค่าธรรมเนียม ได้ 100 บาท โจทย์นี้ยังไม่รวมภาษีหรือส่วนลด"
+    "explanation": "โปรแกรมกำหนด `unit_price` เป็น 25 และ `count` เป็น 4 จากนั้นคูณเพื่อหายอดก่อนค่าธรรมเนียม ได้ 100 บาท โจทย์นี้ยังไม่รวมภาษีหรือส่วนลด",
+    "difficulty_tier": 2,
+    "difficulty_label": "ง่าย — รวมแนวคิดคุ้นเคย"
   },
   {
     "id": "L01-E006",
@@ -217,7 +227,9 @@
     ],
     "assessment": false,
     "submission_mode": "stdout",
-    "explanation": "ตัวแปร `asset` เก็บ string และ `price` เก็บ integer f-string ทำให้แทรกค่าทั้งสองในข้อความได้โดยไม่ต้องแปลงชนิดเอง ช่องว่างในข้อความต้องตรงตามรูปแบบที่โจทย์กำหนด"
+    "explanation": "ตัวแปร `asset` เก็บ string และ `price` เก็บ integer f-string ทำให้แทรกค่าทั้งสองในข้อความได้โดยไม่ต้องแปลงชนิดเอง ช่องว่างในข้อความต้องตรงตามรูปแบบที่โจทย์กำหนด",
+    "difficulty_tier": 2,
+    "difficulty_label": "ง่าย — รวมแนวคิดคุ้นเคย"
   },
   {
     "id": "L01-E007",
@@ -232,17 +244,17 @@
     ],
     "function": null,
     "signature": null,
-    "problem": "ทายผลลัพธ์ของโค้ดในโจทย์ แล้วเขียนค่าที่แสดงลงไฟล์คำตอบ .txt โดยหนึ่งผลลัพธ์ต่อบรรทัด",
+    "problem": "ทาย stdout ของโค้ดต่อไปนี้ แล้วกำหนด ANSWER เป็นข้อความสองบรรทัดตามลำดับ:\n`coins = 2`\n`price = 3`\n`print(coins * price)`\n`print(\"BTC\")`",
     "sample": "เขียนผลลัพธ์ที่คาดลงไฟล์ข้อความคำตอบตามจำนวนบรรทัดของ stdout",
     "expected": "6\nBTC",
     "constraints": "Python 3.12; ใช้เฉพาะแนวคิดที่สอนถึงข้อนี้; การเทรดเป็นการจำลอง paper-only",
-    "lesson": "เมื่อกำหนดค่าตัวแปรแล้ว Python ใช้ค่านั้นในการคำนวณ และ `print()` แสดงตามลำดับบรรทัด",
+    "lesson": "เมื่อกำหนดค่าตัวแปรแล้ว Python ใช้ค่านั้นในการคำนวณ และ `print()` แสดงค่าทีละบรรทัด ให้อ่านคำสั่งจากบนลงล่างก่อนเขียนคำตอบ",
     "example": "boxes = 3\nitems_per_box = 4\nprint(boxes * items_per_box)  # 12",
     "pitfall": "คิดว่า print แสดงคำสั่งหรือชื่อตัวแปรแทนค่าของมัน",
     "hints": [
-      "คูณค่าของ coins กับ price",
-      "คำสั่ง print ที่สองแสดง string BTC",
-      "บรรทัดแรกเป็น 6 และบรรทัดถัดไปเป็น BTC"
+      "อ่านค่าที่กำหนดให้ในตัวแปรก่อน แล้วติดตามลำดับคำสั่ง `print()`",
+      "นิพจน์ใน `print()` คำนวณก่อนแสดงผล ส่วน string จะแสดงเป็นข้อความตามตัวอักษร",
+      "ตรวจว่าคำตอบมีสองบรรทัดและเรียงตามคำสั่ง; อย่าคัดลอกเครื่องหมายคำพูดรอบ string ลงใน stdout"
     ],
     "lesson_file": "lessons/L01-E007.md",
     "cases": [
@@ -253,8 +265,10 @@
     ],
     "assessment": false,
     "submission_mode": "text_answer",
-    "explanation": "ค่าของ coins คือ 2 และ price คือ 3 จึงคูณกันได้ 6 คำสั่ง print ถัดไปแสดง BTC ในบรรทัดใหม่ ส่งผลทั้งสองบรรทัดลงไฟล์ข้อความคำตอบ",
-    "answer_file": "answers/level_01/L01-E007.txt"
+    "explanation": "ประเมินนิพจน์ของคำสั่ง print แรกจากค่าตัวแปร แล้วอ่าน string ในคำสั่งถัดไปตามลำดับ ผลลัพธ์ต้องมีสองบรรทัด โดยไม่ใส่เครื่องหมายคำพูดของ string",
+    "answer_file": "answers/level_01/L01-E007.txt",
+    "difficulty_tier": 3,
+    "difficulty_label": "ปานกลาง — หลายขั้นตอน"
   },
   {
     "id": "L01-E008",
@@ -277,9 +291,9 @@
     "example": "box_count = int(\"4\")\nprint(box_count * 6)  # 24",
     "pitfall": "นำ string จาก input() ไปบวกกับ integer โดยตรง",
     "hints": [
-      "input() ให้ข้อความ",
-      "ต้องแปลงข้อความเป็นจำนวนเต็มก่อนบวก",
-      "กำหนด count = int(input())"
+      "`input()` ให้ข้อความ แม้ผู้ใช้พิมพ์ตัวเลข",
+      "แปลงข้อความเป็นจำนวนเต็มก่อนนำไปบวกหนึ่ง",
+      "พิมพ์ผลหลังแปลงและคำนวณ; ตรวจว่าผลเป็นจำนวนที่ป้อนบวกหนึ่ง"
     ],
     "lesson_file": "lessons/L01-E008.md",
     "cases": [
@@ -296,7 +310,9 @@
     ],
     "assessment": false,
     "submission_mode": "stdout",
-    "explanation": "`input()` อ่านข้อความ `4` ซึ่งเป็น string `int()` แปลงเป็น integer 4 แล้วบวก 1 ได้ 5 การไม่แปลงชนิดทำให้เกิด TypeError เมื่อบวก string กับ integer"
+    "explanation": "`input()` อ่านข้อความ `4` ซึ่งเป็น string `int()` แปลงเป็น integer 4 แล้วบวก 1 ได้ 5 การไม่แปลงชนิดทำให้เกิด TypeError เมื่อบวก string กับ integer",
+    "difficulty_tier": 3,
+    "difficulty_label": "ปานกลาง — หลายขั้นตอน"
   },
   {
     "id": "L01-E009",
@@ -338,7 +354,9 @@
     ],
     "assessment": false,
     "submission_mode": "stdout",
-    "explanation": "บั๊กเกิดจาก `age` เป็น string แต่ 1 เป็น integer การใช้ `int(input())` แปลงข้อมูลตอนรับเข้าทำให้บวกเลขได้จริง ทดสอบทั้ง 9 และ 0 เพื่อกันการตอบตายตัว"
+    "explanation": "บั๊กเกิดจาก `age` เป็น string แต่ 1 เป็น integer การใช้ `int(input())` แปลงข้อมูลตอนรับเข้าทำให้บวกเลขได้จริง ทดสอบทั้ง 9 และ 0 เพื่อกันการตอบตายตัว",
+    "difficulty_tier": 3,
+    "difficulty_label": "ปานกลาง — หลายขั้นตอน"
   },
   {
     "id": "L01-E010",
@@ -385,7 +403,9 @@
     ],
     "assessment": false,
     "submission_mode": "stdout",
-    "explanation": "อ่านค่าทั้งสามเป็น float เพื่อรองรับเศษสตางค์ จากนั้นลบค่าใช้จ่ายสองรายการออกจากรายรับ `:.2f` จัดรูปแบบผลลัพธ์ให้มีทศนิยมสองตำแหน่งเสมอ โจทย์นี้ไม่เปลี่ยนค่าต้นทางและไม่ปัดระหว่างการคำนวณ"
+    "explanation": "อ่านค่าทั้งสามเป็น float เพื่อรองรับเศษสตางค์ จากนั้นลบค่าใช้จ่ายสองรายการออกจากรายรับ `:.2f` จัดรูปแบบผลลัพธ์ให้มีทศนิยมสองตำแหน่งเสมอ โจทย์นี้ไม่เปลี่ยนค่าต้นทางและไม่ปัดระหว่างการคำนวณ",
+    "difficulty_tier": 3,
+    "difficulty_label": "ปานกลาง — หลายขั้นตอน"
   },
   {
     "id": "L01-E011",
@@ -432,7 +452,9 @@
     ],
     "assessment": false,
     "submission_mode": "stdout",
-    "explanation": "ส่วนต่างต่อ BTC คือ 61,000-60,000 = 1,000 USD คูณ 0.01 BTC ได้กำไรขั้นต้น 10 USD ใช้ float เพราะราคา/จำนวนอาจมีเศษ และแสดงสองตำแหน่งเพื่อให้ผลอ่านง่าย ตัวอย่างนี้ไม่ใช่ข้อมูลตลาดจริง"
+    "explanation": "ส่วนต่างต่อ BTC คือ 61,000-60,000 = 1,000 USD คูณ 0.01 BTC ได้กำไรขั้นต้น 10 USD ใช้ float เพราะราคา/จำนวนอาจมีเศษ และแสดงสองตำแหน่งเพื่อให้ผลอ่านง่าย ตัวอย่างนี้ไม่ใช่ข้อมูลตลาดจริง",
+    "difficulty_tier": 4,
+    "difficulty_label": "ท้าทาย — เงื่อนไขและกรณีขอบ"
   },
   {
     "id": "L01-E012",
@@ -455,9 +477,9 @@
     "example": "50 * 10 / 100  # 5.0",
     "pitfall": "ตอบ 8 โดยไม่สังเกตว่า `/` ให้ผลเป็น float หรือคิดว่าเป็น 10% ของ 100",
     "hints": [
-      "แทนชื่อตัวแปรด้วยค่า 80 และ 10",
-      "คูณก่อนแล้วหาร 100",
-      "80*10/100 = 8.0"
+      "แทนค่าตัวแปรทั้งสองลงในนิพจน์",
+      "คูณจำนวนเงินด้วยเปอร์เซ็นต์ก่อน",
+      "หารผลคูณด้วย 100; Python ใช้ `/` จึงอาจคืนค่าทศนิยม"
     ],
     "lesson_file": "lessons/L01-E012.md",
     "cases": [
@@ -468,8 +490,10 @@
     ],
     "assessment": false,
     "submission_mode": "text_answer",
-    "explanation": "แทนค่าตัวแปรในนิพจน์ได้ 80*10/100 การคูณและหารมีลำดับเดียวกันและคำนวณซ้ายไปขวา ผลทางคณิตศาสตร์คือ 8 แต่ Python ใช้ / จึงแสดงเป็น 8.0 ส่งข้อความนี้ลงไฟล์คำตอบ",
-    "answer_file": "answers/level_01/L01-E012.txt"
+    "explanation": "แทนค่าตัวแปรในนิพจน์ คูณจำนวนเงินด้วยเปอร์เซ็นต์แล้วหารด้วย 100 เครื่องหมาย `/` คืนค่าทศนิยมได้ แม้ผลทางคณิตศาสตร์จะเป็นจำนวนเต็ม",
+    "answer_file": "answers/level_01/L01-E012.txt",
+    "difficulty_tier": 2,
+    "difficulty_label": "ง่าย — รวมแนวคิดคุ้นเคย"
   },
   {
     "id": "L01-E013",
@@ -486,15 +510,15 @@
     "signature": null,
     "problem": "เติมบรรทัด TODO ให้โปรแกรมอ่านกำไรขั้นต้นและอัตราค่าธรรมเนียมเป็นเปอร์เซ็นต์ แล้วแสดงกำไรสุทธิสองตำแหน่ง",
     "sample": "gross=10, fee_percent=1 แสดง 9.90",
-    "expected": "gross - gross * fee_percent / 100",
+    "expected": "net = gross - abs(gross) * fee_percent / 100; gross คงเครื่องหมายเดิม ส่วนค่าธรรมเนียมไม่ติดลบ",
     "constraints": "Python 3.12; ใช้เฉพาะแนวคิดที่สอนถึงข้อนี้; การเทรดเป็นการจำลอง paper-only; gross อาจเป็นบวกหรือลบ และ fee_percent ต้องไม่ติดลบ",
     "lesson": "ค่าธรรมเนียมคำนวณจาก gross * rate / 100 แล้วหักออกจาก gross ฟังก์ชัน `abs(x)` คืนค่าขนาดที่ไม่ติดลบของ x จึงใช้คิดค่าธรรมเนียมได้แม้ gross เป็นขาดทุน",
     "example": "bill = 80\ndiscount_percent = 5\ndiscount = bill * discount_percent / 100\nremaining = bill - discount\nprint(f\"{remaining:.2f}\")  # 76.00",
     "pitfall": "ลืมหารด้วย 100 หรือบวกค่าธรรมเนียมแทนการหัก",
     "hints": [
-      "อ่านค่าทั้งสองเป็น float",
-      "คำนวณ fee แยกจาก net",
-      "net = gross - abs(gross) * fee_percent / 100"
+      "แยกค่าธรรมเนียมออกจากกำไร/ขาดทุนขั้นต้น",
+      "ค่าธรรมเนียมคิดจากขนาดของ gross จึงใช้ขนาดบวก แม้ gross จะติดลบ",
+      "หักค่าธรรมเนียมที่ไม่ติดลบออกจาก gross ที่ยังคงเครื่องหมายเดิม แล้วจัดรูปแบบตามโจทย์"
     ],
     "lesson_file": "lessons/L01-E013.md",
     "cases": [
@@ -516,7 +540,9 @@
     ],
     "assessment": false,
     "submission_mode": "stdout",
-    "explanation": "เมื่อ gross เท่ากับ 10 และอัตรา 1% ค่าธรรมเนียมคือ 10*1/100 = 0.10 กำไรสุทธิเท่ากับ 10-0.10 = 9.90 การแยกตัวแปร `fee` ช่วยตรวจสูตรได้ชัด"
+    "explanation": "ค่า gross มีเครื่องหมายบอกกำไรหรือขาดทุน แต่ฐานค่าธรรมเนียมเป็นขนาดของ gross จึงไม่ติดลบ เมื่อเป็นขาดทุนให้หักค่าธรรมเนียมออกจาก gross เดิมเพื่อให้ขาดทุนเพิ่มขึ้น",
+    "difficulty_tier": 5,
+    "difficulty_label": "ประยุกต์ขั้นสูง — ใช้ความรู้เดิมกับโจทย์ใหม่"
   },
   {
     "id": "L01-E014",
@@ -563,7 +589,9 @@
     ],
     "assessment": false,
     "submission_mode": "stdout",
-    "explanation": "ราคาต่างกัน 10 ต่อ BTC คูณ 2 ได้ gross 20 ค่าธรรมเนียมรวมคือ (100+110)*2*1/100 = 4.20 ดังนั้นสุทธิคือ 15.80 บั๊กเดิมบวกต้นทุนเข้าไป จึงทำให้ผลดีเกินจริง อีก test ตรวจกรณีขาดทุนและอัตราศูนย์"
+    "explanation": "ราคาต่างกัน 10 ต่อ BTC คูณ 2 ได้ gross 20 ค่าธรรมเนียมรวมคือ (100+110)*2*1/100 = 4.20 ดังนั้นสุทธิคือ 15.80 บั๊กเดิมบวกต้นทุนเข้าไป จึงทำให้ผลดีเกินจริง อีก test ตรวจกรณีขาดทุนและอัตราศูนย์",
+    "difficulty_tier": 4,
+    "difficulty_label": "ท้าทาย — เงื่อนไขและกรณีขอบ"
   },
   {
     "id": "L01-E015",
@@ -572,7 +600,7 @@
     "title": "ภารกิจสรุป paper trade",
     "difficulty": "ท้าทาย",
     "category": "โจทย์ประยุกต์",
-    "objective": "รวม input, float, ตัวแปร, สูตรกำไร, ค่าธรรมเนียม และ f-string",
+    "objective": "รวม input, การแปลงชนิดข้อมูล, การคำนวณ และการจัดรูปแบบผลลัพธ์ตาม variant ที่เลือก",
     "prerequisites": [
       "L01-E014"
     ],
@@ -582,19 +610,19 @@
     "sample": "Variant A ตัวอย่าง: 100, 110, 0.1, 1",
     "expected": "gross=(sell-buy)*quantity; fees=(buy+sell)*quantity*fee_percent/100; net=gross-fees",
     "constraints": "Python 3.12; ใช้เฉพาะแนวคิดที่สอนถึงข้อนี้; การเทรดเป็นการจำลอง paper-only; ราคาซื้อ/ขายและจำนวนต้องไม่ติดลบ; fee_percent ต้องไม่ติดลบ",
-    "lesson": "อ่านข้อมูลตามลำดับ เก็บแต่ละค่าในตัวแปร คำนวณ gross และ fees แยกกัน แล้วแสดงผลอย่างมีป้ายกำกับ",
-    "example": "sales_revenue = 300\nsupplies_cost = 45\npostage_cost = 8\nprofit = sales_revenue - supplies_cost - postage_cost\nprint(f\"Profit: {profit:.2f}\")  # Profit: 247.00",
-    "pitfall": "hardcode ผลตัวอย่าง, ลืมจำนวนเหรียญ หรือคิดค่าธรรมเนียมเพียงครั้งเดียว",
+    "lesson": "ใช้ prompt ของ variant ปัจจุบันเป็นข้อกำหนดหลัก เพราะ A และ B ต่างกัน อ่าน input และ output ที่ระบุ แยกค่าระหว่างทางเพื่อตรวจสูตรและหน่วย แล้วพิมพ์เฉพาะป้ายกำกับและรูปแบบที่โจทย์กำหนด.",
+    "example": "value = 2.5\nprint(f\"Value: {value:.2f}\")  # Value: 2.50",
+    "pitfall": "ใช้หน่วยและ input ตาม prompt; ตรวจชื่อป้าย จำนวนบรรทัด และรูปแบบทศนิยมของ variant ปัจจุบัน",
     "hints": [
-      "อ่านตัวเลขสี่ค่าด้วย float()",
-      "คำนวณ gross ก่อน แล้วคำนวณ fee จาก buy และ sell",
-      "พิมพ์ Gross, Fees, Net ด้วย f-string และ `:.2f`"
+      "จับคู่ input แต่ละค่ากับชื่อและหน่วยที่ prompt ของ variant ปัจจุบันระบุ",
+      "คำนวณค่าระหว่างทางแยกเป็นตัวแปร เพื่อให้ตรวจสูตรและหน่วยได้",
+      "จัดรูปแบบตัวเลขและตรวจชื่อป้ายกับจำนวนบรรทัดตาม prompt; อย่านำสูตรจากอีก variant มาใช้"
     ],
     "lesson_file": "lessons/L01-E015.md",
     "cases": [],
     "assessment": true,
     "submission_mode": "stdout",
-    "explanation": "โปรแกรมรับข้อมูล 4 ค่าและแปลงเป็น float จากนั้นคำนวณผลต่างราคาคูณจำนวนเหรียญ ค่าธรรมเนียมคิดจากมูลค่าซื้อและขายรวม แล้วหักจาก gross ฟอร์แมต `:.2f` ทำให้แต่ละบรรทัดมีทศนิยมสองหลัก Test ของ variant แต่ละชุดใช้ตัวเลขที่ต่างกัน เพื่อยืนยันว่าโปรแกรมคำนวณจาก input จริง ไม่ใช่ค่าตัวอย่าง",
+    "explanation": "ทำตาม prompt และตัวอย่าง input/output ของ variant ที่กำลังตรวจ แปลงข้อมูลก่อนคำนวณ แยกค่าระหว่างทางเป็นตัวแปร และใช้รูปแบบตัวเลขสองตำแหน่งตามที่โจทย์กำหนด",
     "variant_samples": {
       "A": "100, 110, 0.1, 1",
       "B": "1000, 100, 50, 25"
@@ -606,7 +634,9 @@
     "variant_expected": {
       "A": "gross=(sell-buy)*quantity; fees=(buy+sell)*quantity*fee_percent/100; net=gross-fees",
       "B": "Expenses = housing + food + other; Remaining = income - Expenses; both have two decimal places"
-    }
+    },
+    "difficulty_tier": 5,
+    "difficulty_label": "ประยุกต์ขั้นสูง — ใช้ความรู้เดิมกับโจทย์ใหม่"
   },
   {
     "id": "L02-E001",
@@ -658,7 +688,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 1,
+    "difficulty_label": "ง่ายมาก — แนวคิดเดียว"
   },
   {
     "id": "L02-E002",
@@ -697,7 +729,9 @@
     "assessment": false,
     "explanation": "trace ค่า total ทีละรอบ: รอบแรกเพิ่ม 3 รอบที่สองข้าม และรอบสุดท้ายเพิ่ม 2 บรรทัดสุดท้ายพิมพ์สมาชิกท้าย list",
     "submission_mode": "text_answer",
-    "answer_file": "answers/level_02/L02-E002.txt"
+    "answer_file": "answers/level_02/L02-E002.txt",
+    "difficulty_tier": 1,
+    "difficulty_label": "ง่ายมาก — แนวคิดเดียว"
   },
   {
     "id": "L02-E003",
@@ -770,7 +804,9 @@
     "explanation": "ฟังก์ชันเริ่ม total เป็น 0 วนทีละ value และเพิ่มเฉพาะค่าที่ผ่าน <= จากนั้นคืน total; main แปลง input สองบรรทัดและ print ค่าคืน",
     "submission_mode": "stdout",
     "function": "sum_at_or_below_limit",
-    "signature": "values, limit"
+    "signature": "values, limit",
+    "difficulty_tier": 1,
+    "difficulty_label": "ง่ายมาก — แนวคิดเดียว"
   },
   {
     "id": "L02-E004",
@@ -832,7 +868,9 @@
     "explanation": "การแก้คือเปลี่ยนเงื่อนไขให้รวมยอดเท่ากับ 500 และกำหนดค่าส่งในกิ่ง else; ไม่ต้องแก้การรับ input",
     "submission_mode": "stdout",
     "function": "shipping_fee",
-    "signature": "order_total"
+    "signature": "order_total",
+    "difficulty_tier": 2,
+    "difficulty_label": "ง่าย — รวมแนวคิดคุ้นเคย"
   },
   {
     "id": "L02-E005",
@@ -908,7 +946,9 @@
     "explanation": "ตรวจยอดและเขตก่อน หากถูกต้องและยอดถึง 300 ให้ fee เป็นศูนย์ ถ้ายังไม่ถึงเลือก 20 หรือ 50 แล้วแสดง subtotal + fee",
     "submission_mode": "stdout",
     "function": "final_order_amount",
-    "signature": "subtotal, zone"
+    "signature": "subtotal, zone",
+    "difficulty_tier": 2,
+    "difficulty_label": "ง่าย — รวมแนวคิดคุ้นเคย"
   },
   {
     "id": "L02-E006",
@@ -965,7 +1005,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 2,
+    "difficulty_label": "ง่าย — รวมแนวคิดคุ้นเคย"
   },
   {
     "id": "L02-E007",
@@ -982,7 +1024,7 @@
     "signature": "values",
     "problem": "สถานการณ์: นักวิเคราะห์ปรับยอดที่มีเครื่องหมายบวกและลบสลับตำแหน่ง\n\nเขียน sum_alternating_values(values) ให้ทำตามสัญญา: index คู่บวกเข้า total และ index คี่ลบออก; index เริ่มจาก 0.\n\nกรณีขอบ: list ว่างคืน 0; สมาชิกแรกใช้เครื่องหมายบวก.\nส่งค่ากลับด้วย return และรักษาชนิดผลลัพธ์ตามตัวอย่าง",
     "sample": "([10, 3, 2, 1],)",
-    "expected": "8",
+    "expected": "0 for an empty list; otherwise add even-index values and subtract odd-index values.",
     "constraints": "Python 3.12; list ว่างคืน 0; สมาชิกแรกใช้เครื่องหมายบวก; ใช้เฉพาะข้อมูลตามสัญญาโจทย์; ห้ามแก้ grader หรือเฉลย",
     "lesson": "แนวคิด: index คู่บวกเข้า total และ index คี่ลบออก; index เริ่มจาก 0\n\nคิดทีละขั้น: วนพร้อม index; ใช้เศษจากการหาร index ด้วย 2 เพื่อเลือกเครื่องหมาย",
     "example": "import json\nsettings = json.loads('{\"mode\": \"offline\", \"retry\": 2}')\nprint(settings[\"mode\"], settings[\"retry\"])\n",
@@ -1017,7 +1059,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 3,
+    "difficulty_label": "ปานกลาง — หลายขั้นตอน"
   },
   {
     "id": "L02-E008",
@@ -1068,7 +1112,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 3,
+    "difficulty_label": "ปานกลาง — หลายขั้นตอน"
   },
   {
     "id": "L02-E009",
@@ -1123,7 +1169,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 3,
+    "difficulty_label": "ปานกลาง — หลายขั้นตอน"
   },
   {
     "id": "L02-E010",
@@ -1180,7 +1228,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 4,
+    "difficulty_label": "ท้าทาย — เงื่อนไขและกรณีขอบ"
   },
   {
     "id": "L02-E011",
@@ -1235,7 +1285,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 4,
+    "difficulty_label": "ท้าทาย — เงื่อนไขและกรณีขอบ"
   },
   {
     "id": "L02-E012",
@@ -1287,7 +1339,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 4,
+    "difficulty_label": "ท้าทาย — เงื่อนไขและกรณีขอบ"
   },
   {
     "id": "L02-E013",
@@ -1338,7 +1392,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 5,
+    "difficulty_label": "ประยุกต์ขั้นสูง — ใช้ความรู้เดิมกับโจทย์ใหม่"
   },
   {
     "id": "L02-E014",
@@ -1401,7 +1457,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 5,
+    "difficulty_label": "ประยุกต์ขั้นสูง — ใช้ความรู้เดิมกับโจทย์ใหม่"
   },
   {
     "id": "L02-E015",
@@ -1410,7 +1468,7 @@
     "title": "ประเมินเงื่อนไขและลูป",
     "difficulty": "เริ่มต้น",
     "category": "โจทย์ประยุกต์",
-    "objective": "แยกจำนวนรายการทั้งหมด จำนวนค่าบวก และผลรวมสุทธิจากข้อมูลใหม่",
+    "objective": "ใช้เงื่อนไขและลูปแปลง input เป็น output ตาม prompt ของ variant ที่เลือก",
     "prerequisites": [
       "L02-E014"
     ],
@@ -1420,13 +1478,13 @@
     "sample": "([1, -2, 0, 3],)",
     "expected": "{'count': 4, 'positive': 2, 'net': 2}",
     "constraints": "ใช้ Python 3.12 และ standard library; ห้ามแก้ tests, curriculum หรือไฟล์เฉลย; ตัวอย่างการเทรดเป็น paper-only",
-    "lesson": "แบบประเมินนี้ให้ใช้แนวคิดของระดับกับบริบทใหม่: แยกจำนวนรายการทั้งหมด จำนวนค่าบวก และผลรวมสุทธิจากข้อมูลใหม่. อ่าน prompt ของ variant ปัจจุบัน แล้วแยก input, ขั้นตอน และ output ก่อนเขียน",
-    "example": "values = [2, 5, 3]\ntotal = 0\nfor value in values:\n    total += value\nprint(total)\n",
-    "pitfall": "ตรวจค่าติดลบ ศูนย์ และบวก โดยไม่ hardcode ผลตัวอย่าง",
+    "lesson": "ใช้ prompt ของ variant ปัจจุบันเป็น contract; A/B อาจขอผลลัพธ์ต่างกัน ระบุ output ทุกช่อง แล้ววนข้อมูลเพื่อคำนวณแต่ละช่องตามเงื่อนไขของมัน ตรวจค่าขอบก่อนคืนผล.",
+    "example": "for value in [2, 5, 3]:\n    print(value)",
+    "pitfall": "ทดสอบ list ว่าง ค่าลบ ศูนย์ และค่าบวก แล้วตรวจแต่ละช่องตาม prompt ของ variant ปัจจุบัน",
     "hints": [
-      "Hint 1: ระบุ output แต่ละช่องจาก prompt: แยกจำนวนรายการทั้งหมด จำนวนค่าบวก และผลรวมสุทธิจากข้อมูลใหม่.",
-      "Hint 2: ทำตามลำดับ: นับทุกค่า; นับ positive เมื่อค่า > 0; รวมค่าเข้า net.",
-      "Hint 3: ตรวจขอบเขต: ตรวจค่าติดลบ ศูนย์ และบวก โดยไม่ hardcode ผลตัวอย่าง."
+      "เขียนชื่อ output ทุกช่องและค่าเริ่มต้นก่อนวน input",
+      "วนสมาชิกแต่ละตัวหนึ่งครั้ง แล้วอัปเดตแต่ละช่องตามเงื่อนไขของ prompt โดยแยกเงื่อนไขออกจากกัน",
+      "ตรวจ input ว่าง ค่าลบ ศูนย์ และค่าบวก; เทียบชื่อและชนิด output กับโจทย์"
     ],
     "lesson_file": "lessons/level_02.md",
     "cases": [
@@ -1475,17 +1533,20 @@
     "assessment": true,
     "variant_prompts": {
       "A": "ฝ่ายปฏิบัติการสรุปผลต่างรายวันระหว่างงานที่ทำจริงกับแผน ค่าเป็นบวกหมายถึงทำเกินแผน จงคืนจำนวนวัน จำนวนวันที่ค่าเป็นบวก และผลรวมสุทธิ",
-      "B": "ทีมบริการตรวจเวลาตอบกลับเทียบเป้าหมาย ค่าเป็นบวกหมายถึงช้ากว่าเป้าหมาย จงวนรายการแล้วสรุปจำนวนทั้งหมด จำนวนที่เกินเป้าหมาย และผลต่างสุทธิ"
+      "B": "ตรวจชุดตัวเลขด้วยลูป แล้วคืน dict ที่มี even_sum (ผลรวมของจำนวนคู่ รวม 0 และจำนวนคู่ติดลบ) กับ negative_count (จำนวนค่าที่น้อยกว่า 0) ถ้ารายการว่างให้คืน 0 ทั้งสองช่อง"
     },
     "variant_samples": {
       "A": "([1, -2, 0, 3],)",
-      "B": "([-1, 0, 2, 4],)"
+      "B": "[[-3, 2, 5, 8]]"
     },
     "variant_expected": {
       "A": "{'count': 4, 'positive': 2, 'net': 2}",
-      "B": "{\"count\": 4, \"positive\": 2, \"net\": 5}"
+      "B": "{\"even_sum\": 10, \"negative_count\": 1}"
     },
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 5,
+    "difficulty_label": "ประยุกต์ขั้นสูง — ใช้ความรู้เดิมกับโจทย์ใหม่",
+    "explanation": "ทบทวนการวนซ้ำหนึ่งรอบเพื่อสร้างผลสรุปสองค่า ตรวจแต่ละเงื่อนไขแยกกัน และใช้ค่าเริ่มต้นที่ถูกต้องสำหรับ list ว่าง."
   },
   {
     "id": "L03-E001",
@@ -1536,7 +1597,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 1,
+    "difficulty_label": "ง่ายมาก — แนวคิดเดียว"
   },
   {
     "id": "L03-E002",
@@ -1575,7 +1638,9 @@
     "assessment": false,
     "explanation": "len(list) นับทุกตำแหน่ง; len(set) นับค่าที่ไม่ซ้ำ; index 0 อ่านสมาชิกแรก",
     "submission_mode": "text_answer",
-    "answer_file": "answers/level_03/L03-E002.txt"
+    "answer_file": "answers/level_03/L03-E002.txt",
+    "difficulty_tier": 1,
+    "difficulty_label": "ง่ายมาก — แนวคิดเดียว"
   },
   {
     "id": "L03-E003",
@@ -1650,7 +1715,9 @@
     "explanation": "ฟังก์ชันวน tags และตั้ง count ของ tag เป็นค่าเดิมหรือศูนย์แล้วบวกหนึ่ง จากนั้นคืน dict; main แสดง sorted(items)",
     "submission_mode": "stdout",
     "function": "frequency_table",
-    "signature": "tags"
+    "signature": "tags",
+    "difficulty_tier": 1,
+    "difficulty_label": "ง่ายมาก — แนวคิดเดียว"
   },
   {
     "id": "L03-E004",
@@ -1718,7 +1785,9 @@
     "explanation": "วนรายการเดิม; ถ้าค่ายังไม่อยู่ใน seen ให้เพิ่มลง seen และ output list วิธีนี้ลบซ้ำครั้งหลังโดยคงตำแหน่งครั้งแรก",
     "submission_mode": "stdout",
     "function": "unique_in_order",
-    "signature": "items"
+    "signature": "items",
+    "difficulty_tier": 2,
+    "difficulty_label": "ง่าย — รวมแนวคิดคุ้นเคย"
   },
   {
     "id": "L03-E005",
@@ -1811,7 +1880,9 @@
     "explanation": "ฟังก์ชันเลือก sku เฉพาะระเบียนที่ quantity <= threshold และคืน list เรียงแล้ว; main แปลงรูปแบบแถวที่กำหนดและแสดง NONE เมื่อผลว่าง",
     "submission_mode": "stdout",
     "function": "low_stock_skus",
-    "signature": "items, threshold"
+    "signature": "items, threshold",
+    "difficulty_tier": 2,
+    "difficulty_label": "ง่าย — รวมแนวคิดคุ้นเคย"
   },
   {
     "id": "L03-E006",
@@ -1865,7 +1936,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 2,
+    "difficulty_label": "ง่าย — รวมแนวคิดคุ้นเคย"
   },
   {
     "id": "L03-E007",
@@ -1930,7 +2003,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 3,
+    "difficulty_label": "ปานกลาง — หลายขั้นตอน"
   },
   {
     "id": "L03-E008",
@@ -1994,7 +2069,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 3,
+    "difficulty_label": "ปานกลาง — หลายขั้นตอน"
   },
   {
     "id": "L03-E009",
@@ -2058,7 +2135,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 3,
+    "difficulty_label": "ปานกลาง — หลายขั้นตอน"
   },
   {
     "id": "L03-E010",
@@ -2115,7 +2194,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 4,
+    "difficulty_label": "ท้าทาย — เงื่อนไขและกรณีขอบ"
   },
   {
     "id": "L03-E011",
@@ -2169,7 +2250,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 4,
+    "difficulty_label": "ท้าทาย — เงื่อนไขและกรณีขอบ"
   },
   {
     "id": "L03-E012",
@@ -2226,7 +2309,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 4,
+    "difficulty_label": "ท้าทาย — เงื่อนไขและกรณีขอบ"
   },
   {
     "id": "L03-E013",
@@ -2284,7 +2369,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 2,
+    "difficulty_label": "ง่าย — รวมแนวคิดคุ้นเคย"
   },
   {
     "id": "L03-E014",
@@ -2344,7 +2431,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 5,
+    "difficulty_label": "ประยุกต์ขั้นสูง — ใช้ความรู้เดิมกับโจทย์ใหม่"
   },
   {
     "id": "L03-E015",
@@ -2353,7 +2442,7 @@
     "title": "ประเมินโครงสร้างข้อมูล",
     "difficulty": "ปานกลาง",
     "category": "โจทย์ประยุกต์",
-    "objective": "คืน length, first และจำนวนค่าไม่ซ้ำจากรายการ",
+    "objective": "เลือกและรักษาโครงสร้างข้อมูลตาม prompt ของ variant ที่เลือก",
     "prerequisites": [
       "L03-E014"
     ],
@@ -2363,13 +2452,13 @@
     "sample": "([3, 1, 3, 2],)",
     "expected": "{'length': 4, 'first': 3, 'unique': 3}",
     "constraints": "ใช้ Python 3.12 และ standard library; ห้ามแก้ tests, curriculum หรือไฟล์เฉลย; ตัวอย่างการเทรดเป็น paper-only",
-    "lesson": "แบบประเมินนี้ให้ใช้แนวคิดของระดับกับบริบทใหม่: คืน length, first และจำนวนค่าไม่ซ้ำจากรายการ. อ่าน prompt ของ variant ปัจจุบัน แล้วแยก input, ขั้นตอน และ output ก่อนเขียน",
-    "example": "import json\nsettings = json.loads('{\"mode\": \"offline\", \"retry\": 2}')\nprint(settings[\"mode\"], settings[\"retry\"])\n",
-    "pitfall": "เทียบกรณีมีค่าซ้ำกับกรณีว่าง; อย่าใช้ unique แทน length",
+    "lesson": "ใช้ prompt ของ variant ปัจจุบันเป็น contract; A/B ใช้ผลลัพธ์คนละแบบ ระบุชนิดข้อมูล ลำดับ และค่าที่ต้องคืน หากต้องเก็บลำดับเดิม ให้แยกข้อมูลผลลัพธ์จากตัวช่วยตรวจสมาชิกที่พบแล้ว.",
+    "example": "records = [(\"tea\", 20), (\"rice\", 30)]\nprint(records[0], len(records))",
+    "pitfall": "ตรวจ list ว่าง รายการซ้ำ ลำดับ และค่าแรกตามข้อกำหนดของ variant ปัจจุบัน",
     "hints": [
-      "Hint 1: ระบุ output แต่ละช่องจาก prompt: คืน length, first และจำนวนค่าไม่ซ้ำจากรายการ.",
-      "Hint 2: ทำตามลำดับ: ตรวจ list ว่างก่อนอ่านตัวแรก; นับ unique โดยไม่เปลี่ยนลำดับ input.",
-      "Hint 3: ตรวจขอบเขต: เทียบกรณีมีค่าซ้ำกับกรณีว่าง; อย่าใช้ unique แทน length."
+      "ดูว่า prompt ขอรายการ ลำดับเดิม หรือค่าสรุปใด แล้วกำหนด output ให้ตรง",
+      "ถ้าต้องรักษาลำดับ ให้เก็บรายการผลลัพธ์แยกจากตัวช่วยตรวจว่าค่าเคยพบหรือยัง",
+      "ตรวจ list ว่าง รายการซ้ำ และค่าแรกตามข้อตกลงของ variant"
     ],
     "lesson_file": "lessons/level_03.md",
     "cases": [
@@ -2417,17 +2506,20 @@
     "assessment": true,
     "variant_prompts": {
       "A": "คลังสินค้าต้องสรุปจำนวนรหัสสินค้าที่สแกน รหัสแรกที่พบ และจำนวนรหัสที่ไม่ซ้ำ โดยเก็บลำดับรายการเดิม",
-      "B": "โรงเรียนบันทึกหมายเลขบัตรพนักงานที่แตะเข้าอาคาร บางคนอาจแตะซ้ำ จงสรุปจำนวนครั้งแรกที่บันทึก รหัสแรก และจำนวนบุคคลไม่ซ้ำ"
+      "B": "คืน dict ที่มี unique_items เป็นรายการที่ตัดค่าซ้ำโดยคงลำดับครั้งแรกที่พบ และ duplicate_count เป็นจำนวนครั้งที่พบค่าซ้ำหลังจากครั้งแรก. list ว่างคืน [] และ 0"
     },
     "variant_samples": {
       "A": "([3, 1, 3, 2],)",
-      "B": "([10, 20, 10, 30, 20],)"
+      "B": "[[3, 1, 3, 2, 1]]"
     },
     "variant_expected": {
       "A": "{'length': 4, 'first': 3, 'unique': 3}",
-      "B": "{\"length\": 5, \"first\": 10, \"unique\": 3}"
+      "B": "{\"duplicate_count\": 2, \"unique_items\": [3, 1, 2]}"
     },
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 5,
+    "difficulty_label": "ประยุกต์ขั้นสูง — ใช้ความรู้เดิมกับโจทย์ใหม่",
+    "explanation": "แยกหน้าที่ของ set ที่ใช้ตรวจสมาชิกกับ list ที่รักษาลำดับไว้ แล้วนับเฉพาะการพบซ้ำหลังครั้งแรก."
   },
   {
     "id": "L04-E001",
@@ -2476,7 +2568,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 1,
+    "difficulty_label": "ง่ายมาก — แนวคิดเดียว"
   },
   {
     "id": "L04-E002",
@@ -2515,7 +2609,9 @@
     "assessment": false,
     "explanation": "การเรียกแรกใช้ fee=2; การเรียกที่สองส่ง 5 จึงแทน default",
     "submission_mode": "text_answer",
-    "answer_file": "answers/level_04/L04-E002.txt"
+    "answer_file": "answers/level_04/L04-E002.txt",
+    "difficulty_tier": 1,
+    "difficulty_label": "ง่ายมาก — แนวคิดเดียว"
   },
   {
     "id": "L04-E003",
@@ -2583,7 +2679,9 @@
     "explanation": "ทำขั้นคูณก่อนตามสูตร แล้วบวก offset; main รับ input และจัดรูปแบบค่าที่คืน",
     "submission_mode": "stdout",
     "function": "compose_adjustment",
-    "signature": "amount, scale, offset"
+    "signature": "amount, scale, offset",
+    "difficulty_tier": 1,
+    "difficulty_label": "ง่ายมาก — แนวคิดเดียว"
   },
   {
     "id": "L04-E004",
@@ -2648,7 +2746,9 @@
     "explanation": "ตรวจ denominator == 0 ก่อนหาร แล้วคืน None; กรณีอื่นคืน numerator / denominator",
     "submission_mode": "stdout",
     "function": "safe_division",
-    "signature": "numerator, denominator"
+    "signature": "numerator, denominator",
+    "difficulty_tier": 2,
+    "difficulty_label": "ง่าย — รวมแนวคิดคุ้นเคย"
   },
   {
     "id": "L04-E005",
@@ -2716,7 +2816,9 @@
     "explanation": "ยอดหลังส่วนลดคือ subtotal*(1-discount_rate); ยอด invoice คือ discounted*(1+tax_rate); invalid input ให้คืน None",
     "submission_mode": "stdout",
     "function": "invoice_total",
-    "signature": "subtotal, discount_rate, tax_rate"
+    "signature": "subtotal, discount_rate, tax_rate",
+    "difficulty_tier": 2,
+    "difficulty_label": "ง่าย — รวมแนวคิดคุ้นเคย"
   },
   {
     "id": "L04-E006",
@@ -2765,7 +2867,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 2,
+    "difficulty_label": "ง่าย — รวมแนวคิดคุ้นเคย"
   },
   {
     "id": "L04-E007",
@@ -2814,7 +2918,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 3,
+    "difficulty_label": "ปานกลาง — หลายขั้นตอน"
   },
   {
     "id": "L04-E008",
@@ -2863,7 +2969,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 3,
+    "difficulty_label": "ปานกลาง — หลายขั้นตอน"
   },
   {
     "id": "L04-E009",
@@ -2912,7 +3020,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 3,
+    "difficulty_label": "ปานกลาง — หลายขั้นตอน"
   },
   {
     "id": "L04-E010",
@@ -2961,7 +3071,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 4,
+    "difficulty_label": "ท้าทาย — เงื่อนไขและกรณีขอบ"
   },
   {
     "id": "L04-E011",
@@ -3010,7 +3122,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 2,
+    "difficulty_label": "ง่าย — รวมแนวคิดคุ้นเคย"
   },
   {
     "id": "L04-E012",
@@ -3067,7 +3181,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 4,
+    "difficulty_label": "ท้าทาย — เงื่อนไขและกรณีขอบ"
   },
   {
     "id": "L04-E013",
@@ -3116,7 +3232,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 5,
+    "difficulty_label": "ประยุกต์ขั้นสูง — ใช้ความรู้เดิมกับโจทย์ใหม่"
   },
   {
     "id": "L04-E014",
@@ -3165,7 +3283,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 1,
+    "difficulty_label": "ง่ายมาก — แนวคิดเดียว"
   },
   {
     "id": "L04-E015",
@@ -3174,7 +3294,7 @@
     "title": "ประเมินฟังก์ชัน",
     "difficulty": "ปานกลาง",
     "category": "โจทย์ประยุกต์",
-    "objective": "คืนส่วนต่าง actual-target และ ratio actual/target",
+    "objective": "เขียนฟังก์ชันที่คำนวณและคืนค่าตรงตาม contract ของ variant ที่เลือก",
     "prerequisites": [
       "L04-E014"
     ],
@@ -3184,13 +3304,13 @@
     "sample": "(10, 2)",
     "expected": "{'difference': 8, 'ratio': 5.0}",
     "constraints": "ใช้ Python 3.12 และ standard library; ห้ามแก้ tests, curriculum หรือไฟล์เฉลย; ตัวอย่างการเทรดเป็น paper-only",
-    "lesson": "แบบประเมินนี้ให้ใช้แนวคิดของระดับกับบริบทใหม่: คืนส่วนต่าง actual-target และ ratio actual/target. อ่าน prompt ของ variant ปัจจุบัน แล้วแยก input, ขั้นตอน และ output ก่อนเขียน",
-    "example": "class Product:\n    def __init__(self, name, price):\n        self.name = name\n        self.price = price\ntea = Product(\"tea\", 20)\nprint(tea.name, tea.price)\n",
-    "pitfall": "ทดสอบ actual มากกว่า/น้อยกว่า target และ target เป็นศูนย์",
+    "lesson": "ใช้ prompt ของ variant ปัจจุบันเป็น contract; A/B อาจใช้สูตรต่างกัน ระบุ input, สูตร, key และชนิดค่าที่ต้องคืน แยกผลคำนวณเป็นขั้น แล้วคืนโครงสร้างข้อมูลตามสัญญา.",
+    "example": "def identity(value):\n    return value\n\nprint(identity(3))",
+    "pitfall": "ทดสอบค่าที่เท่ากัน ค่าเป็นศูนย์ และกรณีขอบตาม prompt ของ variant ปัจจุบัน",
     "hints": [
-      "Hint 1: ระบุ output แต่ละช่องจาก prompt: คืนส่วนต่าง actual-target และ ratio actual/target.",
-      "Hint 2: ทำตามลำดับ: คำนวณ difference; ตรวจ target=0 ก่อนหาร; เก็บสองผลใน dict.",
-      "Hint 3: ตรวจขอบเขต: ทดสอบ actual มากกว่า/น้อยกว่า target และ target เป็นศูนย์."
+      "เขียนสูตรและชื่อ key ที่ prompt ระบุทีละช่องก่อนลงมือ",
+      "คำนวณค่าระหว่างทางที่ใช้ร่วมกัน แล้วคืนเฉพาะค่าที่ variant ปัจจุบันขอ",
+      "ทดสอบค่าที่เท่ากัน ค่าเป็นศูนย์ และ input ที่ทำให้ต้องจัดการกรณีขอบ"
     ],
     "lesson_file": "lessons/level_04.md",
     "cases": [
@@ -3231,17 +3351,20 @@
     "assessment": true,
     "variant_prompts": {
       "A": "ฝ่ายบัญชีเปรียบเทียบรายรับจริงกับเป้ารายรับ รับ actual และ target แล้วคืนส่วนต่าง actual-target และอัตราส่วน actual/target; ถ้า target เป็นศูนย์ให้อัตราส่วนเป็น None",
-      "B": "ฝ่ายผลิตเปรียบเทียบจำนวนชิ้นที่ผลิตกับแผนการผลิต ใช้กฎเดิมแต่เป็นบริบทใหม่ และคืน None เมื่อแผนเป็นศูนย์"
+      "B": "รับตัวเลข x และ y แล้วคืน dict ที่มี total (x+y), average ((x+y)/2) และ larger (ค่าที่มากกว่า; ถ้าเท่ากันให้คืนค่านั้น)"
     },
     "variant_samples": {
       "A": "(10, 2)",
-      "B": "(525, 500)"
+      "B": "(10, 2)"
     },
     "variant_expected": {
       "A": "{'difference': 8, 'ratio': 5.0}",
-      "B": "{\"difference\": 25, \"ratio\": 1.05}"
+      "B": "{\"average\": 6.0, \"larger\": 10, \"total\": 12}"
     },
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 5,
+    "difficulty_label": "ประยุกต์ขั้นสูง — ใช้ความรู้เดิมกับโจทย์ใหม่",
+    "explanation": "คำนวณผลรวมเพียงครั้งเดียว แล้วคืนผลรวม ค่าเฉลี่ย และค่ามากสุดใน dictionary ตามชื่อ key ที่กำหนด."
   },
   {
     "id": "L05-E001",
@@ -3288,7 +3411,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 1,
+    "difficulty_label": "ง่ายมาก — แนวคิดเดียว"
   },
   {
     "id": "L05-E002",
@@ -3327,7 +3452,9 @@
     "assessment": false,
     "explanation": "ค่า 2 และ 5 เข้า valid; bad เกิด ValueError และเพิ่ม rejected หนึ่งครั้ง",
     "submission_mode": "text_answer",
-    "answer_file": "answers/level_05/L05-E002.txt"
+    "answer_file": "answers/level_05/L05-E002.txt",
+    "difficulty_tier": 1,
+    "difficulty_label": "ง่ายมาก — แนวคิดเดียว"
   },
   {
     "id": "L05-E003",
@@ -3389,7 +3516,9 @@
     "explanation": "แปลงด้วย float; หากเกิด ValueError หรือค่าติดลบให้คืน None; main จัดรูปแบบเฉพาะค่าที่ผ่าน",
     "submission_mode": "stdout",
     "function": "parse_positive_amount",
-    "signature": "text"
+    "signature": "text",
+    "difficulty_tier": 1,
+    "difficulty_label": "ง่ายมาก — แนวคิดเดียว"
   },
   {
     "id": "L05-E004",
@@ -3451,7 +3580,9 @@
     "explanation": "csv.reader แยกเป็นสองช่องในตัวอย่างที่มี comma ภายใน quote; การนับ comma ด้วย split จะได้สาม",
     "submission_mode": "stdout",
     "function": "csv_field_count",
-    "signature": "line"
+    "signature": "line",
+    "difficulty_tier": 2,
+    "difficulty_label": "ง่าย — รวมแนวคิดคุ้นเคย"
   },
   {
     "id": "L05-E005",
@@ -3532,7 +3663,9 @@
     "explanation": "ประมวลผลทีละบรรทัดด้วย csv.reader; ข้อมูลผิดรูปแบบหรือค่าติดลบให้เพิ่ม rejected; ยอดรวมเฉพาะแถว valid",
     "submission_mode": "stdout",
     "function": "sales_report",
-    "signature": "lines"
+    "signature": "lines",
+    "difficulty_tier": 2,
+    "difficulty_label": "ง่าย — รวมแนวคิดคุ้นเคย"
   },
   {
     "id": "L05-E006",
@@ -3579,7 +3712,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 2,
+    "difficulty_label": "ง่าย — รวมแนวคิดคุ้นเคย"
   },
   {
     "id": "L05-E007",
@@ -3626,7 +3761,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 3,
+    "difficulty_label": "ปานกลาง — หลายขั้นตอน"
   },
   {
     "id": "L05-E008",
@@ -3677,7 +3814,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 3,
+    "difficulty_label": "ปานกลาง — หลายขั้นตอน"
   },
   {
     "id": "L05-E009",
@@ -3727,7 +3866,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 3,
+    "difficulty_label": "ปานกลาง — หลายขั้นตอน"
   },
   {
     "id": "L05-E010",
@@ -3774,7 +3915,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 2,
+    "difficulty_label": "ง่าย — รวมแนวคิดคุ้นเคย"
   },
   {
     "id": "L05-E011",
@@ -3821,7 +3964,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 2,
+    "difficulty_label": "ง่าย — รวมแนวคิดคุ้นเคย"
   },
   {
     "id": "L05-E012",
@@ -3871,7 +4016,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 3,
+    "difficulty_label": "ปานกลาง — หลายขั้นตอน"
   },
   {
     "id": "L05-E013",
@@ -3918,7 +4065,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 2,
+    "difficulty_label": "ง่าย — รวมแนวคิดคุ้นเคย"
   },
   {
     "id": "L05-E014",
@@ -3968,7 +4117,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 3,
+    "difficulty_label": "ปานกลาง — หลายขั้นตอน"
   },
   {
     "id": "L05-E015",
@@ -3977,7 +4128,7 @@
     "title": "ประเมินการแยกข้อมูล",
     "difficulty": "ปานกลาง",
     "category": "โจทย์ประยุกต์",
-    "objective": "normalize comma-separated text และคืนจำนวน field",
+    "objective": "แยกและแปลงข้อความตามรูปแบบที่ prompt ของ variant ที่เลือกกำหนด",
     "prerequisites": [
       "L05-E014"
     ],
@@ -3987,13 +4138,13 @@
     "sample": "('10.5,20',)",
     "expected": "{'fields': 2, 'normalized': '10.5,20'}",
     "constraints": "ใช้ Python 3.12 และ standard library; ห้ามแก้ tests, curriculum หรือไฟล์เฉลย; ตัวอย่างการเทรดเป็น paper-only",
-    "lesson": "แบบประเมินนี้ให้ใช้แนวคิดของระดับกับบริบทใหม่: normalize comma-separated text และคืนจำนวน field. อ่าน prompt ของ variant ปัจจุบัน แล้วแยก input, ขั้นตอน และ output ก่อนเขียน",
-    "example": "point = (3, 4)\nx, y = point\nprint(x + y)\n",
-    "pitfall": "ตรวจช่องว่างรอบนอกและหลาย field; อย่าแปลงเป็นตัวเลข",
+    "lesson": "ใช้ prompt ของ variant ปัจจุบันเป็น contract; ระบุตัวคั่น จำนวน field การปรับข้อความ และชนิดข้อมูลที่ต้องการ จากนั้นแยกข้อความ ตัดช่องว่าง และแปลงเฉพาะ field ที่ระบุ.",
+    "example": "left, right = (\"offline\", \"paper\")\nprint(left, right)",
+    "pitfall": "ตรวจตัวคั่น ช่องว่าง ลำดับ field และชนิดข้อมูลตาม prompt ของ variant ปัจจุบัน",
     "hints": [
-      "Hint 1: ระบุ output แต่ละช่องจาก prompt: normalize comma-separated text และคืนจำนวน field.",
-      "Hint 2: ทำตามลำดับ: strip, split, strip สมาชิก, uppercase แล้ว join กลับ.",
-      "Hint 3: ตรวจขอบเขต: ตรวจช่องว่างรอบนอกและหลาย field; อย่าแปลงเป็นตัวเลข."
+      "อ่านตัวคั่นและจำนวน field จาก prompt ก่อนเรียก split",
+      "ตัดช่องว่างของแต่ละ field แล้วแปลงเฉพาะค่าที่โจทย์กำหนด; คงลำดับ field",
+      "ตรวจช่องว่าง ตัวคั่น และชนิดข้อมูลของแต่ละ field ตาม prompt"
     ],
     "lesson_file": "lessons/level_05.md",
     "cases": [
@@ -4031,17 +4182,20 @@
     "assessment": true,
     "variant_prompts": {
       "A": "ผู้ดูแลแคตตาล็อกนำเข้ารหัสสินค้าหลายตัวที่คั่นด้วย comma ให้ตัดช่องว่างรอบข้อความ แปลงเป็นตัวพิมพ์ใหญ่ และนับช่อง",
-      "B": "สำนักงานรวมชื่อหมวดเอกสารจากหลายสาขาที่คั่นด้วย comma ให้ normalize รูปแบบเป็นตัวพิมพ์ใหญ่ ตัดช่องว่างรอบนอก และรายงานจำนวนช่อง"
+      "B": "แยกข้อความรูปแบบ region-item-quantity เช่น west-apple-12 แล้วคืน dict: region เป็นตัวพิมพ์ใหญ่, item เป็นตัวพิมพ์เล็ก และ quantity เป็น int. ช่องคั่นคือขีดกลางหนึ่งตัว; อาจมีช่องว่างรอบช่องข้อมูล"
     },
     "variant_samples": {
       "A": "('10.5,20',)",
-      "B": "(' west,central,east ',)"
+      "B": "(' west - Apple - 12 ',)"
     },
     "variant_expected": {
       "A": "{'fields': 2, 'normalized': '10.5,20'}",
-      "B": "{\"fields\": 3, \"normalized\": \"WEST,CENTRAL,EAST\"}"
+      "B": "{\"item\": \"apple\", \"quantity\": 12, \"region\": \"WEST\"}"
     },
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 3,
+    "difficulty_label": "ปานกลาง — หลายขั้นตอน",
+    "explanation": "แยกข้อความตามตัวคั่น จากนั้นจัดการช่องว่างและชนิดข้อมูลของแต่ละช่องตามข้อกำหนด."
   },
   {
     "id": "L06-E001",
@@ -4095,7 +4249,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 3,
+    "difficulty_label": "ปานกลาง — หลายขั้นตอน"
   },
   {
     "id": "L06-E002",
@@ -4134,7 +4290,9 @@
     "assessment": false,
     "explanation": "มีค่าไม่หายสามตัวรวม 300; จำนวนที่หายคือสองและค่าเฉลี่ย 100",
     "submission_mode": "text_answer",
-    "answer_file": "answers/level_06/L06-E002.txt"
+    "answer_file": "answers/level_06/L06-E002.txt",
+    "difficulty_tier": 1,
+    "difficulty_label": "ง่ายมาก — แนวคิดเดียว"
   },
   {
     "id": "L06-E003",
@@ -4209,7 +4367,9 @@
     "explanation": "เริ่มหน้าต่างทุกตำแหน่งที่ยังมีสมาชิกครบตาม window; ผลลัพธ์จึงมี len(values)-window+1 ค่าเมื่อข้อมูลพอ",
     "submission_mode": "stdout",
     "function": "rolling_means",
-    "signature": "values, window"
+    "signature": "values, window",
+    "difficulty_tier": 3,
+    "difficulty_label": "ปานกลาง — หลายขั้นตอน"
   },
   {
     "id": "L06-E004",
@@ -4285,7 +4445,9 @@
     ],
     "assessment": false,
     "explanation": "เดินตามลำดับเวลา; ค่าจริงอัปเดต previous; ค่าที่หายใช้ previous ล่าสุดและคง None เมื่อยังไม่มีค่าก่อนหน้า",
-    "submission_mode": "stdout"
+    "submission_mode": "stdout",
+    "difficulty_tier": 3,
+    "difficulty_label": "ปานกลาง — หลายขั้นตอน"
   },
   {
     "id": "L06-E005",
@@ -4356,7 +4518,9 @@
     "explanation": "สะสม revenue ใน dict ตาม product แล้วเรียง key; main ใช้ DictReader เพื่อจัดการ header และค่า CSV",
     "submission_mode": "stdout",
     "function": "revenue_by_product",
-    "signature": "rows"
+    "signature": "rows",
+    "difficulty_tier": 4,
+    "difficulty_label": "ท้าทาย — เงื่อนไขและกรณีขอบ"
   },
   {
     "id": "L06-E006",
@@ -4408,7 +4572,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 2,
+    "difficulty_label": "ง่าย — รวมแนวคิดคุ้นเคย"
   },
   {
     "id": "L06-E007",
@@ -4462,7 +4628,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 3,
+    "difficulty_label": "ปานกลาง — หลายขั้นตอน"
   },
   {
     "id": "L06-E008",
@@ -4517,7 +4685,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 3,
+    "difficulty_label": "ปานกลาง — หลายขั้นตอน"
   },
   {
     "id": "L06-E009",
@@ -4574,7 +4744,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 2,
+    "difficulty_label": "ง่าย — รวมแนวคิดคุ้นเคย"
   },
   {
     "id": "L06-E010",
@@ -4626,7 +4798,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 2,
+    "difficulty_label": "ง่าย — รวมแนวคิดคุ้นเคย"
   },
   {
     "id": "L06-E011",
@@ -4681,7 +4855,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 2,
+    "difficulty_label": "ง่าย — รวมแนวคิดคุ้นเคย"
   },
   {
     "id": "L06-E012",
@@ -4734,7 +4910,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 2,
+    "difficulty_label": "ง่าย — รวมแนวคิดคุ้นเคย"
   },
   {
     "id": "L06-E013",
@@ -4790,7 +4968,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 3,
+    "difficulty_label": "ปานกลาง — หลายขั้นตอน"
   },
   {
     "id": "L06-E014",
@@ -4849,7 +5029,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 2,
+    "difficulty_label": "ง่าย — รวมแนวคิดคุ้นเคย"
   },
   {
     "id": "L06-E015",
@@ -4858,7 +5040,7 @@
     "title": "ประเมินและทำความสะอาดข้อมูล",
     "difficulty": "ท้าทาย",
     "category": "โจทย์ประยุกต์",
-    "objective": "แยก None และนับ missing โดยเก็บค่า 0 ไว้",
+    "objective": "จัดการค่าที่หายไปตามความหมายและ contract ของ variant ที่เลือก",
     "prerequisites": [
       "L06-E014"
     ],
@@ -4868,13 +5050,13 @@
     "sample": "([100, 105, None, 110, 90],)",
     "expected": "{'clean': [100, 105, 110, 90], 'missing': 1}",
     "constraints": "ใช้ Python 3.12 และ standard library; ห้ามแก้ tests, curriculum หรือไฟล์เฉลย; ตัวอย่างการเทรดเป็น paper-only",
-    "lesson": "แบบประเมินนี้ให้ใช้แนวคิดของระดับกับบริบทใหม่: แยก None และนับ missing โดยเก็บค่า 0 ไว้. อ่าน prompt ของ variant ปัจจุบัน แล้วแยก input, ขั้นตอน และ output ก่อนเขียน",
-    "example": "text = \"  offline paper  \"\nprint(text.strip().upper())\n",
-    "pitfall": "ทดสอบ None, 0 และ list ว่าง",
+    "lesson": "ใช้ prompt ของ variant ปัจจุบันเป็น contract; แยก None ออกจากค่าที่ถูกต้อง เช่น 0 แล้วทำตามว่าต้องละค่า คงค่าเดิม หรือเติมค่าจากข้อมูลก่อนหน้า นับเฉพาะค่าที่เปลี่ยนตามนิยาม.",
+    "example": "value = None\nprint(value is None)",
+    "pitfall": "ตรวจ None ที่ต้น กลาง และท้ายตาม variant ปัจจุบัน; อย่าถือว่า 0 เป็นค่าที่หายไป",
     "hints": [
-      "Hint 1: ระบุ output แต่ละช่องจาก prompt: แยก None และนับ missing โดยเก็บค่า 0 ไว้.",
-      "Hint 2: ทำตามลำดับ: วนข้อมูล; นับ is None; เพิ่มค่าอื่นลง clean ตามลำดับเดิม.",
-      "Hint 3: ตรวจขอบเขต: ทดสอบ None, 0 และ list ว่าง."
+      "แยก None ออกจากค่าที่ถูกต้อง เช่น 0; ใช้พฤติกรรมที่ prompt กำหนด",
+      "ประมวลผลตามลำดับและเก็บค่าก่อนหน้าเฉพาะเมื่อโจทย์ต้องใช้",
+      "ลอง None ที่ต้น กลาง ท้าย และนับเฉพาะค่าที่เปลี่ยนตามความหมายในโจทย์"
     ],
     "lesson_file": "lessons/level_06.md",
     "cases": [
@@ -4929,17 +5111,20 @@
     "assessment": true,
     "variant_prompts": {
       "A": "ชุดข้อมูล OHLCV มีค่าปิดรายวันที่อาจหายไป จงคืนรายการที่ไม่ใช่ None และจำนวนค่าที่หาย โดยรักษาค่าศูนย์ไว้",
-      "B": "รายงานยอดสมัครเว็บไซต์บางวันนำเข้าไม่สำเร็จ แยกค่าที่ขาดออกจากรายการและนับจำนวนโดยไม่ทิ้งยอดศูนย์ที่ถูกต้อง"
+      "B": "ทำ forward fill กับ list: แทน None ด้วยค่าที่ไม่ใช่ None ก่อนหน้าล่าสุด. None ที่อยู่ก่อนค่าจริงตัวแรกให้คงเป็น None. คืน dict ที่มี filled และ filled_count ซึ่งนับจำนวน None ที่ถูกแทน"
     },
     "variant_samples": {
       "A": "([100, 105, None, 110, 90],)",
-      "B": "([120, None, 140, None],)"
+      "B": "[[100, None, 110, None, 90]]"
     },
     "variant_expected": {
       "A": "{'clean': [100, 105, 110, 90], 'missing': 1}",
-      "B": "{\"clean\": [120, 140], \"missing\": 2}"
+      "B": "{\"filled\": [100, 100, 110, 110, 90], \"filled_count\": 2}"
     },
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 3,
+    "difficulty_label": "ปานกลาง — หลายขั้นตอน",
+    "explanation": "เก็บสถานะของค่าที่ไม่ใช่ None ล่าสุดระหว่างการวนซ้ำ และแยกการแทนค่าจากการคง None ที่อยู่ช่วงต้น."
   },
   {
     "id": "L07-E001",
@@ -4990,7 +5175,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 1,
+    "difficulty_label": "ง่ายมาก — แนวคิดเดียว"
   },
   {
     "id": "L07-E002",
@@ -5029,7 +5216,9 @@
     "assessment": false,
     "explanation": "mean คือ 16/3 แสดงสองตำแหน่งเป็น 5.33; list เรียงเป็น [2,4,10] และสมาชิกกลางคือ 4",
     "submission_mode": "text_answer",
-    "answer_file": "answers/level_07/L07-E002.txt"
+    "answer_file": "answers/level_07/L07-E002.txt",
+    "difficulty_tier": 1,
+    "difficulty_label": "ง่ายมาก — แนวคิดเดียว"
   },
   {
     "id": "L07-E003",
@@ -5098,7 +5287,9 @@
     "explanation": "ใช้ผลรวม squared deviations หารด้วย n สำหรับประชากร; เมื่อไม่มีสมาชิกไม่สามารถหารได้ จึงคืน None",
     "submission_mode": "stdout",
     "function": "population_variance",
-    "signature": "values"
+    "signature": "values",
+    "difficulty_tier": 3,
+    "difficulty_label": "ปานกลาง — หลายขั้นตอน"
   },
   {
     "id": "L07-E004",
@@ -5163,7 +5354,9 @@
     "explanation": "ตัวเศษคือ signups ตัวหารคือ visits; เมื่อ visits เป็นศูนย์ให้คืน None แทนการหาร",
     "submission_mode": "stdout",
     "function": "conversion_rate",
-    "signature": "signups, visits"
+    "signature": "signups, visits",
+    "difficulty_tier": 2,
+    "difficulty_label": "ง่าย — รวมแนวคิดคุ้นเคย"
   },
   {
     "id": "L07-E005",
@@ -5242,7 +5435,9 @@
     "explanation": "คำนวณ rate ของแต่ละกลุ่มก่อน แล้วเลือก A, B หรือ tie ตามค่าที่ได้; visitor ศูนย์ทำให้ผลสรุปใช้ไม่ได้",
     "submission_mode": "stdout",
     "function": "compare_campaigns",
-    "signature": "a_signups, a_visits, b_signups, b_visits"
+    "signature": "a_signups, a_visits, b_signups, b_visits",
+    "difficulty_tier": 2,
+    "difficulty_label": "ง่าย — รวมแนวคิดคุ้นเคย"
   },
   {
     "id": "L07-E006",
@@ -5294,7 +5489,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 2,
+    "difficulty_label": "ง่าย — รวมแนวคิดคุ้นเคย"
   },
   {
     "id": "L07-E007",
@@ -5345,7 +5542,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 3,
+    "difficulty_label": "ปานกลาง — หลายขั้นตอน"
   },
   {
     "id": "L07-E008",
@@ -5396,7 +5595,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 2,
+    "difficulty_label": "ง่าย — รวมแนวคิดคุ้นเคย"
   },
   {
     "id": "L07-E009",
@@ -5447,7 +5648,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 3,
+    "difficulty_label": "ปานกลาง — หลายขั้นตอน"
   },
   {
     "id": "L07-E010",
@@ -5501,7 +5704,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 4,
+    "difficulty_label": "ท้าทาย — เงื่อนไขและกรณีขอบ"
   },
   {
     "id": "L07-E011",
@@ -5551,7 +5756,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 3,
+    "difficulty_label": "ปานกลาง — หลายขั้นตอน"
   },
   {
     "id": "L07-E012",
@@ -5603,7 +5810,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 4,
+    "difficulty_label": "ท้าทาย — เงื่อนไขและกรณีขอบ"
   },
   {
     "id": "L07-E013",
@@ -5654,7 +5863,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 4,
+    "difficulty_label": "ท้าทาย — เงื่อนไขและกรณีขอบ"
   },
   {
     "id": "L07-E014",
@@ -5709,7 +5920,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 3,
+    "difficulty_label": "ปานกลาง — หลายขั้นตอน"
   },
   {
     "id": "L07-E015",
@@ -5718,7 +5931,7 @@
     "title": "ประเมินสถิติ",
     "difficulty": "ท้าทาย",
     "category": "โจทย์ประยุกต์",
-    "objective": "คืนจำนวน ค่าเฉลี่ย ค่าต่ำสุด และค่าสูงสุดของตัวอย่าง",
+    "objective": "คำนวณสถิติที่ prompt ของ variant ที่เลือกกำหนด",
     "prerequisites": [
       "L07-E014"
     ],
@@ -5728,13 +5941,13 @@
     "sample": "([1, 2, 3, 4],)",
     "expected": "{'mean': 2.5, 'n': 4, 'min': 1, 'max': 4}",
     "constraints": "ใช้ Python 3.12 และ standard library; ห้ามแก้ tests, curriculum หรือไฟล์เฉลย; ตัวอย่างการเทรดเป็น paper-only",
-    "lesson": "แบบประเมินนี้ให้ใช้แนวคิดของระดับกับบริบทใหม่: คืนจำนวน ค่าเฉลี่ย ค่าต่ำสุด และค่าสูงสุดของตัวอย่าง. อ่าน prompt ของ variant ปัจจุบัน แล้วแยก input, ขั้นตอน และ output ก่อนเขียน",
-    "example": "items = [\"tea\", \"rice\"]\nitems.append(\"coffee\")\nprint(items)\n",
-    "pitfall": "อย่าหารด้วยศูนย์; ทดสอบหนึ่งค่าและ input ว่าง",
+    "lesson": "ใช้ prompt ของ variant ปัจจุบันเป็น contract; ระบุว่าต้องคืนจำนวน ค่าเฉลี่ย ค่ากลาง พิสัย หรือสถิติใด กำหนดพฤติกรรมของ input ว่างก่อนคำนวณและรักษาข้อมูลต้นฉบับ.",
+    "example": "grades = [72, 88, 91]\nprint(sorted(grades))",
+    "pitfall": "ตรวจ input ว่าง จำนวนสมาชิกคี่/คู่ และค่าซ้ำตามสถิติที่ variant ปัจจุบันขอ",
     "hints": [
-      "Hint 1: ระบุ output แต่ละช่องจาก prompt: คืนจำนวน ค่าเฉลี่ย ค่าต่ำสุด และค่าสูงสุดของตัวอย่าง.",
-      "Hint 2: ทำตามลำดับ: ตรวจว่างก่อน; เมื่อมีค่าจึงคำนวณ n, mean, min, max.",
-      "Hint 3: ตรวจขอบเขต: อย่าหารด้วยศูนย์; ทดสอบหนึ่งค่าและ input ว่าง."
+      "จัดการ list ว่างก่อนใช้สูตรสถิติ",
+      "เลือกสูตรตามสถิติใน prompt; ถ้าต้องเรียง ให้เรียงสำเนาเพื่อรักษาข้อมูลเดิม",
+      "ตรวจ list คี่/คู่ ค่าซ้ำ ค่าลบ และผลเมื่อว่างตาม contract"
     ],
     "lesson_file": "lessons/level_07.md",
     "cases": [
@@ -5786,17 +5999,20 @@
     "assessment": true,
     "variant_prompts": {
       "A": "นักวิจัยมีตัวอย่างผลตอบแทนและต้องสรุปค่าเฉลี่ย จำนวน ค่าต่ำสุด และค่าสูงสุด ถ้าไม่มีข้อมูลให้ช่องสถิติเป็น None",
-      "B": "ทีมบริการวัดนาทีที่ลูกค้ารอสาย แล้วสรุปค่าเฉลี่ย จำนวน ค่าต่ำสุด และค่าสูงสุดของช่วงเวลาที่สังเกตได้"
+      "B": "คำนวณ median และ range (ค่าสูงสุดลบค่าต่ำสุด) ของตัวเลข. ถ้า list ว่างให้คืน None ทั้งสองช่อง"
     },
     "variant_samples": {
       "A": "([1, 2, 3, 4],)",
-      "B": "([2, 4, 10],)"
+      "B": "[[8, 1, 5, 3]]"
     },
     "variant_expected": {
       "A": "{'mean': 2.5, 'n': 4, 'min': 1, 'max': 4}",
-      "B": "{\"mean\": 5.333333333333333, \"n\": 3, \"min\": 2, \"max\": 10}"
+      "B": "{\"median\": 4.0, \"range\": 7}"
     },
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 5,
+    "difficulty_label": "ประยุกต์ขั้นสูง — ใช้ความรู้เดิมกับโจทย์ใหม่",
+    "explanation": "เรียงข้อมูลเพื่อหา median โดยแยกจำนวนคี่และคู่ แล้วหาความกว้างจากค่าสูงสุดกับค่าต่ำสุด."
   },
   {
     "id": "L08-E001",
@@ -5847,7 +6063,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 1,
+    "difficulty_label": "ง่ายมาก — แนวคิดเดียว"
   },
   {
     "id": "L08-E002",
@@ -5886,7 +6104,9 @@
     "assessment": false,
     "explanation": "gross คือ 5; fee คือ 210 × 0.5 × 0.001 = 0.105; net คือ 4.895",
     "submission_mode": "text_answer",
-    "answer_file": "answers/level_08/L08-E002.txt"
+    "answer_file": "answers/level_08/L08-E002.txt",
+    "difficulty_tier": 1,
+    "difficulty_label": "ง่ายมาก — แนวคิดเดียว"
   },
   {
     "id": "L08-E003",
@@ -5954,7 +6174,9 @@
     "explanation": "risk budget เป็น equity คูณเปอร์เซ็นต์หาร 100; จำนวนหน่วยเป็น budget หาร stop distance",
     "submission_mode": "stdout",
     "function": "risk_based_quantity",
-    "signature": "equity, risk_percent, stop_distance"
+    "signature": "equity, risk_percent, stop_distance",
+    "difficulty_tier": 3,
+    "difficulty_label": "ปานกลาง — หลายขั้นตอน"
   },
   {
     "id": "L08-E004",
@@ -6025,7 +6247,9 @@
     "explanation": "สูตร fee รวม (entry+exit)*quantity*fee_rate; net คือ gross ลบ fee ไม่ใช่บวก",
     "submission_mode": "stdout",
     "function": "net_trade_pnl",
-    "signature": "entry, exit_price, quantity, fee_rate"
+    "signature": "entry, exit_price, quantity, fee_rate",
+    "difficulty_tier": 2,
+    "difficulty_label": "ง่าย — รวมแนวคิดคุ้นเคย"
   },
   {
     "id": "L08-E005",
@@ -6105,7 +6329,9 @@
     "explanation": "ฟังก์ชันคืน None เมื่อ input ผิด มิฉะนั้นคืน exposure และ bool ที่บอกว่าไม่เกินวงเงิน",
     "submission_mode": "stdout",
     "function": "exposure_report",
-    "signature": "equity, positions, max_fraction"
+    "signature": "equity, positions, max_fraction",
+    "difficulty_tier": 2,
+    "difficulty_label": "ง่าย — รวมแนวคิดคุ้นเคย"
   },
   {
     "id": "L08-E006",
@@ -6156,7 +6382,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 2,
+    "difficulty_label": "ง่าย — รวมแนวคิดคุ้นเคย"
   },
   {
     "id": "L08-E007",
@@ -6207,7 +6435,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 2,
+    "difficulty_label": "ง่าย — รวมแนวคิดคุ้นเคย"
   },
   {
     "id": "L08-E008",
@@ -6256,7 +6486,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 2,
+    "difficulty_label": "ง่าย — รวมแนวคิดคุ้นเคย"
   },
   {
     "id": "L08-E009",
@@ -6307,7 +6539,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 2,
+    "difficulty_label": "ง่าย — รวมแนวคิดคุ้นเคย"
   },
   {
     "id": "L08-E010",
@@ -6358,7 +6592,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 4,
+    "difficulty_label": "ท้าทาย — เงื่อนไขและกรณีขอบ"
   },
   {
     "id": "L08-E011",
@@ -6409,7 +6645,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 4,
+    "difficulty_label": "ท้าทาย — เงื่อนไขและกรณีขอบ"
   },
   {
     "id": "L08-E012",
@@ -6460,7 +6698,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 2,
+    "difficulty_label": "ง่าย — รวมแนวคิดคุ้นเคย"
   },
   {
     "id": "L08-E013",
@@ -6509,7 +6749,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 3,
+    "difficulty_label": "ปานกลาง — หลายขั้นตอน"
   },
   {
     "id": "L08-E014",
@@ -6560,7 +6802,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 3,
+    "difficulty_label": "ปานกลาง — หลายขั้นตอน"
   },
   {
     "id": "L08-E015",
@@ -6569,7 +6813,7 @@
     "title": "ประเมินความเสี่ยง paper",
     "difficulty": "ท้าทาย",
     "category": "โจทย์ประยุกต์",
-    "objective": "คำนวณ gross, fee สองขา, net และป้าย offline paper",
+    "objective": "คำนวณผลตอบแทนและผลลัพธ์ด้านความเสี่ยงตาม prompt ของ variant ที่เลือก",
     "prerequisites": [
       "L08-E014"
     ],
@@ -6579,13 +6823,13 @@
     "sample": "(100, 110, 0.5)",
     "expected": "{'gross': 5.0, 'fee': 0.105, 'net': 4.895, 'live_trading': False}",
     "constraints": "ใช้ Python 3.12 และ standard library; ห้ามแก้ tests, curriculum หรือไฟล์เฉลย; ตัวอย่างการเทรดเป็น paper-only",
-    "lesson": "แบบประเมินนี้ให้ใช้แนวคิดของระดับกับบริบทใหม่: คำนวณ gross, fee สองขา, net และป้าย offline paper. อ่าน prompt ของ variant ปัจจุบัน แล้วแยก input, ขั้นตอน และ output ก่อนเขียน",
-    "example": "from math import sqrt\nprint(sqrt(81))\n",
-    "pitfall": "ใช้ราคาเข้า/ออกเท่ากันและกรณีขาดทุนเพื่อเช็ก fee",
+    "lesson": "ใช้ prompt ของ variant ปัจจุบันเป็น contract; คำนวณการเปลี่ยนแปลงราคาจาก input จริงก่อน แล้วคืนเฉพาะตัวชี้วัดที่ขอ ตรวจการหารด้วยศูนย์และทิศทางเมื่อเกี่ยวข้อง และให้ผลเป็น offline เสมอ.",
+    "example": "value = 2.5\nprint(f\"Value: {value:.2f}\")",
+    "pitfall": "ตรวจกรณีกำไร ขาดทุน ราคาเท่ากัน และ entry เป็นศูนย์ตาม variant ปัจจุบัน",
     "hints": [
-      "Hint 1: ระบุ output แต่ละช่องจาก prompt: คำนวณ gross, fee สองขา, net และป้าย offline paper.",
-      "Hint 2: ทำตามลำดับ: แยก gross กับ fee; หัก fee จาก gross; live_trading ต้อง False.",
-      "Hint 3: ตรวจขอบเขต: ใช้ราคาเข้า/ออกเท่ากันและกรณีขาดทุนเพื่อเช็ก fee."
+      "คำนวณ price change ก่อน แล้วสร้างเฉพาะ output ที่ prompt ปัจจุบันขอ",
+      "ตรวจ entry เป็นศูนย์ก่อนหาร; คำนวณ fee เฉพาะเมื่อ variant ระบุให้ทำ",
+      "ทดสอบ gain, loss, flat และ entry เป็นศูนย์; ตรวจ live_trading เป็น False"
     ],
     "lesson_file": "lessons/level_08.md",
     "cases": [
@@ -6635,17 +6879,20 @@
     "assessment": true,
     "variant_prompts": {
       "A": "คำนวณ paper trade สินทรัพย์ดิจิทัลแบบ long: กำไรขั้นต้น=(exit-entry)*quantity, fee=(entry+exit)*quantity*0.001 และ net=gross-fee; ห้ามทำ live trading",
-      "B": "ประเมินการจำลองซื้อขายทองคำกระดาษด้วยสูตรต้นทุนเดิม แต่ใช้บริบทสินค้าอีกชนิดและข้อมูลอีกชุด รายงาน gross, fee, net และ live_trading=False"
+      "B": "คำนวณ gross=(exit-entry)*quantity, return_percent=(exit-entry)/entry*100 และ direction ซึ่งเป็น up, down หรือ flat. เมื่อ entry เป็น 0 ให้ return_percent เป็น None. คืน live_trading=False เสมอ; ห้ามคำนวณ fee ใน variant นี้"
     },
     "variant_samples": {
       "A": "(100, 110, 0.5)",
-      "B": "(200, 195, 0.1)"
+      "B": "(100, 110, 0.5)"
     },
     "variant_expected": {
       "A": "{'gross': 5.0, 'fee': 0.105, 'net': 4.895, 'live_trading': False}",
-      "B": "{\"gross\": -0.5, \"fee\": 0.0395, \"net\": -0.5395, \"live_trading\": false}"
+      "B": "{\"direction\": \"up\", \"gross\": 5.0, \"live_trading\": false, \"return_percent\": 10.0}"
     },
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 5,
+    "difficulty_label": "ประยุกต์ขั้นสูง — ใช้ความรู้เดิมกับโจทย์ใหม่",
+    "explanation": "แยก gross จากผลตอบแทนเป็นเปอร์เซ็นต์ แล้วจัดสถานะทิศทางโดยไม่ส่งคำสั่งซื้อขายจริง."
   },
   {
     "id": "L09-E001",
@@ -6699,7 +6946,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 1,
+    "difficulty_label": "ง่ายมาก — แนวคิดเดียว"
   },
   {
     "id": "L09-E002",
@@ -6738,7 +6987,9 @@
     "assessment": false,
     "explanation": "สำหรับ index 2 ค่าอ้างอิงจาก 100 และ 104 เป็น 102; สำหรับ index 3 ใช้ 104 และ 102 เป็น 103",
     "submission_mode": "text_answer",
-    "answer_file": "answers/level_09/L09-E002.txt"
+    "answer_file": "answers/level_09/L09-E002.txt",
+    "difficulty_tier": 1,
+    "difficulty_label": "ง่ายมาก — แนวคิดเดียว"
   },
   {
     "id": "L09-E003",
@@ -6817,7 +7068,9 @@
     "explanation": "ใช้ slice values[index-window:index]; เมื่อมีครบจึงหารผลรวมด้วย window มิฉะนั้นคืน None",
     "submission_mode": "stdout",
     "function": "prior_mean",
-    "signature": "values, index, window"
+    "signature": "values, index, window",
+    "difficulty_tier": 1,
+    "difficulty_label": "ง่ายมาก — แนวคิดเดียว"
   },
   {
     "id": "L09-E004",
@@ -6897,7 +7150,9 @@
     "explanation": "ใช้ values[index-window:index] แล้วหารด้วย window; คืน None เมื่อข้อมูลไม่ครบ",
     "submission_mode": "stdout",
     "function": "trailing_mean",
-    "signature": "values, index, window"
+    "signature": "values, index, window",
+    "difficulty_tier": 2,
+    "difficulty_label": "ง่าย — รวมแนวคิดคุ้นเคย"
   },
   {
     "id": "L09-E005",
@@ -6915,7 +7170,7 @@
     "expected": "strategy=0.0400 benchmark=0.0200 excess=0.0200 beats=True\n",
     "constraints": "ใช้ Python 3.12 และ standard library; ห้ามแก้ tests, curriculum หรือไฟล์เฉลย; ตัวอย่างการเทรดเป็น paper-only",
     "lesson": "การเปรียบเทียบต้องใช้ช่วงเวลาและจำนวนข้อมูลเท่ากัน รวมต้นทุนไว้ในผลตอบแทนก่อนส่งให้ฟังก์ชัน",
-    "example": "raw = \"  25 \"\namount = int(raw.strip())\nprint(amount + 5)\n",
+    "example": "import math\nreturns = [0.1, 0.2]\nnet = math.prod(1 + r for r in returns) - 1  # 0.32",
     "pitfall": "เปรียบเทียบผลรวมของช่วงเวลาต่างกัน หรือเลือกพารามิเตอร์จาก OOS ซ้ำ",
     "hints": [
       "ตรวจความยาว arrays",
@@ -6938,15 +7193,15 @@
           ]
         ],
         "expected": {
-          "strategy_net": 0.04,
-          "benchmark_net": 0.02,
-          "excess": 0.02,
+          "strategy_net": 0.040094,
+          "benchmark_net": 0.0201,
+          "excess": 0.019994,
           "beats": true
         },
         "tolerance": 1e-08,
         "name": "กลยุทธ์สูงกว่า benchmark",
         "stdin": "[0.02,-0.01,0.03]\n[0.01,0.0,0.01]\n",
-        "expected_stdout": "strategy=0.0400 benchmark=0.0200 excess=0.0200 beats=True\n"
+        "expected_stdout": "strategy=0.0401 benchmark=0.0201 excess=0.0200 beats=True\n"
       },
       {
         "args": [
@@ -6960,15 +7215,15 @@
           ]
         ],
         "expected": {
-          "strategy_net": 0.01,
-          "benchmark_net": 0.03,
-          "excess": -0.02,
+          "strategy_net": 0.010000000000000009,
+          "benchmark_net": 0.0302,
+          "excess": -0.0202,
           "beats": false
         },
         "tolerance": 1e-08,
         "name": "benchmark สูงกว่า",
         "stdin": "[0.01,0.0]\n[0.02,0.01]\n",
-        "expected_stdout": "strategy=0.0100 benchmark=0.0300 excess=-0.0200 beats=False\n"
+        "expected_stdout": "strategy=0.0100 benchmark=0.0302 excess=-0.0202 beats=False\n"
       },
       {
         "args": [
@@ -6985,13 +7240,59 @@
         "name": "จำนวนช่วงไม่เท่ากัน",
         "stdin": "[0.1]\n[0.1,0.2]\n",
         "expected_stdout": "INVALID\n"
+      },
+      {
+        "args": [
+          [
+            0.01,
+            0.02
+          ],
+          [
+            0.01,
+            0.02
+          ]
+        ],
+        "expected": {
+          "strategy_net": 0.030200000000000005,
+          "benchmark_net": 0.030200000000000005,
+          "excess": 0.0,
+          "beats": false
+        },
+        "tolerance": 1e-08,
+        "name": "equal OOS results do not beat benchmark",
+        "stdin": "[0.01,0.02]\n[0.01,0.02]\n",
+        "expected_stdout": "strategy=0.0302 benchmark=0.0302 excess=0.0000 beats=False\n"
+      },
+      {
+        "args": [
+          [
+            0.1,
+            0.2
+          ],
+          [
+            0.0,
+            0.05
+          ]
+        ],
+        "expected": {
+          "strategy_net": 0.32,
+          "benchmark_net": 0.05,
+          "excess": 0.27,
+          "beats": true
+        },
+        "tolerance": 1e-08,
+        "name": "compounds unequal-period simple returns",
+        "stdin": "[0.1,0.2]\n[0.0,0.05]\n",
+        "expected_stdout": "strategy=0.3200 benchmark=0.0500 excess=0.2700 beats=True\n"
       }
     ],
     "assessment": false,
     "explanation": "ฟังก์ชันคืน None หากจำนวนผลตอบแทนไม่เท่ากัน มิฉะนั้นรวมแต่ละชุดและตัดสิน beats จาก excess > 0",
     "submission_mode": "stdout",
     "function": "compare_oos",
-    "signature": "strategy_returns, benchmark_returns"
+    "signature": "strategy_returns, benchmark_returns",
+    "difficulty_tier": 3,
+    "difficulty_label": "ปานกลาง — หลายขั้นตอน"
   },
   {
     "id": "L09-E006",
@@ -7059,7 +7360,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 2,
+    "difficulty_label": "ง่าย — รวมแนวคิดคุ้นเคย"
   },
   {
     "id": "L09-E007",
@@ -7125,7 +7428,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 3,
+    "difficulty_label": "ปานกลาง — หลายขั้นตอน"
   },
   {
     "id": "L09-E008",
@@ -7180,7 +7485,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 3,
+    "difficulty_label": "ปานกลาง — หลายขั้นตอน"
   },
   {
     "id": "L09-E009",
@@ -7236,7 +7543,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 3,
+    "difficulty_label": "ปานกลาง — หลายขั้นตอน"
   },
   {
     "id": "L09-E010",
@@ -7302,7 +7611,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 4,
+    "difficulty_label": "ท้าทาย — เงื่อนไขและกรณีขอบ"
   },
   {
     "id": "L09-E011",
@@ -7358,7 +7669,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 3,
+    "difficulty_label": "ปานกลาง — หลายขั้นตอน"
   },
   {
     "id": "L09-E012",
@@ -7408,7 +7721,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 3,
+    "difficulty_label": "ปานกลาง — หลายขั้นตอน"
   },
   {
     "id": "L09-E013",
@@ -7459,7 +7774,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 1,
+    "difficulty_label": "ง่ายมาก — แนวคิดเดียว"
   },
   {
     "id": "L09-E014",
@@ -7518,7 +7835,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 2,
+    "difficulty_label": "ง่าย — รวมแนวคิดคุ้นเคย"
   },
   {
     "id": "L09-E015",
@@ -7527,7 +7846,7 @@
     "title": "ตัดสินใจจากงานวิจัย",
     "difficulty": "ท้าทาย",
     "category": "โจทย์ประยุกต์",
-    "objective": "คืน observations, mean และความพร้อมไป out-of-sample",
+    "objective": "สรุปผลวิจัยหรือผลตอบแทนด้วยกติกาที่ prompt ของ variant ที่เลือกกำหนด",
     "prerequisites": [
       "L09-E014"
     ],
@@ -7537,13 +7856,13 @@
     "sample": "([100, 105, 103, 110, 108],)",
     "expected": "{'observations': 5, 'mean': 105.2, 'decision': 'evaluate out of sample'}",
     "constraints": "ใช้ Python 3.12 และ standard library; ห้ามแก้ tests, curriculum หรือไฟล์เฉลย; ตัวอย่างการเทรดเป็น paper-only",
-    "lesson": "แบบประเมินนี้ให้ใช้แนวคิดของระดับกับบริบทใหม่: คืน observations, mean และความพร้อมไป out-of-sample. อ่าน prompt ของ variant ปัจจุบัน แล้วแยก input, ขั้นตอน และ output ก่อนเขียน",
-    "example": "def add_tip(total, rate=0.05):\n    return total + total * rate\nprint(add_tip(80))\n",
-    "pitfall": "ผลผ่านเกณฑ์ขนาดตัวอย่างไม่พิสูจน์ว่ากลยุทธ์มี edge",
+    "lesson": "ใช้ prompt ของ variant ปัจจุบันเป็น contract; ระบุช่วงข้อมูล จำนวน observation และวิธีรวมผล แยกค่าเฉลี่ยหรือเกณฑ์ตัดสินออกจากการทบต้น และห้ามใช้การรวมแบบหนึ่งแทนอีกแบบ.",
+    "example": "def add_tip(total, rate=0.05):\n    return total + total * rate\n\nprint(add_tip(80))",
+    "pitfall": "ตรวจ list ว่าง เกณฑ์จำนวนข้อมูล และวิธีรวมผลตาม prompt ของ variant ปัจจุบัน",
     "hints": [
-      "Hint 1: ระบุ output แต่ละช่องจาก prompt: คืน observations, mean และความพร้อมไป out-of-sample.",
-      "Hint 2: ทำตามลำดับ: นับ n ก่อน; n>=3 จึง evaluate; ถ้าน้อยกว่านั้น insufficient.",
-      "Hint 3: ตรวจขอบเขต: ผลผ่านเกณฑ์ขนาดตัวอย่างไม่พิสูจน์ว่ากลยุทธ์มี edge."
+      "แยกให้ชัดว่า prompt ขอค่าเฉลี่ย/จำนวนข้อมูลหรือผลตอบแทนทบต้น",
+      "ทำตามเกณฑ์จำนวนข้อมูลหรือสูตร growth factor ที่ prompt ระบุ; อย่ารวมแบบอื่นแทน",
+      "ตรวจ list ว่าง ค่าลบ และ threshold หรือ worst period ตามข้อตกลงของ variant"
     ],
     "lesson_file": "lessons/level_09.md",
     "cases": [
@@ -7592,17 +7911,20 @@
     "assessment": true,
     "variant_prompts": {
       "A": "ทีมวิจัยตรวจชุดผลตอบแทน: คืนจำนวน observations, ค่าเฉลี่ย และ decision; ใช้ evaluate out of sample เมื่อมีอย่างน้อย 3 ค่า มิฉะนั้น insufficient data",
-      "B": "ก่อนวิเคราะห์ความคลาดเคลื่อนของโมเดล ทีมต้องตรวจขนาดตัวอย่างและค่าเฉลี่ยก่อนตัดสินใจว่าจะไปประเมินข้อมูลที่ไม่เคยเห็นได้หรือยัง ใช้เกณฑ์ 3 ค่าเดิม"
+      "B": "รับรายการ simple returns ในรูปทศนิยม เช่น 0.10 หมายถึง 10%. คืน periods, compound_return=ผลคูณ(1+r) ลบ 1 และ worst_period. รายการว่างให้ compound_return เป็น 0.0 และ worst_period เป็น None"
     },
     "variant_samples": {
       "A": "([100, 105, 103, 110, 108],)",
-      "B": "([3, 4, 5, 6],)"
+      "B": "[[0.1, 0.2]]"
     },
     "variant_expected": {
       "A": "{'observations': 5, 'mean': 105.2, 'decision': 'evaluate out of sample'}",
-      "B": "{\"observations\": 4, \"mean\": 4.5, \"decision\": \"evaluate out of sample\"}"
+      "B": "{\"compound_return\": 0.32, \"periods\": 2, \"worst_period\": 0.1}"
     },
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 5,
+    "difficulty_label": "ประยุกต์ขั้นสูง — ใช้ความรู้เดิมกับโจทย์ใหม่",
+    "explanation": "ผลตอบแทนหลายช่วงต้องคูณ growth factor ของแต่ละช่วง ไม่ใช่บวกเปอร์เซ็นต์อย่างเดียว แล้วสรุปช่วงที่ต่ำสุด."
   },
   {
     "id": "L10-E001",
@@ -7659,7 +7981,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 1,
+    "difficulty_label": "ง่ายมาก — แนวคิดเดียว"
   },
   {
     "id": "L10-E002",
@@ -7698,7 +8022,9 @@
     "assessment": false,
     "explanation": "notional เท่ากับ 10; fee เท่ากับ 0.01; cash_after เท่ากับ 89.99 และไม่มี live order",
     "submission_mode": "text_answer",
-    "answer_file": "answers/level_10/L10-E002.txt"
+    "answer_file": "answers/level_10/L10-E002.txt",
+    "difficulty_tier": 1,
+    "difficulty_label": "ง่ายมาก — แนวคิดเดียว"
   },
   {
     "id": "L10-E003",
@@ -7711,7 +8037,7 @@
     "prerequisites": [
       "L10-E002"
     ],
-    "problem": "เติม order_allowed(cash, quantity, price, max_order_value) ให้คืน bool เท่านั้น อนุญาตเมื่อ cash ไม่ติดลบ, quantity/price เป็นบวก, notional ไม่เกิน max_order_value และไม่เกิน cash โปรแกรมรับค่าทีละบรรทัด",
+    "problem": "เติม order_allowed(cash, quantity, price, max_order_value) ให้คืน bool เท่านั้น อนุญาตเมื่อ cash ไม่ติดลบ, quantity/price เป็นบวก, notional ไม่เกิน max_order_value และไม่เกิน cash โปรแกรมรับค่าทีละบรรทัด; input ไม่มี side field",
     "sample": "100\n1\n10\n25\n",
     "expected": "True\n",
     "constraints": "ใช้ Python 3.12 และ standard library; ห้ามแก้ tests, curriculum หรือไฟล์เฉลย; ตัวอย่างการเทรดเป็น paper-only",
@@ -7782,7 +8108,9 @@
     "explanation": "ใช้ and รวม invariant ทั้งหมด; order value ต้องไม่เกินทั้งวงเงินต่อคำสั่งและ cash",
     "submission_mode": "stdout",
     "function": "order_allowed",
-    "signature": "cash, quantity, price, max_order_value"
+    "signature": "cash, quantity, price, max_order_value",
+    "difficulty_tier": 3,
+    "difficulty_label": "ปานกลาง — หลายขั้นตอน"
   },
   {
     "id": "L10-E004",
@@ -7862,7 +8190,9 @@
     "explanation": "validator ต้องปฏิเสธ OHLC ที่ขัดกันหรือ volume ติดลบ; อย่าซ่อมค่าเงียบ ๆ",
     "submission_mode": "stdout",
     "function": "valid_bar",
-    "signature": "bar"
+    "signature": "bar",
+    "difficulty_tier": 2,
+    "difficulty_label": "ง่าย — รวมแนวคิดคุ้นเคย"
   },
   {
     "id": "L10-E005",
@@ -7994,7 +8324,9 @@
     "explanation": "ฟังก์ชันคืน state ใหม่และ accepted flag; คำสั่งที่ไม่ผ่านต้องไม่แก้เงินสดหรือจำนวนหน่วย; live_trading เป็น False ทุกกรณี",
     "submission_mode": "stdout",
     "function": "paper_step",
-    "signature": "state, event, max_order_value, fee_rate"
+    "signature": "state, event, max_order_value, fee_rate",
+    "difficulty_tier": 2,
+    "difficulty_label": "ง่าย — รวมแนวคิดคุ้นเคย"
   },
   {
     "id": "L10-E006",
@@ -8045,7 +8377,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 2,
+    "difficulty_label": "ง่าย — รวมแนวคิดคุ้นเคย"
   },
   {
     "id": "L10-E007",
@@ -8095,7 +8429,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 2,
+    "difficulty_label": "ง่าย — รวมแนวคิดคุ้นเคย"
   },
   {
     "id": "L10-E008",
@@ -8144,7 +8480,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 2,
+    "difficulty_label": "ง่าย — รวมแนวคิดคุ้นเคย"
   },
   {
     "id": "L10-E009",
@@ -8193,7 +8531,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 3,
+    "difficulty_label": "ปานกลาง — หลายขั้นตอน"
   },
   {
     "id": "L10-E010",
@@ -8250,7 +8590,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 2,
+    "difficulty_label": "ง่าย — รวมแนวคิดคุ้นเคย"
   },
   {
     "id": "L10-E011",
@@ -8303,7 +8645,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 3,
+    "difficulty_label": "ปานกลาง — หลายขั้นตอน"
   },
   {
     "id": "L10-E012",
@@ -8318,7 +8662,7 @@
     ],
     "function": "loss_limit_stop",
     "signature": "event",
-    "problem": "สถานการณ์: risk gate หยุดจำลองเมื่อ day PnL ขาดทุนถึง loss limit\n\nเขียน loss_limit_stop(event) ตามสัญญา: คืน True เมื่อ day_pnl <= -abs(loss_limit).\n\nกรณีขอบ: ขาดทุนเท่าขีดจำกัดต้องหยุด; day_pnl=0 và limit=0 cũng stop.\nใช้ข้อมูลจำลองออฟไลน์เท่านั้นและคืนค่าตามโจทย์",
+    "problem": "สถานการณ์: risk gate หยุดจำลองเมื่อ day PnL ขาดทุนถึง loss limit\n\nเขียน loss_limit_stop(event) ตามสัญญา: คืน True เมื่อ day_pnl <= -abs(loss_limit).\n\nกรณีขอบ: ขาดทุนเท่าขีดจำกัดต้องหยุด; day_pnl=0 และ limit=0 ก็หยุด.\nใช้ข้อมูลจำลองออฟไลน์เท่านั้นและคืนค่าตามโจทย์",
     "sample": "({'day_pnl': -4, 'loss_limit': 5},)",
     "expected": "False",
     "constraints": "Python 3.12; ขาดทุนเท่าขีดจำกัดต้องหยุด; day_pnl=0 และ limit=0 ก็ถือว่าถึงขีดจำกัด; ไม่มีการเชื่อมต่อ exchange หรือ wallet",
@@ -8356,7 +8700,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 4,
+    "difficulty_label": "ท้าทาย — เงื่อนไขและกรณีขอบ"
   },
   {
     "id": "L10-E013",
@@ -8405,7 +8751,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 2,
+    "difficulty_label": "ง่าย — รวมแนวคิดคุ้นเคย"
   },
   {
     "id": "L10-E014",
@@ -8463,7 +8811,9 @@
       }
     ],
     "assessment": false,
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 2,
+    "difficulty_label": "ง่าย — รวมแนวคิดคุ้นเคย"
   },
   {
     "id": "L10-E015",
@@ -8472,7 +8822,7 @@
     "title": "ประเมินบอทออฟไลน์",
     "difficulty": "ท้าทาย",
     "category": "โจทย์ประยุกต์",
-    "objective": "ตรวจ event และคำนวณ cash หลังคำสั่งจำลองอย่างปลอดภัย",
+    "objective": "ตรวจ event จำลองและคำนวณ state ใหม่ตาม prompt ของ variant ที่เลือก โดยทำงาน offline",
     "prerequisites": [
       "L10-E014"
     ],
@@ -8482,13 +8832,13 @@
     "sample": "({'cash': 100, 'quantity': 1, 'price': 10, 'side': 'buy', 'id': 'a'},)",
     "expected": "{'orders': 1, 'cash_after': 90, 'live_trading': False}",
     "constraints": "ใช้ Python 3.12 และ standard library; ห้ามแก้ tests, curriculum หรือไฟล์เฉลย; ตัวอย่างการเทรดเป็น paper-only",
-    "lesson": "แบบประเมินนี้ให้ใช้แนวคิดของระดับกับบริบทใหม่: ตรวจ event และคำนวณ cash หลังคำสั่งจำลองอย่างปลอดภัย. อ่าน prompt ของ variant ปัจจุบัน แล้วแยก input, ขั้นตอน และ output ก่อนเขียน",
-    "example": "grades = [72, 88, 91]\nprint(sorted(grades))\n",
-    "pitfall": "ทดสอบเงินซื้อไม่พอและยืนยันว่า cash_after ไม่ติดลบ",
+    "lesson": "ใช้ prompt ของ variant ปัจจุบันเป็น contract; ตรวจโครงสร้าง event, เงื่อนไขยอมรับ และ output ก่อนแก้ state ตรวจเฉพาะ field ที่กำหนด เปลี่ยนยอดหลัง validation และห้ามเชื่อมระบบซื้อขายจริง.",
+    "example": "event = {\"side\": \"sell\"}\nprint(event.get(\"side\"))",
+    "pitfall": "ใช้กติกา accept/reject ของ variant ปัจจุบัน; ผลต้อง offline และยอดคงเดิมเมื่อถูกปฏิเสธตามโจทย์",
     "hints": [
-      "Hint 1: ระบุ output แต่ละช่องจาก prompt: ตรวจ event และคำนวณ cash หลังคำสั่งจำลองอย่างปลอดภัย.",
-      "Hint 2: ทำตามลำดับ: ตรวจ side, quantity, price, cash; buy ห้ามเกิน cash; sell เพิ่ม cash.",
-      "Hint 3: ตรวจขอบเขต: ทดสอบเงินซื้อไม่พอและยืนยันว่า cash_after ไม่ติดลบ."
+      "อ่านโครงสร้าง input และระบุ output fields ก่อนตรวจ event",
+      "ตรวจ side, quantity, price และ cash/position เฉพาะตาม prompt ปัจจุบัน",
+      "ทำตามกติกา accept/reject ก่อนเปลี่ยนยอด; live_trading ต้อง False"
     ],
     "lesson_file": "lessons/level_10.md",
     "cases": [
@@ -8598,16 +8948,19 @@
     "assessment": true,
     "variant_prompts": {
       "A": "ตรวจ event ซื้อขาย paper ออฟไลน์ที่มี cash, quantity, price, side และ id; รายงานจำนวนคำสั่งที่ยอมรับ เงินสดหลังรายการ และ live_trading=False",
-      "B": "ระบบคลังจำลองบันทึกการจัดซื้อในบัญชีกระดาษจากรายการ offline; ใช้รูปแบบ event เดิม แต่เปลี่ยนบริบทเป็นการจำลองจัดซื้อและห้ามเชื่อมระบบชำระเงินจริง"
+      "B": "ตรวจ event จำลองสำหรับการขาย โดยรับ dict ที่มี cash, position, quantity, price และ side. ยอมรับเฉพาะ side='sell', quantity>0, price>0 และ position>=quantity. เมื่อผ่านให้เพิ่ม cash ด้วย quantity*price และลด position ตาม quantity. เมื่อไม่ผ่านให้ accepted=False และคงยอดเดิม; input ที่ไม่ใช่ dict ให้ยอดเป็น 0. คืน accepted, cash_after, position_after และ live_trading=False เสมอ"
     },
     "variant_samples": {
       "A": "({'cash': 100, 'quantity': 1, 'price': 10, 'side': 'buy', 'id': 'a'},)",
-      "B": "({'cash': 250, 'quantity': 3, 'price': 20, 'side': 'buy', 'id': 'stock-A'},)"
+      "B": "({'cash': 100, 'position': 3, 'quantity': 1, 'price': 20, 'side': 'sell'},)"
     },
     "variant_expected": {
       "A": "{'orders': 1, 'cash_after': 90, 'live_trading': False}",
-      "B": "{\"orders\": 1, \"cash_after\": 190, \"live_trading\": false}"
+      "B": "{\"accepted\": true, \"cash_after\": 120, \"live_trading\": false, \"position_after\": 2}"
     },
-    "submission_mode": "function"
+    "submission_mode": "function",
+    "difficulty_tier": 5,
+    "difficulty_label": "ประยุกต์ขั้นสูง — ใช้ความรู้เดิมกับโจทย์ใหม่",
+    "explanation": "ตรวจชนิดและค่าของ event ก่อนคำนวณ หากขายได้ให้เพิ่มเงินสดและลดจำนวนถือครอง; กรณีปฏิเสธต้องคงยอดเดิม."
   }
 ]

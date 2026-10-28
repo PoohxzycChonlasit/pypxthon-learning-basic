@@ -1,0 +1,23 @@
+# Python bytecode
+__pycache__/
+*.pyc
+
+# Project-local virtual environments
+.venv/
+
+# Learner progress is local state
+**/progress.json
+
+# Temporary test and coverage outputs
+.pytest_cache/
+.coverage
+coverage.xml
+test-results/
+test-output/
+*.tmp
+
+# Local scratch and editor swap files
+scratch/
+*.scratch
+*.swp
+*.swo

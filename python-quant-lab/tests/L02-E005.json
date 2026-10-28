@@ -53,5 +53,16 @@
     "name": "remote just below free threshold",
     "stdin": "299\nremote\n",
     "expected_stdout": "349.00\n"
+  },
+  {
+    "args": [
+      -1,
+      "local"
+    ],
+    "expected": null,
+    "tolerance": 1e-08,
+    "name": "negative subtotal is invalid",
+    "stdin": "-1\nlocal\n",
+    "expected_stdout": "INVALID\n"
   }
 ]

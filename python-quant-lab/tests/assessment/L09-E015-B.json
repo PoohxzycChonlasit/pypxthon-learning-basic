@@ -2,30 +2,28 @@
   {
     "args": [
       [
-        3,
-        4,
-        5,
-        6
+        0.1,
+        0.2
       ]
     ],
     "expected": {
-      "observations": 4,
-      "mean": 4.5,
-      "decision": "evaluate out of sample"
+      "periods": 2,
+      "compound_return": 0.32,
+      "worst_period": 0.1
     },
     "tolerance": 1e-08
   },
   {
     "args": [
       [
-        2,
-        8
+        -0.1,
+        0.05
       ]
     ],
     "expected": {
-      "observations": 2,
-      "mean": 5.0,
-      "decision": "insufficient data"
+      "periods": 2,
+      "compound_return": -0.055,
+      "worst_period": -0.1
     },
     "tolerance": 1e-08
   },
@@ -34,9 +32,23 @@
       []
     ],
     "expected": {
-      "observations": 0,
-      "mean": null,
-      "decision": "insufficient data"
+      "periods": 0,
+      "compound_return": 0.0,
+      "worst_period": null
+    },
+    "tolerance": 1e-08
+  },
+  {
+    "args": [
+      [
+        0.0,
+        0.0
+      ]
+    ],
+    "expected": {
+      "periods": 2,
+      "compound_return": 0.0,
+      "worst_period": 0.0
     },
     "tolerance": 1e-08
   }

@@ -1,2 +1,9 @@
 def final_loop_assessment(values):
-    return {'count':len(values),'positive':sum(x>0 for x in values),'net':sum(values)}
+    even_sum = 0
+    negative_count = 0
+    for value in values:
+        if value % 2 == 0:
+            even_sum += value
+        if value < 0:
+            negative_count += 1
+    return {"even_sum": even_sum, "negative_count": negative_count}

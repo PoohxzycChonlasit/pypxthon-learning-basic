@@ -2,17 +2,37 @@
   {
     "args": [
       [
-        10,
-        20,
-        10,
-        30,
-        20
+        3,
+        1,
+        3,
+        2,
+        1
       ]
     ],
     "expected": {
-      "length": 5,
-      "first": 10,
-      "unique": 3
+      "unique_items": [
+        3,
+        1,
+        2
+      ],
+      "duplicate_count": 2
+    },
+    "tolerance": 1e-08
+  },
+  {
+    "args": [
+      [
+        "A",
+        "a",
+        "A"
+      ]
+    ],
+    "expected": {
+      "unique_items": [
+        "A",
+        "a"
+      ],
+      "duplicate_count": 1
     },
     "tolerance": 1e-08
   },
@@ -21,24 +41,24 @@
       []
     ],
     "expected": {
-      "length": 0,
-      "first": null,
-      "unique": 0
+      "unique_items": [],
+      "duplicate_count": 0
     },
     "tolerance": 1e-08
   },
   {
     "args": [
       [
-        "tea",
-        "rice",
-        "tea"
+        5,
+        5,
+        5
       ]
     ],
     "expected": {
-      "length": 3,
-      "first": "tea",
-      "unique": 2
+      "unique_items": [
+        5
+      ],
+      "duplicate_count": 2
     },
     "tolerance": 1e-08
   }

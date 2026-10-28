@@ -1,2 +1,10 @@
 def final_paper_risk_assessment(entry, exit, quantity):
-    return {'gross':(exit-entry)*quantity,'fee':(entry+exit)*quantity*.001,'net':(exit-entry)*quantity-(entry+exit)*quantity*.001,'live_trading':False}
+    gross = (exit - entry) * quantity
+    return_percent = (exit - entry) / entry * 100 if entry != 0 else None
+    if exit > entry:
+        direction = "up"
+    elif exit < entry:
+        direction = "down"
+    else:
+        direction = "flat"
+    return {"gross": gross, "return_percent": return_percent, "direction": direction, "live_trading": False}

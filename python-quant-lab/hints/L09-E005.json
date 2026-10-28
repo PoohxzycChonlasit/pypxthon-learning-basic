@@ -1,5 +1,5 @@
 [
-  "ตรวจความยาว arrays",
-  "รวมผลตอบแทนของแต่ละชุดตามข้อกำหนดแบบ simple sum",
-  "excess คือ strategy_net - benchmark_net"
+  "ตรวจจำนวน observation ของ arrays ก่อน",
+  "ทบต้น simple returns ด้วยผลคูณของ (1 + r) แล้วลบ 1; อย่าบวก return ตรง ๆ",
+  "คำนวณ excess จาก strategy_net - benchmark_net และ beats เมื่อ excess > 0"
 ]

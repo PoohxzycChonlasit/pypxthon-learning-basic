@@ -4,11 +4,21 @@ Python Quant Lab เป็นหลักสูตรภาษาไทยสำ
 
 Python เป็นภาษาโปรแกรมที่อ่านง่ายและมีเครื่องมือหลากหลาย คนใช้เขียนสคริปต์อัตโนมัติ จัดการไฟล์ ทำรายงาน เว็บ และวิเคราะห์ข้อมูล ในงาน Quant เราใช้ Python เตรียมข้อมูล คำนวณสถิติและทดสอบสมมติฐาน ส่วน trading bot คือโปรแกรมที่อ่านข้อมูลและทำตามกฎที่กำหนด หลักสูตรนี้ใช้การจำลองออฟไลน์เท่านั้น ไม่มี exchange, wallet หรือคำสั่งซื้อขายจริง ผล backtest ไม่พิสูจน์ว่ามีกำไรหรือรับประกันผลในอนาคต
 
+แบบฝึกหัดเปิดดูคำสั่งและตำแหน่ง TODO ได้ในไฟล์ที่ต้องแก้ แต่ละข้อมีระดับความยาก Tier 1–5 ซึ่งเทียบภายใน Level เดียวกัน และมี checklist `☐` ให้ติดตามงาน ตัวอย่าง syntax ในกล่องเป็นตัวอย่างแยก ไม่ใช่คำตอบเต็ม ส่วนโจทย์ทำนายผลใช้ไฟล์คำแนะนำ Markdown แยกเพื่อให้ไฟล์ `.txt` คงรูปแบบที่ grader ต้องการ
+
 ## เริ่มต้นบน Windows และ VS Code
 
 ### 1. เปิดโฟลเดอร์โครงการ
 
-เปิด VS Code แล้วเลือก **File → Open Folder...** เลือกโฟลเดอร์ <code>python-quant-lab</code> จากนั้นเลือก **Terminal → New Terminal** terminal คือช่องพิมพ์คำสั่งที่ทำงานอยู่ในโฟลเดอร์หนึ่ง ๆ
+สำหรับ clone ใหม่ ให้รันจากโฟลเดอร์แม่ที่ต้องการเก็บ repository:
+
+~~~powershell
+git clone https://github.com/PoohxzycChonlasit/pypxthon-learning-basic.git pypxthon-learning-basic
+Set-Location -LiteralPath ".\pypxthon-learning-basic\python-quant-lab"
+code .
+~~~
+
+ถ้าใช้ checkout ที่มีอยู่แล้ว ให้เปิดโฟลเดอร์ `python-quant-lab` ใน VS Code หรือใช้ PowerShell:
 
 ตรวจโฟลเดอร์ปัจจุบันและเปิดโครงการจาก PowerShell ได้ด้วย:
 
@@ -18,6 +28,8 @@ Get-Location
 ~~~
 
 ใช้ <code>-LiteralPath</code> และใส่ path ในเครื่องหมายคำพูด เพราะชื่อโฟลเดอร์มีช่องว่าง
+
+คำสั่งในคู่มือนี้ใช้ <code>-B</code> เพื่อไม่สร้าง bytecode cache ระหว่างเรียน; ใช้ Python 3.12 ที่ติดตั้งไว้แล้ว ไม่ต้องสร้าง environment หรือติดตั้ง package เพื่อเริ่ม Level 1–5
 
 ### 2. ตรวจ Python และเลือก interpreter
 
@@ -47,14 +59,14 @@ python -m venv .venv
 ### 4. เริ่มระบบและอ่านบทเรียน
 
 ~~~powershell
-python practice.py start
-python practice.py lesson
+python -B practice.py start
+python -B practice.py lesson
 ~~~
 
 เริ่มข้อแรกหรือข้อที่บันทึกไว้ ระบบแสดงโจทย์และพาธไฟล์ที่ต้องแก้ หาก VS Code เปิดไฟล์ไม่ได้ ให้ใช้คำสั่ง open แล้วเปิดพาธที่แสดง:
 
 ~~~powershell
-python practice.py open
+python -B practice.py open
 ~~~
 
 ### 5. พิมพ์และรันคำตอบ
@@ -62,14 +74,14 @@ python practice.py open
 แก้เฉพาะไฟล์คำตอบของข้อปัจจุบัน แล้วบันทึกด้วย **Ctrl+S** คำสั่ง run ทดลองกรณีตัวอย่างแรก:
 
 ~~~powershell
-python practice.py run
+python -B practice.py run
 ~~~
 
 ### 6. ตรวจคำตอบและทำความเข้าใจผล
 
 ~~~powershell
-python practice.py check
-python practice.py check L01-E003
+python -B practice.py check
+python -B practice.py check L01-E003
 ~~~
 
 หากตรวจไม่ผ่าน อ่านชื่อ test และ traceback แล้วแก้สาเหตุ ใช้ [คู่มือแก้โจทย์](docs/how-to-solve-exercises.md) และ [ข้อผิดพลาด Python ที่พบบ่อย](docs/common-python-errors.md)
@@ -77,21 +89,21 @@ python practice.py check L01-E003
 ### 7. ขอ hint หรือเปิด solution
 
 ~~~powershell
-python practice.py hint
-python practice.py hint L01-E003 2
-python practice.py solution L01-E003
-python practice.py explain L01-E003
+python -B practice.py hint
+python -B practice.py hint L01-E003 2
+python -B practice.py solution L01-E003
+python -B practice.py explain L01-E003
 ~~~
 
-ระบบจะถามก่อนเปิด solution หรือคำอธิบายฉบับเต็ม ตอบ <code>YES</code> เพื่อยืนยัน หรือใช้ <code>--yes</code> ต่อท้ายเมื่อคุณตัดสินใจแล้ว เช่น <code>python practice.py solution L01-E003 --yes</code> การเปิด solution ไม่เขียนทับไฟล์นักเรียน แต่จะบันทึกว่าเคยดูไว้ และการผ่านภายหลังจะเป็นการผ่านแบบช่วยเหลือ
+ระบบจะถามก่อนเปิด solution หรือคำอธิบายฉบับเต็ม ตอบ <code>YES</code> เพื่อยืนยัน หรือใช้ <code>--yes</code> ต่อท้ายเมื่อคุณตัดสินใจแล้ว เช่น <code>python -B practice.py solution L01-E003 --yes</code> การเปิด solution ไม่เขียนทับไฟล์นักเรียน แต่จะบันทึกว่าเคยดูไว้ และการผ่านภายหลังจะเป็นการผ่านแบบช่วยเหลือ
 
 ### 8. ไปข้อถัดไปและดูความคืบหน้า
 
 ~~~powershell
-python practice.py next
-python practice.py status
-python practice.py list
-python practice.py retry L01-E003
+python -B practice.py next
+python -B practice.py status
+python -B practice.py list
+python -B practice.py retry L01-E003
 ~~~
 
 ## ทำความเข้าใจไฟล์ในโครงการ
@@ -102,13 +114,15 @@ python practice.py retry L01-E003
 | <code>practice.py</code> | โปรแกรมนำทาง ตรวจคำตอบ และบันทึกความคืบหน้า | ไม่ควรแก้ระหว่างเรียน |
 | <code>curriculum.json</code> | โจทย์ เป้าหมาย ตัวอย่าง และกรณีทดสอบของระบบ | ไม่ควรแก้ |
 | <code>lessons/</code> | บทเรียนแบบพิมพ์ตามและตัวอย่างก่อนทำโจทย์ | อ่านและพิมพ์ตัวอย่างลงไฟล์ทดลอง |
-| <code>exercises/</code> | ไฟล์ Python สำหรับส่งคำตอบ | แก้ไฟล์ของข้อที่กำลังทำ |
+| <code>exercises/</code> | ไฟล์ Python ที่มี instruction boxes และ TODO | แก้ไฟล์ของข้อที่กำลังทำ |
+| <code>instructions/</code> | คู่มือ Markdown สำหรับข้อทำนายผลที่ส่งคำตอบเป็นข้อความ | อ่าน; ไม่ใส่ comment ในไฟล์ .txt |
 | <code>answers/</code> | คำตอบข้อความสำหรับข้อทำนายผล | แก้เฉพาะไฟล์ที่คำสั่ง open ระบุ |
 | <code>solutions/</code> | คำตอบอ้างอิง | เปิดผ่านคำสั่ง solution หลังลองทำ |
 | <code>explanations/</code> | คำอธิบายหลังเฉลย | เปิดผ่านคำสั่ง explain หลังลองทำ |
 | <code>hints/</code> | ใบ้สามระดับสำหรับแต่ละข้อ | อ่านผ่านคำสั่ง hint |
 | <code>tests/</code> | ตัวอย่างข้อมูลที่ grader ใช้ตรวจ | ไม่ควรแก้ |
 | <code>data/</code> | ชุดข้อมูลฝึกออฟไลน์และข้อมูลสังเคราะห์ | อ่าน; เก็บข้อมูลทดลองแยกไฟล์ |
+| <code>tracks/data_analysis/</code> | เส้นทางเสริม CSV/JSON/SQLite, NumPy, pandas, charts และ analytics | ทำหลัง Level 5; ใช้ .venv สำหรับ packages |
 | <code>progress.json</code> | สถานะ attempts, hints, solution reveals และผลผ่าน | อย่าแก้หรือลบทิ้ง |
 | <code>requirements.txt</code> | รายการ dependency ของโครงการ | ไม่ต้องติดตั้งแพ็กเกจเพื่อเริ่ม |
 
@@ -130,6 +144,18 @@ python practice.py retry L01-E003
 **อ่านบทเรียน → พิมพ์ตัวอย่างเอง → ทดลองเปลี่ยนค่า → ทำโจทย์ → ตรวจ → แก้ข้อผิดพลาด → อ่านคำอธิบาย → สรุปด้วยคำของตนเอง → ทำข้อต่อไป**
 
 อย่าจำโค้ดโดยไม่เข้าใจ ลองทำนายผลก่อนรัน อธิบายว่าแต่ละบรรทัดทำอะไร และสร้างกรณีทดสอบใหม่เพื่อดูว่าความเข้าใจยังใช้ได้เมื่อข้อมูลเปลี่ยนหรือไม่
+
+## อ่านกล่องคำสั่งและระดับความยาก
+
+กล่องในไฟล์โจทย์เรียงตามหัวข้อ: exercise header, เป้าหมายและเหตุผล, สถานการณ์/ผู้ใช้, checklist, input/output, syntax reference, จุด TODO, คำสั่ง verify และวิธีขอความช่วยเหลือ แต่ละข้อบอกความรู้ก่อนหน้าและเชื่อมไปยัง lesson, hint, solution และ explanation ที่ละเอียดกว่า
+
+- `☐` คือ checklist item ที่ยังไม่ได้ทำ; ผู้เรียนทำเครื่องหมาย `☑` เองได้หลังตรวจงานแล้ว
+- Tier 1: แนวคิดเดียว; Tier 2: รวมแนวคิดที่คุ้นเคย; Tier 3: ทำโจทย์จริงหลายขั้น
+- Tier 4: จัดการเงื่อนไขและกรณีขอบ; Tier 5: ประยุกต์ความรู้เดิมกับโจทย์ใหม่ รวม E015 ของแต่ละ Level
+- ตัวอย่าง syntax เป็นตัวอย่างฝึกแยกจากโจทย์ ไม่ใช่เฉลยเต็ม; แก้เฉพาะตำแหน่ง TODO และคงรูปแบบคำตอบ
+- เปิดโจทย์ text-answer ด้วย `python -B practice.py open ID`; VS Code จะแสดงไฟล์ `.txt` และ companion Markdown พร้อมกัน
+
+ถ้า box drawing แสดงไม่ครบ ให้เปิดไฟล์เป็น UTF-8; ดู [ASCII fallback](docs/exercise-box-ascii-fallback.md) ได้โดยไม่เสียเนื้อหาคำสั่ง
 
 ## แผนที่หลักสูตร
 
@@ -161,6 +187,10 @@ python practice.py retry L01-E003
 - [Level 9 starters](exercises/level_09/) · [คำอธิบายข้อแรก](explanations/L09-E001.md)
 - [Level 10 starters](exercises/level_10/) · [คำอธิบายข้อแรก](explanations/L10-E001.md)
 
+## เริ่ม Data Analysis
+
+หลัง Level 5 ให้เริ่ม DA01–DA05 ซึ่งใช้ standard library สำหรับ schema, CSV, JSON, SQLite และการบันทึก rejected rows จากนั้นขออนุมัติการติดตั้ง package ก่อนใช้ NumPy/pandas/Matplotlib ใน [Data Analysis Practice Track](tracks/data_analysis/README.md) ชุดข้อมูลและคำสั่งสร้างซ้ำอยู่ใน [data/README.md](data/README.md) NumPy/pandas exercises เป็นแบบฝึกหัด graded จริงใน track ไม่ได้อ้างว่า 150 core exercises ประเมิน package เหล่านี้แล้ว
+
 ## ความคืบหน้าและการประเมิน
 
 - <code>NOT_STARTED</code> — ยังไม่เริ่มส่งคำตอบ
@@ -189,7 +219,7 @@ python practice.py retry L01-E003
 
 **รู้ได้อย่างไรว่าตนเข้าใจ Python?** อธิบายโค้ดได้ เขียนใหม่โดยไม่มองต้นฉบับ และปรับให้ทำงานในโจทย์บริบทใหม่ได้
 
-**พร้อมเรียน NumPy เมื่อไร?** เมื่อเข้าใจ list, loop, function, การคำนวณพื้นฐาน และความหมายของข้อมูล NumPy เป็น optional dependency
+**พร้อมเรียน NumPy เมื่อไร?** เมื่อผ่านพื้นฐาน Level 5 และรู้จักชนิดข้อมูล/การคำนวณพื้นฐาน เริ่ม [Data Analysis Track](tracks/data_analysis/README.md) โดยทำ DA01–DA05 ก่อน NumPy เป็น optional dependency
 
 **พร้อมเริ่ม Quant เมื่อไร?** หลังเขียนฟังก์ชันและจัดการข้อมูลได้ เข้าใจเปอร์เซ็นต์และสถิติพื้นฐาน จากนั้นค่อยศึกษาต้นทุนและความเสี่ยง
 
@@ -211,8 +241,10 @@ python practice.py retry L01-E003
 - [Level 8 — การเงินและความเสี่ยง](lessons/level_08.md)
 - [Level 9 — วิจัย Quant](lessons/level_09.md)
 - [Level 10 — Paper bot ออฟไลน์](lessons/level_10.md)
+- [Data Analysis Practice Track — แบบฝึกหัดเสริม DA01–DA23](tracks/data_analysis/README.md)
 - [คู่มือไวยากรณ์ Python](docs/python-syntax-handbook.md)
 - [แผนที่หลักสูตร](docs/learning-roadmap.md)
+- [Coverage matrix และ verification ledger สำหรับ M005](docs/m005-coverage-matrix.md)
 - [วิธีแก้โจทย์](docs/how-to-solve-exercises.md)
 - [ข้อผิดพลาดที่พบบ่อย](docs/common-python-errors.md)
 - [Python เทียบกับ JavaScript/TypeScript](docs/python-vs-javascript.md)
@@ -223,31 +255,31 @@ python practice.py retry L01-E003
 ## คำสั่งระบบ
 
 ~~~powershell
-python practice.py help
-python practice.py start
-python practice.py lesson [ID]
-python practice.py open [ID]
-python practice.py run [ID]
-python practice.py check [ID]
-python practice.py hint [ID [1-3]]
-python practice.py solution [ID] [--yes]
-python practice.py explain [ID] [--yes]
-python practice.py next
-python practice.py list
-python practice.py status
-python practice.py retry ID
+python -B practice.py help
+python -B practice.py start
+python -B practice.py lesson [ID]
+python -B practice.py open [ID]
+python -B practice.py run [ID]
+python -B practice.py check [ID]
+python -B practice.py hint [ID [1-3]]
+python -B practice.py solution [ID] [--yes]
+python -B practice.py explain [ID] [--yes]
+python -B practice.py next
+python -B practice.py list
+python -B practice.py status
+python -B practice.py retry ID
 ~~~
 
 run ทดลองกรณีแรก; check ตรวจทุกกรณีของข้อ; hint แสดงใบ้ระดับที่ระบุ; solution แสดงโค้ดอ้างอิง; explain แสดงเหตุผล; retry เริ่มทำข้อเดิมหรือ assessment variant ใหม่ตามความสามารถของข้อนั้น
 
 ## Dependencies และขอบเขตการใช้งาน
 
-แบบฝึกหัดหลักใช้ Python standard library; <code>requirements.txt</code> ไม่ติดตั้งแพ็กเกจภายนอก ตัวอย่าง NumPy, pandas, Matplotlib และ Plotly เป็นส่วนเสริม และจะทำงานเมื่อแพ็กเกจนั้นอยู่ใน interpreter ที่เลือก หากต้องการติดตั้ง ให้ใช้ virtual environment <code>.venv</code> ของโครงการและคำสั่งนี้:
+Level 1–5 และแบบฝึกหัดหลักใช้ Python standard library; <code>requirements.txt</code> ไม่ติดตั้งแพ็กเกจภายนอก Data Analysis Track มีแบบฝึกหัด NumPy, pandas และ Matplotlib ที่ต้องใช้ virtual environment <code>.venv</code> ของโครงการ การติดตั้งต้องได้รับอนุมัติก่อน แล้วจึงใช้คำสั่งนี้:
 
 ~~~powershell
 .\.venv\Scripts\python.exe -m pip install -r requirements-optional.txt
 ~~~
 
-รายการเสริมมี NumPy, pandas, Matplotlib และ Plotly; vectorbt ไม่ได้รวมไว้และไม่จำเป็นกับหลักสูตรนี้ อย่ารันคำสั่งติดตั้งถ้าต้องการเรียนเฉพาะส่วน standard library
+รายการเสริมมี NumPy, pandas, Matplotlib และ Plotly; vectorbt ไม่ได้รวมไว้และไม่จำเป็นกับหลักสูตรนี้ หากยังไม่มีอนุมัติ ให้เรียน Level 1–5 และ DA01–DA05 ต่อได้โดยไม่ติดตั้ง package
 
 grader ใช้ subprocess และจำกัดเวลา แต่ไม่ได้เป็น sandbox ที่ปลอดภัยสำหรับรันโค้ดที่ไม่น่าเชื่อถือ ใช้ไฟล์นี้เพื่อเรียนในเครื่องของตนเอง ตรวจโค้ดก่อนรัน และอย่าใส่ credential หรือข้อมูลส่วนตัวลงในชุดฝึก

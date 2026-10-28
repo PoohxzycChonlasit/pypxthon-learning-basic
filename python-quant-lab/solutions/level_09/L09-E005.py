@@ -1,8 +1,9 @@
 def compare_oos(strategy_returns, benchmark_returns):
     if len(strategy_returns) != len(benchmark_returns):
         return None
-    strategy_net = sum(strategy_returns)
-    benchmark_net = sum(benchmark_returns)
+    from math import prod
+    strategy_net = prod(1 + value for value in strategy_returns) - 1
+    benchmark_net = prod(1 + value for value in benchmark_returns) - 1
     excess = strategy_net - benchmark_net
     return {"strategy_net": strategy_net, "benchmark_net": benchmark_net, "excess": excess, "beats": excess > 0}
 
