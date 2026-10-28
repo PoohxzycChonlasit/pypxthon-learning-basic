@@ -1,0 +1,38 @@
+[
+  {
+    "args": [
+      10,
+      2
+    ],
+    "expected": {
+      "sum": 12,
+      "difference": 8,
+      "product": 20
+    },
+    "tolerance": 1e-08
+  },
+  {
+    "args": [
+      0,
+      4
+    ],
+    "expected": {
+      "sum": 4,
+      "difference": -4,
+      "product": 0
+    },
+    "tolerance": 1e-08
+  },
+  {
+    "args": [
+      -3,
+      2
+    ],
+    "expected": {
+      "sum": -1,
+      "difference": -5,
+      "product": -6
+    },
+    "tolerance": 1e-08
+  }
+]

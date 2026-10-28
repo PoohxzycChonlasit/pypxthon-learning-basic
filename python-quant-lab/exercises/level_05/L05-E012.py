@@ -1,0 +1,3 @@
+def encode_record_lines(text):
+    """TODO: implement the behavior in the exercise instructions."""
+    raise NotImplementedError("เขียนฟังก์ชันนี้")

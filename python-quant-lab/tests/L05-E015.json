@@ -1,0 +1,32 @@
+[
+  {
+    "args": [
+      "10.5,20"
+    ],
+    "expected": {
+      "fields": 2,
+      "normalized": "10.5,20"
+    },
+    "tolerance": 1e-08
+  },
+  {
+    "args": [
+      ""
+    ],
+    "expected": {
+      "fields": 1,
+      "normalized": ""
+    },
+    "tolerance": 1e-08
+  },
+  {
+    "args": [
+      "2,3,4"
+    ],
+    "expected": {
+      "fields": 3,
+      "normalized": "2,3,4"
+    },
+    "tolerance": 1e-08
+  }
+]

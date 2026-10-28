@@ -1,0 +1,35 @@
+[
+  {
+    "args": [
+      10,
+      2
+    ],
+    "expected": {
+      "difference": 8,
+      "ratio": 5.0
+    },
+    "tolerance": 1e-08
+  },
+  {
+    "args": [
+      0,
+      1
+    ],
+    "expected": {
+      "difference": -1,
+      "ratio": 0.0
+    },
+    "tolerance": 1e-08
+  },
+  {
+    "args": [
+      5,
+      5
+    ],
+    "expected": {
+      "difference": 0,
+      "ratio": 1.0
+    },
+    "tolerance": 1e-08
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "args": [
+      [
+        1,
+        -2,
+        0,
+        3
+      ]
+    ],
+    "expected": [
+      "profit",
+      "loss",
+      "flat",
+      "profit"
+    ],
+    "tolerance": 1e-08
+  },
+  {
+    "args": [
+      []
+    ],
+    "expected": [],
+    "tolerance": 1e-08
+  },
+  {
+    "args": [
+      [
+        5,
+        5
+      ]
+    ],
+    "expected": [
+      "profit",
+      "profit"
+    ],
+    "tolerance": 1e-08
+  }
+]

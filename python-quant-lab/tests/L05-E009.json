@@ -1,0 +1,23 @@
+[
+  {
+    "args": [
+      "10.5,20"
+    ],
+    "expected": {},
+    "tolerance": 1e-08
+  },
+  {
+    "args": [
+      ""
+    ],
+    "expected": {},
+    "tolerance": 1e-08
+  },
+  {
+    "args": [
+      "2,3,4"
+    ],
+    "expected": {},
+    "tolerance": 1e-08
+  }
+]

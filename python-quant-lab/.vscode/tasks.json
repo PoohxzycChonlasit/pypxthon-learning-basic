@@ -1,0 +1,13 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {"label":"Start Learning","type":"shell","command":"python","args":["practice.py","start"],"problemMatcher":[]},
+    {"label":"Open Current Exercise","type":"shell","command":"python","args":["practice.py","open"],"problemMatcher":[]},
+    {"label":"Check Current Exercise","type":"shell","command":"python","args":["practice.py","check"],"problemMatcher":[]},
+    {"label":"Show Hint","type":"shell","command":"python","args":["practice.py","hint"],"problemMatcher":[]},
+    {"label":"Show Solution","type":"shell","command":"python","args":["practice.py","solution"],"problemMatcher":[]},
+    {"label":"Explain Solution","type":"shell","command":"python","args":["practice.py","explain"],"problemMatcher":[]},
+    {"label":"Show Progress","type":"shell","command":"python","args":["practice.py","status"],"problemMatcher":[]},
+    {"label":"Next Exercise","type":"shell","command":"python","args":["practice.py","next"],"problemMatcher":[]}
+  ]
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "args": [
+      10,
+      2
+    ],
+    "expected": 10,
+    "tolerance": 1e-08
+  },
+  {
+    "args": [
+      0,
+      4
+    ],
+    "expected": 4,
+    "tolerance": 1e-08
+  },
+  {
+    "args": [
+      -3,
+      2
+    ],
+    "expected": 2,
+    "tolerance": 1e-08
+  }
+]
