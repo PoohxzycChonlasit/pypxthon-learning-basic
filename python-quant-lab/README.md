@@ -123,6 +123,7 @@ python -B practice.py retry L01-E003
 | <code>tests/</code> | ตัวอย่างข้อมูลที่ grader ใช้ตรวจ | ไม่ควรแก้ |
 | <code>data/</code> | ชุดข้อมูลฝึกออฟไลน์และข้อมูลสังเคราะห์ | อ่าน; เก็บข้อมูลทดลองแยกไฟล์ |
 | <code>tracks/data_analysis/</code> | เส้นทางเสริม CSV/JSON/SQLite, NumPy, pandas, charts และ analytics | ทำหลัง Level 5; ใช้ .venv สำหรับ packages |
+| <code>tracks/engineering_thinking/</code> | เส้นทางเสริมสำหรับแตกปัญหา เขียน contract วาง architecture และมอบหมายงาน AI อย่างตรวจสอบได้ | ทำควบคู่หรือหลัง Level 1; ไม่ต้องติดตั้ง package |
 | <code>progress.json</code> | สถานะ attempts, hints, solution reveals และผลผ่าน | อย่าแก้หรือลบทิ้ง |
 | <code>requirements.txt</code> | รายการ dependency ของโครงการ | ไม่ต้องติดตั้งแพ็กเกจเพื่อเริ่ม |
 
@@ -186,6 +187,10 @@ python -B practice.py retry L01-E003
 - [Level 8 starters](exercises/level_08/) · [คำอธิบายข้อแรก](explanations/L08-E001.md)
 - [Level 9 starters](exercises/level_09/) · [คำอธิบายข้อแรก](explanations/L09-E001.md)
 - [Level 10 starters](exercises/level_10/) · [คำอธิบายข้อแรก](explanations/L10-E001.md)
+
+## เริ่ม Engineering Thinking ก่อนมอบหมายงานให้ AI
+
+เส้นทางเสริม [Engineering Thinking and AI-Assisted Development](tracks/engineering_thinking/README.md) ฝึกเขียน requirements, input/output contract, data model, pseudocode, implementation plan และ test cases ก่อนขอให้ coding agent ทำงานย่อย เริ่มจากการคิดและเขียนข้อกำหนดด้วยตนเอง แล้วค่อยให้ agent ช่วยทำงานที่มีขอบเขตชัดเจน
 
 ## เริ่ม Data Analysis
 

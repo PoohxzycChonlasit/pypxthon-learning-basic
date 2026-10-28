@@ -26,3 +26,7 @@
 150 แบบฝึกหัดใน 10 ระดับยังคงใช้ Python standard library เพื่อให้เริ่มได้โดยไม่ติดตั้ง package ภายนอก เส้นทาง [Data Analysis Practice Track](../tracks/data_analysis/README.md) เพิ่มงานที่ต้องใช้เวลาและความลึกมากกว่าแบบฝึกหัดสั้น: DA01–DA05 สอน schema, CSV, JSON, SQLite และการเก็บ rejected rows; DA06–DA09 ใช้ NumPy; DA10–DA17 ใช้ pandas สำหรับ Series/DataFrame, cleaning, groupby, time series และ EDA; DA18–DA19 ตรวจข้อมูลและกราฟ; DA20–DA22 ทำรายงานธุรกิจ/การเงินและ export; DA23 เป็น Plotly optional
 
 เริ่ม DA01–DA05 ได้ด้วย standard library จากนั้นขออนุมัติการติดตั้งก่อนใช้ `.venv` กับ NumPy, pandas และ Matplotlib ส่วน Plotly เป็นทางเลือกเพิ่มเติม ชุดข้อมูลทั้งหมดเป็นข้อมูลสังเคราะห์และกราฟทดสอบด้วยข้อมูล/label/artifact ไม่ใช้การเทียบ pixel
+
+## ออกแบบก่อนเขียนโค้ด
+
+ใช้ [Engineering Thinking and AI-Assisted Development](../tracks/engineering_thinking/README.md) เพื่อฝึก requirements, data models, pseudocode, architecture, test planning และ code review ก่อนมอบหมายงานย่อยให้ AI ดูลำดับหัวข้อและ exercise mapping ใน [Video Learning Roadmap](video-learning-roadmap.md); video URLs และ timestamps ที่ยังไม่ได้ตรวจสอบระบุเป็น `UNKNOWN`.

@@ -259,15 +259,18 @@ print(rows[0]["sku"], int(rows[0]["qty"]))
 
 ### SQLite ด้วย standard library
 
-`sqlite3` query ฐานข้อมูลในเครื่องโดยไม่ติดตั้ง package ใช้ parameterized query เมื่อมีค่าจากผู้ใช้ และปิด connection ด้วย `with`
+`sqlite3` ใช้ query ฐานข้อมูลในเครื่องได้โดยไม่ติดตั้ง package และควรใช้ parameterized query เมื่อมีค่าจากผู้ใช้ `sqlite3.Connection` ที่ใช้เป็น context manager จะจัดการ transaction โดย commit เมื่อสำเร็จหรือ rollback เมื่อเกิด exception แต่ไม่ได้ปิด connection อัตโนมัติ ตัวอย่างนี้ใช้ `contextlib.closing` เพื่อปิด connection ด้วย
 
 ~~~python
 import sqlite3
-with sqlite3.connect(":memory:") as connection:
-    connection.execute("CREATE TABLE sales(month TEXT, amount REAL)")
-    connection.execute("INSERT INTO sales VALUES (?, ?)", ("2025-01", 12.5))
-    rows = connection.execute("SELECT month, SUM(amount) FROM sales GROUP BY month")
-    print(rows.fetchall())
+from contextlib import closing
+
+with closing(sqlite3.connect(":memory:")) as connection:
+    with connection:
+        connection.execute("CREATE TABLE sales(month TEXT, amount REAL)")
+        connection.execute("INSERT INTO sales VALUES (?, ?)", ("2025-01", 12.5))
+    rows = connection.execute("SELECT month, SUM(amount) FROM sales GROUP BY month").fetchall()
+print(rows)
 ~~~
 
 ผลลัพธ์: <code>[('2025-01', 12.5)]</code>; type-along: เพิ่มอีกเดือนแล้วทำนายผล query ก่อนรัน; พลาดบ่อยคือประกอบ SQL ด้วย string, ลืมตรวจ schema หรือไม่กำหนดลำดับ `ORDER BY`; Related exercise: DA04 ใน [Data Analysis Practice Track](../tracks/data_analysis/README.md)

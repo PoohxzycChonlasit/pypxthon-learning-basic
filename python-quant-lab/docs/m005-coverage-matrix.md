@@ -73,12 +73,31 @@ the Data Analysis guide and main README.
 | Core curriculum | 150/150 AI reviewed; IDs, solution access, starter availability and metadata regressions pass | Core suite passed 27 tests. Human learner acceptance remains `NOT_VERIFIED`. |
 | Rubric | Scores recorded for clarity, correctness, prerequisites, difficulty, relevance, syntax, hints, references, grading and assessment integrity | Scores are post-repair AI ratings: 2=meets, 1=usable limitation, 0=material failure, NA=not applicable. |
 | Difficulty | 47 core tier assignments corrected; current counts are Tier 1: 27, Tier 2: 49, Tier 3: 43, Tier 4: 18, Tier 5: 13 | No equal-count constraint is imposed. Metadata/display consistency is checked by regression. |
-| Core grading | Fixed reference cases and core CLI regressions pass | `py -3.12 -B -m unittest discover -s tests -p 'test_*.py' -v` — 27/27. This does not establish learner mastery. |
+| Core grading | M006 historical suite: 27/27. M006C follow-up suite: 35/35 after adding L10-E015-B malformed-order cases. | M006C full run used `py -3.12 -B -m unittest discover -s tests -p 'test_*.py' -v` in a temporary project copy. Automated correctness does not establish learner mastery. |
 | First-use CLI | Start, open, unfinished check, hint, solution reveal, correct answer, progress persistence, assisted/independent status and starter preservation pass in temporary copies | The real checkout has no `progress.json`; smoke tests wrote progress only under temporary directories. The editor command was captured rather than launching a UI. |
 | Data Analysis | 23/23 reviewed; six reference-backed grader suites pass, 43/43 tests in an isolated project copy | Python 3.11.9 already has NumPy 2.4.4, pandas 2.2.3, Matplotlib 3.10.8 and Plotly 6.3.1. No packages were installed. |
 | Project virtual environment | `BLOCKED` for package graders until dependencies are installed | `.venv` is Python 3.12.10 and has none of the four packages. Global Python 3.12.10 has NumPy 2.5.1 and pandas 3.0.6. Package tests ran with existing global Python 3.11.9. Proposed command (not run): `.\.venv\Scripts\python.exe -m pip install -r requirements-optional.txt`. |
-| Assessments | All ten final assessments have distinct A/B task prompts and reference behavior; shared lesson, hint and starter guidance follows the selected variant | L02–L10 B variants were rewritten within existing IDs, with distinct outputs and oracle cases. Regression asserts prompt/solution differences and hint/catalog alignment; learner mastery remains unverified. |
-| Student work | No real `progress.json`; 156 starter-module function-body ASTs match the pre-audit baseline | No existing learner submission was found or overwritten. The working tree remains unstaged; cache hashes match the M006-start baseline. |
+| Assessments | A/B task distinction and guidance checks passed at M006. M006C repaired and tested a malformed-order state-preservation gap in L10-E015-B. | Original M006 cases did not exercise conversion failures for quantity/price; expanded fixture and regression evidence are recorded below and in the ledger. Learner mastery remains unverified. |
+| Student work | No `progress.json`; M006's 156 starter-module function-body ASTs remain historical evidence. M006C found 12 answer text files. | Baseline hashes were captured for 162 files under `answers/` and `exercises/`; those files were not modified. Tests ran in a temporary copy. |
 | Human acceptance | `NOT_VERIFIED` | No novice learner session was observed. |
 
 **Environment discrepancy:** M003 reported NumPy/pandas in the ambient interpreter; M005 checked the project `.venv`. The current inventory confirms these are different environments. The exact M003 executable is not independently established, so this explanation is an evidence-backed inference.
+
+## M006C focused assessment follow-up
+
+**Verified 2026-10-28.** The M006 27-test result is retained as historical
+evidence for its then-shipped cases. The follow-up found that malformed B
+order fields could incorrectly zero valid account balances. The implementation
+was repaired without changing the B prompt; the expanded 17-case B fixture and
+independent 15-input regression now assert balance preservation.
+
+| Check | M006C result | Evidence / boundary |
+|---|---|---|
+| Pre-repair reproduction | FAIL as expected | Five new string/`None`/empty conversion subcases failed against the old reference; valid sell and non-dict behavior passed. |
+| Repaired assessment | PASS | New independent tests: 3/3. Existing reference fixture and A/B checks: 2/2. CLI A/B workflow with expanded fixture: 1/1. |
+| Full core regression | PASS | 35/35 in 135.546 seconds in a temporary project copy, including a sibling `PythonPhase1` copy for local-link checks. |
+| Related Level 10 accounting review | PASS | Assessment A, L10-E013 cash restoration and L10-E014 event logging showed no same state-loss defect. |
+| Account-field ambiguity | UNKNOWN | B does not define output representation for malformed/non-finite pre-existing cash or position; the prior fallback remains and the explanation records the boundary. |
+| Video roadmap | PARTIAL | Nine of 13 topic rows now have checked titles and video URLs; three chapter-backed timestamps are recorded. Phase 2, algorithms, software architecture and quant research remain `UNKNOWN`. |
+| Student data | PRESERVED | `progress.json` was absent. The 12 answer files and 150 exercise files hashed at baseline remain unchanged. |
+| Human learner acceptance | NOT_VERIFIED | No real learner session was observed. |

@@ -82,5 +82,233 @@
       "live_trading": false
     },
     "tolerance": 1e-08
+  },
+  {
+    "args": [
+      {
+        "cash": 100,
+        "position": 3,
+        "quantity": "bad",
+        "price": 20,
+        "side": "sell"
+      }
+    ],
+    "expected": {
+      "accepted": false,
+      "cash_after": 100,
+      "position_after": 3,
+      "live_trading": false
+    },
+    "tolerance": 1e-08,
+    "name": "invalid quantity string preserves balances"
+  },
+  {
+    "args": [
+      {
+        "cash": 100,
+        "position": 3,
+        "quantity": 1,
+        "price": "bad",
+        "side": "sell"
+      }
+    ],
+    "expected": {
+      "accepted": false,
+      "cash_after": 100,
+      "position_after": 3,
+      "live_trading": false
+    },
+    "tolerance": 1e-08,
+    "name": "invalid price string preserves balances"
+  },
+  {
+    "args": [
+      {
+        "cash": 100,
+        "position": 3,
+        "quantity": null,
+        "price": 20,
+        "side": "sell"
+      }
+    ],
+    "expected": {
+      "accepted": false,
+      "cash_after": 100,
+      "position_after": 3,
+      "live_trading": false
+    },
+    "tolerance": 1e-08,
+    "name": "None quantity preserves balances"
+  },
+  {
+    "args": [
+      {
+        "cash": 100,
+        "position": 3,
+        "quantity": 1,
+        "price": null,
+        "side": "sell"
+      }
+    ],
+    "expected": {
+      "accepted": false,
+      "cash_after": 100,
+      "position_after": 3,
+      "live_trading": false
+    },
+    "tolerance": 1e-08,
+    "name": "None price preserves balances"
+  },
+  {
+    "args": [
+      {
+        "cash": 100,
+        "position": 3,
+        "quantity": "",
+        "price": 20,
+        "side": "sell"
+      }
+    ],
+    "expected": {
+      "accepted": false,
+      "cash_after": 100,
+      "position_after": 3,
+      "live_trading": false
+    },
+    "tolerance": 1e-08,
+    "name": "empty quantity preserves balances"
+  },
+  {
+    "args": [
+      {
+        "cash": 100,
+        "position": 3,
+        "quantity": -1,
+        "price": 20,
+        "side": "sell"
+      }
+    ],
+    "expected": {
+      "accepted": false,
+      "cash_after": 100,
+      "position_after": 3,
+      "live_trading": false
+    },
+    "tolerance": 1e-08,
+    "name": "negative quantity preserves balances"
+  },
+  {
+    "args": [
+      {
+        "cash": 100,
+        "position": 3,
+        "quantity": 1,
+        "price": 0,
+        "side": "sell"
+      }
+    ],
+    "expected": {
+      "accepted": false,
+      "cash_after": 100,
+      "position_after": 3,
+      "live_trading": false
+    },
+    "tolerance": 1e-08,
+    "name": "zero price preserves balances"
+  },
+  {
+    "args": [
+      {
+        "cash": 100,
+        "position": 3,
+        "quantity": 1,
+        "price": -1,
+        "side": "sell"
+      }
+    ],
+    "expected": {
+      "accepted": false,
+      "cash_after": 100,
+      "position_after": 3,
+      "live_trading": false
+    },
+    "tolerance": 1e-08,
+    "name": "negative price preserves balances"
+  },
+  {
+    "args": [
+      {
+        "cash": 100,
+        "position": 3,
+        "quantity": "nan",
+        "price": 20,
+        "side": "sell"
+      }
+    ],
+    "expected": {
+      "accepted": false,
+      "cash_after": 100,
+      "position_after": 3,
+      "live_trading": false
+    },
+    "tolerance": 1e-08,
+    "name": "non-finite quantity preserves balances"
+  },
+  {
+    "args": [
+      {
+        "cash": 100,
+        "position": 3,
+        "quantity": "inf",
+        "price": 20,
+        "side": "sell"
+      }
+    ],
+    "expected": {
+      "accepted": false,
+      "cash_after": 100,
+      "position_after": 3,
+      "live_trading": false
+    },
+    "tolerance": 1e-08,
+    "name": "infinite quantity preserves balances"
+  },
+  {
+    "args": [
+      {
+        "cash": 100,
+        "position": 3,
+        "quantity": 1,
+        "price": "nan",
+        "side": "sell"
+      }
+    ],
+    "expected": {
+      "accepted": false,
+      "cash_after": 100,
+      "position_after": 3,
+      "live_trading": false
+    },
+    "tolerance": 1e-08,
+    "name": "non-finite price preserves balances"
+  },
+  {
+    "args": [
+      {
+        "cash": 100,
+        "position": 3,
+        "quantity": 1,
+        "price": "inf",
+        "side": "sell"
+      }
+    ],
+    "expected": {
+      "accepted": false,
+      "cash_after": 100,
+      "position_after": 3,
+      "live_trading": false
+    },
+    "tolerance": 1e-08,
+    "name": "infinite price preserves balances"
   }
 ]

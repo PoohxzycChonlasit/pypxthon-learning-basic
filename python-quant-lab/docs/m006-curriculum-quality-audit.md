@@ -96,3 +96,69 @@ py -3.12 -B practice.py open L01-E001
 ```
 
 This report establishes AI review and automated behavior only; it does not claim real-user acceptance.
+
+## M006C focused follow-up — 2026-10-28
+
+This follow-up narrows the assessment evidence to L10-E015-B and preserves the
+M006 audit as a historical record. The M006 A/B distinction and guidance checks
+passed for the cases they covered; they did not exercise malformed quantity or
+price values that fail conversion.
+
+### Confirmed defect and repair
+
+Before repair, `final_offline_bot_assessment` converted cash, position,
+quantity and price in one `try` block. A `TypeError` or `ValueError` from an
+order field returned zero balances, even when the original cash and position
+were valid. The contract requires rejected events to preserve those balances.
+
+The independent regression was first run against the old implementation:
+`py -3.12 -B -m unittest discover -s tests -p test_l10_e015_accounting.py -v`
+reported five failing subcases: invalid quantity string, invalid price string,
+`None` quantity, `None` price and empty quantity. The valid sell and non-dict
+cases passed. The implementation now parses account balances separately and
+returns the parsed valid balances when order-field parsing or validation
+rejects an event. The function signature and non-dict zero-balance behavior
+remain unchanged; it performs no network or exchange operation.
+
+The B assessment fixture retains its original positive and negative examples
+and now contains 17 cases, including the original five plus 12 additional
+explicitly expected malformed and non-finite order inputs. The independent
+`tests/test_l10_e015_accounting.py` covers 15 rejected inputs, a successful
+sell, and non-dict input. The expected outputs are specified in the tests and
+fixture, independent of the reference implementation.
+
+### Focused review and contract boundary
+
+The variant B prompt, active-variant lesson output, starter instructions,
+variant-neutral hints, explanation, reference solution, fixture selection,
+grader and retry flow were checked together. The prompt still requires
+rejected valid-account sell events to preserve balances; the B contract was
+not loosened to make the reference pass. The existing Assessment A reference
+and nearby Level 10 cash restoration/event-log exercises did not show the same
+state-loss defect. No additional related repair was needed.
+
+The prompt does not define how to represent malformed or non-finite
+pre-existing cash/position state. The reference keeps its prior fallback for
+values that cannot be converted; the explanation now records the unspecified
+boundary without introducing new accounting rules. Human learner acceptance
+remains `NOT_VERIFIED`.
+
+### Verification performed for M006C
+
+All mutating workflow tests ran against a temporary project copy with a sibling
+`PythonPhase1` copy for documentation-link resolution. The live checkout had no
+`progress.json`; baseline hashes were captured for 162 files under `answers/`
+and `exercises/`.
+
+- Independent regression: `py -3.12 -B -m unittest discover -s tests -p test_l10_e015_accounting.py -v` — **3 tests passed**, including 15 rejected-input subcases.
+- Reference fixture and A/B checks: `py -3.12 -B -m unittest tests.test_verify_lab.LabIntegrity.test_all_reference_solutions_satisfy_all_cases tests.test_verify_lab.LabIntegrity.test_levels_two_through_ten_have_five_workflows_and_assessment_variants -v` — **2 tests passed**.
+- Learner CLI A/B workflow: `py -3.12 -B -m unittest tests.test_verify_lab.LabIntegrity.test_cli_checks_each_added_format_and_each_assessment_variant -v` — **1 test passed** with the expanded B fixture.
+- Full core suite: `py -3.12 -B -m unittest discover -s tests -p 'test_*.py' -v` — **35 tests passed in 135.546 seconds**.
+
+### Video roadmap follow-up
+
+Nine of 13 roadmap topics now have independently checked video titles and
+URLs. Three timestamps are listed where video chapter descriptions supplied
+them. Python Phase 2, algorithms, software architecture and quant research
+remain `UNKNOWN`; no syllabus equivalence or human course acceptance is
+claimed.
