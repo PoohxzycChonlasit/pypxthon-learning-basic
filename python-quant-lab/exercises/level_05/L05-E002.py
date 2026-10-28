@@ -1,3 +1,2 @@
-def normalize_symbol(text):
-    """TODO: implement the behavior in the exercise instructions."""
-    raise NotImplementedError("เขียนฟังก์ชันนี้")
+# L05-E002: ตอบในไฟล์ answers/level_05/L05-E002.txt
+# ใช้คำสั่ง open เพื่อเปิดไฟล์ข้อความ

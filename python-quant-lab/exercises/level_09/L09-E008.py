@@ -1,3 +1,3 @@
-def subtract_round_trip_cost(values):
-    """TODO: implement the behavior in the exercise instructions."""
-    raise NotImplementedError("เขียนฟังก์ชันนี้")
+def subtract_round_trip_cost(gross_returns, round_trip_cost):
+    """TODO: implement the chronological research contract."""
+    raise NotImplementedError("เติมโค้ดตามโจทย์")

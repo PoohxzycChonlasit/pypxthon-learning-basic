@@ -1,31 +1,66 @@
 [
   {
     "args": [
-      [
-        1,
-        2,
-        3,
-        4
-      ]
+      20,
+      100,
+      30,
+      200
     ],
-    "expected": 4,
-    "tolerance": 1e-08
+    "expected": {
+      "a_rate": 0.2,
+      "b_rate": 0.15,
+      "winner": "A"
+    },
+    "tolerance": 1e-08,
+    "name": "กลุ่ม A มี rate สูงกว่า",
+    "stdin": "20\n100\n30\n200\n",
+    "expected_stdout": "A=0.20 B=0.15 winner=A\n"
   },
   {
     "args": [
-      []
+      10,
+      100,
+      25,
+      100
     ],
-    "expected": 0,
-    "tolerance": 1e-08
+    "expected": {
+      "a_rate": 0.1,
+      "b_rate": 0.25,
+      "winner": "B"
+    },
+    "tolerance": 1e-08,
+    "name": "กลุ่ม B มี rate สูงกว่า",
+    "stdin": "10\n100\n25\n100\n",
+    "expected_stdout": "A=0.10 B=0.25 winner=B\n"
   },
   {
     "args": [
-      [
-        5,
-        5
-      ]
+      1,
+      0,
+      2,
+      10
     ],
-    "expected": 2,
-    "tolerance": 1e-08
+    "expected": null,
+    "tolerance": 1e-08,
+    "name": "visitor เป็นศูนย์",
+    "stdin": "1\n0\n2\n10\n",
+    "expected_stdout": "INVALID\n"
+  },
+  {
+    "args": [
+      10,
+      100,
+      20,
+      200
+    ],
+    "expected": {
+      "a_rate": 0.1,
+      "b_rate": 0.1,
+      "winner": "tie"
+    },
+    "tolerance": 1e-08,
+    "name": "equal campaign rates",
+    "stdin": "10\n100\n20\n200\n",
+    "expected_stdout": "A=0.10 B=0.10 winner=tie\n"
   }
 ]

@@ -1,3 +1,3 @@
-def net_returns_after_costs(values):
-    """TODO: implement the behavior in the exercise instructions."""
-    raise NotImplementedError("เขียนฟังก์ชันนี้")
+def net_returns_after_costs(returns, fee_rate, slippage_rate, funding_rate):
+    """TODO: implement the chronological research contract."""
+    raise NotImplementedError("เติมโค้ดตามโจทย์")

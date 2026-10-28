@@ -1,40 +1,10 @@
 [
   {
-    "args": [
-      [
-        100,
-        105,
-        null,
-        110,
-        90
-      ]
-    ],
-    "expected": [
-      100,
-      105,
-      110,
-      90
-    ],
-    "tolerance": 1e-08
-  },
-  {
-    "args": [
-      []
-    ],
-    "expected": [],
-    "tolerance": 1e-08
-  },
-  {
-    "args": [
-      [
-        5,
-        5
-      ]
-    ],
-    "expected": [
-      5,
-      5
-    ],
-    "tolerance": 1e-08
+    "args": [],
+    "expected": "2\n100.0",
+    "tolerance": 1e-08,
+    "name": "จำนวน missing และค่าเฉลี่ย",
+    "stdin": "",
+    "expected_stdout": "2\n100.0\n"
   }
 ]

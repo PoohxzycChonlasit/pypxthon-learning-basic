@@ -1,2 +1,2 @@
 def market_event_symbol(event):
-    return str(event.get('symbol','')).upper()
+    return str(event.get("symbol") or "").strip().upper()

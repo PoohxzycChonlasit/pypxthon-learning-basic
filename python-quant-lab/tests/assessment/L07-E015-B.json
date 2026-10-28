@@ -1,0 +1,46 @@
+[
+  {
+    "args": [
+      [
+        2,
+        4,
+        10
+      ]
+    ],
+    "expected": {
+      "mean": 5.333333333333333,
+      "n": 3,
+      "min": 2,
+      "max": 10
+    },
+    "tolerance": 1e-08
+  },
+  {
+    "args": [
+      []
+    ],
+    "expected": {
+      "mean": null,
+      "n": 0,
+      "min": null,
+      "max": null
+    },
+    "tolerance": 1e-08
+  },
+  {
+    "args": [
+      [
+        8,
+        8,
+        8
+      ]
+    ],
+    "expected": {
+      "mean": 8.0,
+      "n": 3,
+      "min": 8,
+      "max": 8
+    },
+    "tolerance": 1e-08
+  }
+]

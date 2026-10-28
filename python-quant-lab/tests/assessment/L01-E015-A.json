@@ -1,0 +1,12 @@
+[
+  {
+    "name": "กำไร paper trade",
+    "stdin": "100\n110\n0.1\n1\n",
+    "expected_stdout": "Gross: 1.00\nFees: 0.21\nNet: 0.79\n"
+  },
+  {
+    "name": "ขาดทุน paper trade",
+    "stdin": "200\n190\n0.4\n0.5\n",
+    "expected_stdout": "Gross: -4.00\nFees: 0.78\nNet: -4.78\n"
+  }
+]

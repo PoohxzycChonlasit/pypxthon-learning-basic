@@ -1,26 +1,27 @@
 [
   {
-    "args": [
-      10,
-      2
-    ],
-    "expected": "10: 2.00",
-    "tolerance": 1e-08
+    "name": "กำไร BTC",
+    "stdin": "60000\n61000\n0.01\n",
+    "expected_stdout": "10.00\n"
   },
   {
-    "args": [
-      0,
-      4
-    ],
-    "expected": "0: 4.00",
-    "tolerance": 1e-08
+    "name": "ขาดทุน BTC",
+    "stdin": "100\n90\n2\n",
+    "expected_stdout": "-20.00\n"
   },
   {
-    "args": [
-      -3,
-      2
-    ],
-    "expected": "-3: 2.00",
-    "tolerance": 1e-08
+    "name": "ราคาเท่ากัน",
+    "stdin": "5\n5\n0.5\n",
+    "expected_stdout": "0.00\n"
+  },
+  {
+    "name": "fractional position profit",
+    "stdin": "25\n26\n1.25\n",
+    "expected_stdout": "1.25\n"
+  },
+  {
+    "name": "fractional position loss",
+    "stdin": "100\n90\n0.05\n",
+    "expected_stdout": "-0.50\n"
   }
 ]

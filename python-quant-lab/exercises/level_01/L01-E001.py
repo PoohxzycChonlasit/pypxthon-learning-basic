@@ -1,3 +1,1 @@
-def add_two_amounts(a, b):
-    """TODO: implement the behavior in the exercise instructions."""
-    raise NotImplementedError("เขียนฟังก์ชันนี้")
+# TODO: ใช้ print() แสดงข้อความ สวัสดี Python

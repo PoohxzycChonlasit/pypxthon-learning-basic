@@ -2,40 +2,60 @@
   {
     "args": [
       [
-        100,
-        105,
-        null,
-        110,
-        90
-      ]
+        2,
+        4,
+        6,
+        8
+      ],
+      3
     ],
     "expected": [
-      100,
-      105,
-      105,
-      110,
-      90
+      4.0,
+      6.0
     ],
-    "tolerance": 1e-08
+    "tolerance": 1e-08,
+    "name": "หน้าต่างสามค่า",
+    "stdin": "2 4 6 8\n3\n",
+    "expected_stdout": "[4.0, 6.0]\n"
   },
   {
     "args": [
-      []
+      [],
+      2
     ],
     "expected": [],
-    "tolerance": 1e-08
+    "tolerance": 1e-08,
+    "name": "ไม่มีข้อมูล",
+    "stdin": "\n2\n",
+    "expected_stdout": "[]\n"
   },
   {
     "args": [
       [
-        5,
-        5
-      ]
+        7
+      ],
+      2
+    ],
+    "expected": [],
+    "tolerance": 1e-08,
+    "name": "ข้อมูลสั้นกว่าหน้าต่าง",
+    "stdin": "7\n2\n",
+    "expected_stdout": "[]\n"
+  },
+  {
+    "args": [
+      [
+        2,
+        4
+      ],
+      2
     ],
     "expected": [
-      5,
-      5
+      3.0
     ],
-    "tolerance": 1e-08
+    "tolerance": 1e-08,
+    "name": "one complete window",
+    "stdin": "2 4\n2\n",
+    "expected_stdout": "[3.0]\n"
   }
 ]

@@ -1,2 +1,2 @@
-def format_percent(x, y):
-    return f'{x:.1%}'
+def format_percent(value, digits):
+    return f"{value:.{int(digits)}%}"

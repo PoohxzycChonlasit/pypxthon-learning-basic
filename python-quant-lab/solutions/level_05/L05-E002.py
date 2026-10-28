@@ -1,2 +1,1 @@
-def normalize_symbol(text):
-    return text.split(',')[0].strip().upper()
+# คำตอบอยู่ใน L05-E002.txt

@@ -1,2 +1,4 @@
-def gross_signal_returns(values):
-    return [signal*(b/a-1) for a,b,signal in zip(values,values[1:], [1]*(len(values)-1)) if a]
+def gross_signal_returns(prices, signals):
+    return [signal * (current / previous - 1)
+            for previous, current, signal in zip(prices, prices[1:], signals)
+            if previous > 0]

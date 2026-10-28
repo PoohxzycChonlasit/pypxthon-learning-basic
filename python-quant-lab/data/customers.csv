@@ -1,0 +1,7 @@
+customer_id,segment,region,orders
+C001,new,north,1
+C002,returning,central,4
+C003,new,south,1
+C004,returning,north,3
+C005,returning,east,2
+C006,new,central,1

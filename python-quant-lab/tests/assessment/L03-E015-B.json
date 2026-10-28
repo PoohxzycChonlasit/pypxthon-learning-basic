@@ -1,0 +1,45 @@
+[
+  {
+    "args": [
+      [
+        10,
+        20,
+        10,
+        30,
+        20
+      ]
+    ],
+    "expected": {
+      "length": 5,
+      "first": 10,
+      "unique": 3
+    },
+    "tolerance": 1e-08
+  },
+  {
+    "args": [
+      []
+    ],
+    "expected": {
+      "length": 0,
+      "first": null,
+      "unique": 0
+    },
+    "tolerance": 1e-08
+  },
+  {
+    "args": [
+      [
+        "tea",
+        "rice",
+        "tea"
+      ]
+    ],
+    "expected": {
+      "length": 3,
+      "first": "tea",
+      "unique": 2
+    },
+    "tolerance": 1e-08
+  }
+]

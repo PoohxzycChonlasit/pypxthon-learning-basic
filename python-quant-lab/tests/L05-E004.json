@@ -1,23 +1,42 @@
 [
   {
     "args": [
-      "10.5,20"
+      "sku,qty"
     ],
     "expected": 2,
-    "tolerance": 1e-08
+    "tolerance": 1e-08,
+    "name": "สองช่องทั่วไป",
+    "stdin": "sku,qty\n",
+    "expected_stdout": "2\n"
   },
   {
     "args": [
-      ""
+      "\"tea, green\",2"
     ],
-    "expected": 0,
-    "tolerance": 1e-08
+    "expected": 2,
+    "tolerance": 1e-08,
+    "name": "comma ภายใน quote",
+    "stdin": "\"tea, green\",2\n",
+    "expected_stdout": "2\n"
   },
   {
     "args": [
-      "2,3,4"
+      "a,b,c"
     ],
     "expected": 3,
-    "tolerance": 1e-08
+    "tolerance": 1e-08,
+    "name": "สามช่อง",
+    "stdin": "a,b,c\n",
+    "expected_stdout": "3\n"
+  },
+  {
+    "args": [
+      "\"north, east\",\"area 1\""
+    ],
+    "expected": 2,
+    "tolerance": 1e-08,
+    "name": "quoted comma and quote",
+    "stdin": "\"north, east\",\"area 1\"\n",
+    "expected_stdout": "2\n"
   }
 ]

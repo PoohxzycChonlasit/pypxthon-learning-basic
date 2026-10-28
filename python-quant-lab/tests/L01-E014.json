@@ -1,26 +1,27 @@
 [
   {
-    "args": [
-      10,
-      2
-    ],
-    "expected": 10,
-    "tolerance": 1e-08
+    "name": "กำไรหลังค่าธรรมเนียม",
+    "stdin": "100\n110\n2\n1\n",
+    "expected_stdout": "15.80\n"
   },
   {
-    "args": [
-      0,
-      4
-    ],
-    "expected": 4,
-    "tolerance": 1e-08
+    "name": "ขาดทุนหลังค่าธรรมเนียม",
+    "stdin": "110\n100\n1\n1\n",
+    "expected_stdout": "-12.10\n"
   },
   {
-    "args": [
-      -3,
-      2
-    ],
-    "expected": 2,
-    "tolerance": 1e-08
+    "name": "ไม่มีค่าธรรมเนียม",
+    "stdin": "10\n12\n0.5\n0\n",
+    "expected_stdout": "1.00\n"
+  },
+  {
+    "name": "flat price with round-trip costs",
+    "stdin": "50\n50\n1.5\n0.5\n",
+    "expected_stdout": "-0.75\n"
+  },
+  {
+    "name": "zero quantity",
+    "stdin": "20\n30\n0\n5\n",
+    "expected_stdout": "0.00\n"
   }
 ]

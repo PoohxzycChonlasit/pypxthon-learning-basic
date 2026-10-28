@@ -1,3 +1,3 @@
-def slippage_adjusted_exit(entry, exit, quantity):
-    """TODO: implement the behavior in the exercise instructions."""
-    raise NotImplementedError("เขียนฟังก์ชันนี้")
+def slippage_adjusted_exit(exit_price, slippage_rate):
+    """TODO: implement the paper-only contract in the exercise."""
+    raise NotImplementedError("เติมโค้ดตามโจทย์")

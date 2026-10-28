@@ -2,30 +2,52 @@
   {
     "args": [
       [
-        1,
         2,
-        3,
-        4
+        4,
+        4,
+        6
       ]
     ],
-    "expected": 1.118033988749895,
-    "tolerance": 1e-08
+    "expected": 2.0,
+    "tolerance": 1e-08,
+    "name": "ประชากรสี่ค่า",
+    "stdin": "2,4,4,6\n",
+    "expected_stdout": "2.0\n"
+  },
+  {
+    "args": [
+      [
+        7
+      ]
+    ],
+    "expected": 0.0,
+    "tolerance": 1e-08,
+    "name": "สมาชิกเดียว",
+    "stdin": "7\n",
+    "expected_stdout": "0.0\n"
   },
   {
     "args": [
       []
     ],
-    "expected": 0,
-    "tolerance": 1e-08
+    "expected": null,
+    "tolerance": 1e-08,
+    "name": "ข้อมูลว่าง",
+    "stdin": "\n",
+    "expected_stdout": "NONE\n"
   },
   {
     "args": [
       [
-        5,
-        5
+        3,
+        3,
+        3
       ]
     ],
     "expected": 0.0,
-    "tolerance": 1e-08
+    "tolerance": 1e-08,
+    "name": "constant population has zero variance",
+    "stdin": "3,3,3\n",
+    "expected_stdout": "0.0\n"
   }
 ]

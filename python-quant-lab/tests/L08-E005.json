@@ -2,28 +2,67 @@
   {
     "args": [
       100,
-      110,
+      {
+        "BTC": 20,
+        "ETH": 15
+      },
       0.5
     ],
-    "expected": 0.105,
-    "tolerance": 1e-08
+    "expected": {
+      "exposure": 35,
+      "allowed": true
+    },
+    "tolerance": 1e-08,
+    "name": "exposure ต่ำกว่าเพดาน",
+    "stdin": "100\n{\"BTC\":20,\"ETH\":15}\n0.5\n",
+    "expected_stdout": "exposure=35.00 limit=50.00 allowed=True\n"
   },
   {
     "args": [
       100,
-      90,
-      1
+      {
+        "BTC": 40,
+        "ETH": 20
+      },
+      0.5
     ],
-    "expected": 0.19,
-    "tolerance": 1e-08
+    "expected": {
+      "exposure": 60,
+      "allowed": false
+    },
+    "tolerance": 1e-08,
+    "name": "ผลรวมเกินเพดาน",
+    "stdin": "100\n{\"BTC\":40,\"ETH\":20}\n0.5\n",
+    "expected_stdout": "exposure=60.00 limit=50.00 allowed=False\n"
   },
   {
     "args": [
       0,
-      0,
-      0
+      {},
+      0.5
     ],
-    "expected": 0.0,
-    "tolerance": 1e-08
+    "expected": null,
+    "tolerance": 1e-08,
+    "name": "equity ไม่บวก",
+    "stdin": "0\n{}\n0.5\n",
+    "expected_stdout": "INVALID\n"
+  },
+  {
+    "args": [
+      100,
+      {
+        "BTC": 25,
+        "ETH": 35
+      },
+      0.6
+    ],
+    "expected": {
+      "exposure": 60,
+      "allowed": true
+    },
+    "tolerance": 1e-08,
+    "name": "exposure exactly at limit",
+    "stdin": "100\n{\"BTC\":25,\"ETH\":35}\n0.6\n",
+    "expected_stdout": "exposure=60.00 limit=60.00 allowed=True\n"
   }
 ]

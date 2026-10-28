@@ -1,2 +1,11 @@
-def classify_each_result(values):
-    return ['profit' if x>0 else 'loss' if x<0 else 'flat' for x in values]
+def sum_at_or_below_limit(values, limit):
+    total = 0
+    for value in values:
+        if value <= limit:
+            total += value
+    return total
+
+if __name__ == "__main__":
+    limit = int(input())
+    values = [int(value) for value in input().split()]
+    print(sum_at_or_below_limit(values, limit))

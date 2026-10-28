@@ -2,30 +2,54 @@
   {
     "args": [
       [
-        1,
         2,
-        3,
-        4
+        10,
+        5
       ]
     ],
-    "expected": 3,
-    "tolerance": 1e-08
+    "expected": 8,
+    "tolerance": 1e-08,
+    "name": "oracle 1"
   },
   {
     "args": [
       []
     ],
     "expected": 0,
-    "tolerance": 1e-08
+    "tolerance": 1e-08,
+    "name": "oracle 2"
   },
   {
     "args": [
       [
-        5,
-        5
+        4
       ]
     ],
     "expected": 0,
-    "tolerance": 1e-08
+    "tolerance": 1e-08,
+    "name": "oracle 3"
+  },
+  {
+    "args": [
+      [
+        -3,
+        3
+      ]
+    ],
+    "expected": 6,
+    "tolerance": 1e-08,
+    "name": "oracle 4"
+  },
+  {
+    "args": [
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "expected": 0,
+    "tolerance": 1e-08,
+    "name": "oracle 5"
   }
 ]

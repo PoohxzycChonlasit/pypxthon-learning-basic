@@ -1,0 +1,5 @@
+# Optional packages for advanced lessons; install only inside .venv.
+numpy
+pandas
+matplotlib
+plotly

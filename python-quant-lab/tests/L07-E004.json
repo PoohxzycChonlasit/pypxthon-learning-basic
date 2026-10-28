@@ -1,31 +1,46 @@
 [
   {
     "args": [
-      [
-        1,
-        2,
-        3,
-        4
-      ]
+      4,
+      100
     ],
-    "expected": 2.5,
-    "tolerance": 1e-08
+    "expected": 0.04,
+    "tolerance": 1e-08,
+    "name": "สี่จากหนึ่งร้อย",
+    "stdin": "4\n100\n",
+    "expected_stdout": "0.04\n"
   },
   {
     "args": [
-      []
+      0,
+      50
+    ],
+    "expected": 0.0,
+    "tolerance": 1e-08,
+    "name": "ไม่มี signup",
+    "stdin": "0\n50\n",
+    "expected_stdout": "0.0\n"
+  },
+  {
+    "args": [
+      5,
+      0
     ],
     "expected": null,
-    "tolerance": 1e-08
+    "tolerance": 1e-08,
+    "name": "ตัวหารศูนย์",
+    "stdin": "5\n0\n",
+    "expected_stdout": "NONE\n"
   },
   {
     "args": [
-      [
-        5,
-        5
-      ]
+      4,
+      80
     ],
-    "expected": 5.0,
-    "tolerance": 1e-08
+    "expected": 0.05,
+    "tolerance": 1e-08,
+    "name": "five percent conversion",
+    "stdin": "4\n80\n",
+    "expected_stdout": "0.05\n"
   }
 ]

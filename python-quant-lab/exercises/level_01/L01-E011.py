@@ -1,3 +1,2 @@
-def format_asset_label(a, b):
-    """TODO: implement the behavior in the exercise instructions."""
-    raise NotImplementedError("เขียนฟังก์ชันนี้")
+# TODO: อ่านราคาซื้อ ราคาขาย และจำนวน BTC
+# TODO: คำนวณและแสดงกำไรขั้นต้น

@@ -1,3 +1,3 @@
-def risk_reward_ratio(entry, exit, quantity):
-    """TODO: implement the behavior in the exercise instructions."""
-    raise NotImplementedError("เขียนฟังก์ชันนี้")
+def risk_reward_ratio(entry, target, stop):
+    """TODO: implement the paper-only contract in the exercise."""
+    raise NotImplementedError("เติมโค้ดตามโจทย์")

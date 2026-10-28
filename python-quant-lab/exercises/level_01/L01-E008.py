@@ -1,3 +1,3 @@
-def absolute_difference(a, b):
-    """TODO: implement the behavior in the exercise instructions."""
-    raise NotImplementedError("เขียนฟังก์ชันนี้")
+count = input()
+# TODO: แปลง count เป็น int
+print(count + 1)

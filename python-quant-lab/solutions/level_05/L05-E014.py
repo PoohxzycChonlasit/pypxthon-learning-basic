@@ -1,2 +1,7 @@
 def count_repeated_symbols(text):
-    return {s:text.upper().split(',').count(s) for s in set(text.upper().split(',')) if s}
+    counts = {}
+    for token in text.split(","):
+        symbol = token.strip().upper()
+        if symbol:
+            counts[symbol] = counts.get(symbol, 0) + 1
+    return counts

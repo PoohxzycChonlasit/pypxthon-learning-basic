@@ -1,3 +1,8 @@
-def classify_each_result(values):
-    """TODO: implement the behavior in the exercise instructions."""
-    raise NotImplementedError("เขียนฟังก์ชันนี้")
+def sum_at_or_below_limit(values, limit):
+    # TODO: วน values และคืนผลรวมที่ผ่านเงื่อนไข
+    raise NotImplementedError("เติมลูป")
+
+if __name__ == "__main__":
+    limit = int(input())
+    values = [int(value) for value in input().split()]
+    print(sum_at_or_below_limit(values, limit))

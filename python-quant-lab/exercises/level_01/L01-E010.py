@@ -1,3 +1,2 @@
-def round_to_cents(a, b):
-    """TODO: implement the behavior in the exercise instructions."""
-    raise NotImplementedError("เขียนฟังก์ชันนี้")
+# TODO: อ่านรายรับ ที่พัก และค่าอาหาร
+# TODO: แสดงเงินคงเหลือสองตำแหน่ง

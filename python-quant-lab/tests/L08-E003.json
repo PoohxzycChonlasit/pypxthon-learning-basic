@@ -1,29 +1,50 @@
 [
   {
     "args": [
-      100,
-      110,
-      0.5
+      1000,
+      1,
+      5
     ],
-    "expected": 50.0,
-    "tolerance": 1e-08
+    "expected": 2.0,
+    "tolerance": 1e-08,
+    "name": "ความเสี่ยงสิบหน่วย",
+    "stdin": "1000\n1\n5\n",
+    "expected_stdout": "2.00\n"
   },
   {
     "args": [
-      100,
-      90,
-      1
+      1000,
+      0,
+      5
     ],
-    "expected": 100,
-    "tolerance": 1e-08
+    "expected": 0.0,
+    "tolerance": 1e-08,
+    "name": "ไม่รับความเสี่ยง",
+    "stdin": "1000\n0\n5\n",
+    "expected_stdout": "0.00\n"
   },
   {
     "args": [
-      0,
-      0,
+      1000,
+      1,
       0
     ],
     "expected": 0,
-    "tolerance": 1e-08
+    "tolerance": 1e-08,
+    "name": "ระยะ stop ใช้ไม่ได้",
+    "stdin": "1000\n1\n0\n",
+    "expected_stdout": "0.00\n"
+  },
+  {
+    "args": [
+      2500,
+      2,
+      10
+    ],
+    "expected": 5.0,
+    "tolerance": 1e-08,
+    "name": "risk budget divided by stop distance",
+    "stdin": "2500\n2\n10\n",
+    "expected_stdout": "5.00\n"
   }
 ]

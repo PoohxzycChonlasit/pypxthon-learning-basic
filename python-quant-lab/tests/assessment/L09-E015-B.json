@@ -1,0 +1,43 @@
+[
+  {
+    "args": [
+      [
+        3,
+        4,
+        5,
+        6
+      ]
+    ],
+    "expected": {
+      "observations": 4,
+      "mean": 4.5,
+      "decision": "evaluate out of sample"
+    },
+    "tolerance": 1e-08
+  },
+  {
+    "args": [
+      [
+        2,
+        8
+      ]
+    ],
+    "expected": {
+      "observations": 2,
+      "mean": 5.0,
+      "decision": "insufficient data"
+    },
+    "tolerance": 1e-08
+  },
+  {
+    "args": [
+      []
+    ],
+    "expected": {
+      "observations": 0,
+      "mean": null,
+      "decision": "insufficient data"
+    },
+    "tolerance": 1e-08
+  }
+]

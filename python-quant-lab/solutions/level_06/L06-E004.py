@@ -1,2 +1,15 @@
-def rolling_two_point_mean(values):
-    return [(a+b)/2 for a,b in zip(values,values[1:]) if a is not None and b is not None]
+def fill_forward(values):
+    result = []
+    previous = None
+    for value in values:
+        if value is not None:
+            previous = value
+            result.append(value)
+        else:
+            result.append(previous)
+    return result
+
+if __name__ == "__main__":
+    raw = input().strip()
+    values = [] if not raw else [None if x == "NA" else float(x) for x in raw.split(",")]
+    print(fill_forward(values))

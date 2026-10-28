@@ -1,3 +1,2 @@
-def simulate_buy_cash(event):
-    """TODO: implement the behavior in the exercise instructions."""
-    raise NotImplementedError("เขียนฟังก์ชันนี้")
+# L10-E002: ตอบในไฟล์ answers/level_10/L10-E002.txt
+# ใช้คำสั่ง open เพื่อเปิดไฟล์ข้อความ

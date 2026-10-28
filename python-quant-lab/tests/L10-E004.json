@@ -2,40 +2,65 @@
   {
     "args": [
       {
-        "cash": 100,
-        "quantity": 1,
-        "price": 10,
-        "side": "buy",
-        "id": "a"
+        "open": 10,
+        "high": 12,
+        "low": 9,
+        "close": 11,
+        "volume": 5
       }
     ],
-    "expected": "accepted",
-    "tolerance": 1e-08
+    "expected": true,
+    "tolerance": 1e-08,
+    "name": "แท่งถูกต้อง",
+    "stdin": "{\"open\":10,\"high\":12,\"low\":9,\"close\":11,\"volume\":5}\n",
+    "expected_stdout": "True\n"
   },
   {
     "args": [
       {
-        "cash": 0,
-        "quantity": 0,
-        "price": 10,
-        "side": "sell",
-        "id": "b"
+        "open": 10,
+        "high": 9,
+        "low": 8,
+        "close": 11,
+        "volume": 5
       }
     ],
-    "expected": "rejected",
-    "tolerance": 1e-08
+    "expected": false,
+    "tolerance": 1e-08,
+    "name": "high ต่ำกว่า close",
+    "stdin": "{\"open\":10,\"high\":9,\"low\":8,\"close\":11,\"volume\":5}\n",
+    "expected_stdout": "False\n"
   },
   {
     "args": [
       {
-        "cash": 20,
-        "quantity": 2,
-        "price": 5,
-        "side": "buy",
-        "id": "c"
+        "open": 10,
+        "high": 12,
+        "low": 11,
+        "close": 9,
+        "volume": 5
       }
     ],
-    "expected": "accepted",
-    "tolerance": 1e-08
+    "expected": false,
+    "tolerance": 1e-08,
+    "name": "low สูงกว่า close",
+    "stdin": "{\"open\":10,\"high\":12,\"low\":11,\"close\":9,\"volume\":5}\n",
+    "expected_stdout": "False\n"
+  },
+  {
+    "args": [
+      {
+        "open": 10,
+        "high": 12,
+        "low": 9,
+        "close": 11,
+        "volume": -1
+      }
+    ],
+    "expected": false,
+    "tolerance": 1e-08,
+    "name": "negative volume rejected",
+    "stdin": "{\"open\":10,\"high\":12,\"low\":9,\"close\":11,\"volume\":-1}\n",
+    "expected_stdout": "False\n"
   }
 ]

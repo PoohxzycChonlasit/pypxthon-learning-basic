@@ -1,26 +1,50 @@
 [
   {
     "args": [
-      10,
-      2
+      100,
+      0.1,
+      0.07
     ],
-    "expected": 5.0,
-    "tolerance": 1e-08
+    "expected": 96.3,
+    "tolerance": 1e-08,
+    "name": "ส่วนลดก่อนภาษี",
+    "stdin": "100\n0.1\n0.07\n",
+    "expected_stdout": "96.30\n"
+  },
+  {
+    "args": [
+      50,
+      0,
+      0.07
+    ],
+    "expected": 53.5,
+    "tolerance": 1e-08,
+    "name": "ไม่มีส่วนลด",
+    "stdin": "50\n0\n0.07\n",
+    "expected_stdout": "53.50\n"
+  },
+  {
+    "args": [
+      100,
+      1.5,
+      0.07
+    ],
+    "expected": null,
+    "tolerance": 1e-08,
+    "name": "ส่วนลดนอกช่วง",
+    "stdin": "100\n1.5\n0.07\n",
+    "expected_stdout": "INVALID\n"
   },
   {
     "args": [
       0,
-      1
+      0.5,
+      0.07
     ],
     "expected": 0.0,
-    "tolerance": 1e-08
-  },
-  {
-    "args": [
-      5,
-      5
-    ],
-    "expected": 1.0,
-    "tolerance": 1e-08
+    "tolerance": 1e-08,
+    "name": "zero subtotal",
+    "stdin": "0\n0.5\n0.07\n",
+    "expected_stdout": "0.00\n"
   }
 ]

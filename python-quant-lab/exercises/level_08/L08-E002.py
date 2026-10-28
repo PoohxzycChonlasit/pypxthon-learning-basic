@@ -1,3 +1,2 @@
-def long_return_fraction(entry, exit, quantity):
-    """TODO: implement the behavior in the exercise instructions."""
-    raise NotImplementedError("เขียนฟังก์ชันนี้")
+# L08-E002: ตอบในไฟล์ answers/level_08/L08-E002.txt
+# ใช้คำสั่ง open เพื่อเปิดไฟล์ข้อความ

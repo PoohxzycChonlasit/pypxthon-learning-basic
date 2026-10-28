@@ -1,0 +1,12 @@
+[
+  {
+    "name": "budget transfer positive",
+    "stdin": "1000\n100\n50\n25\n",
+    "expected_stdout": "Expenses: 175.00\nRemaining: 825.00\n"
+  },
+  {
+    "name": "budget transfer overspend",
+    "stdin": "100\n80\n30\n10\n",
+    "expected_stdout": "Expenses: 120.00\nRemaining: -20.00\n"
+  }
+]

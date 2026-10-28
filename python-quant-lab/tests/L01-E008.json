@@ -1,26 +1,17 @@
 [
   {
-    "args": [
-      10,
-      2
-    ],
-    "expected": 8,
-    "tolerance": 1e-08
+    "name": "เลขบวก",
+    "stdin": "4\n",
+    "expected_stdout": "5\n"
   },
   {
-    "args": [
-      0,
-      4
-    ],
-    "expected": 4,
-    "tolerance": 1e-08
+    "name": "ศูนย์",
+    "stdin": "0\n",
+    "expected_stdout": "1\n"
   },
   {
-    "args": [
-      -3,
-      2
-    ],
-    "expected": 5,
-    "tolerance": 1e-08
+    "name": "negative integer",
+    "stdin": "-3\n",
+    "expected_stdout": "-2\n"
   }
 ]

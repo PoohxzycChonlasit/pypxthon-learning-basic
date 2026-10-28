@@ -1,3 +1,1 @@
-def subtract_values(a, b):
-    """TODO: implement the behavior in the exercise instructions."""
-    raise NotImplementedError("เขียนฟังก์ชันนี้")
+ANSWER = "TODO: ใส่ผลลัพธ์สองบรรทัด"

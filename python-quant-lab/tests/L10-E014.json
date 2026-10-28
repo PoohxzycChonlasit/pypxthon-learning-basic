@@ -2,11 +2,8 @@
   {
     "args": [
       {
-        "cash": 100,
-        "quantity": 1,
-        "price": 10,
-        "side": "buy",
-        "id": "a"
+        "id": "a",
+        "side": "buy"
       }
     ],
     "expected": {
@@ -14,16 +11,26 @@
       "side": "buy",
       "paper_only": true
     },
-    "tolerance": 1e-08
+    "tolerance": 1e-08,
+    "name": "oracle 1"
+  },
+  {
+    "args": [
+      {}
+    ],
+    "expected": {
+      "event": null,
+      "side": null,
+      "paper_only": true
+    },
+    "tolerance": 1e-08,
+    "name": "oracle 2"
   },
   {
     "args": [
       {
-        "cash": 0,
-        "quantity": 0,
-        "price": 10,
-        "side": "sell",
-        "id": "b"
+        "id": "b",
+        "side": "sell"
       }
     ],
     "expected": {
@@ -31,23 +38,37 @@
       "side": "sell",
       "paper_only": true
     },
-    "tolerance": 1e-08
+    "tolerance": 1e-08,
+    "name": "oracle 3"
   },
   {
     "args": [
       {
-        "cash": 20,
-        "quantity": 2,
-        "price": 5,
-        "side": "buy",
-        "id": "c"
+        "id": 3,
+        "side": "hold"
       }
     ],
     "expected": {
-      "event": "c",
-      "side": "buy",
+      "event": 3,
+      "side": "hold",
       "paper_only": true
     },
-    "tolerance": 1e-08
+    "tolerance": 1e-08,
+    "name": "oracle 4"
+  },
+  {
+    "args": [
+      {
+        "id": "x",
+        "side": null
+      }
+    ],
+    "expected": {
+      "event": "x",
+      "side": null,
+      "paper_only": true
+    },
+    "tolerance": 1e-08,
+    "name": "oracle 5"
   }
 ]

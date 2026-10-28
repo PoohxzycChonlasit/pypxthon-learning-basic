@@ -1,3 +1,3 @@
-def exposure_fraction(entry, exit, quantity):
-    """TODO: implement the behavior in the exercise instructions."""
-    raise NotImplementedError("เขียนฟังก์ชันนี้")
+def exposure_fraction(price, quantity, equity):
+    """TODO: implement the paper-only contract in the exercise."""
+    raise NotImplementedError("เติมโค้ดตามโจทย์")

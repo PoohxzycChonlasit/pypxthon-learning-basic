@@ -1,3 +1,4 @@
-def multiply_amounts(a, b):
-    """TODO: implement the behavior in the exercise instructions."""
-    raise NotImplementedError("เขียนฟังก์ชันนี้")
+price = 4
+quantity = 3
+# TODO: กำหนด total จาก price และ quantity
+print(total)

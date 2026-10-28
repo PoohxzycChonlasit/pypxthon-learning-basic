@@ -1,3 +1,4 @@
-def simple_interest(a, b):
-    """TODO: implement the behavior in the exercise instructions."""
-    raise NotImplementedError("เขียนฟังก์ชันนี้")
+gross = float(input())
+fee_percent = float(input())
+# TODO: คำนวณ net
+print(f"{net:.2f}")

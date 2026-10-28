@@ -1,2 +1,1 @@
-def risk_fraction(x, y):
-    return x*y
+# คำตอบของข้อทำนายผลอยู่ใน L04-E002.txt

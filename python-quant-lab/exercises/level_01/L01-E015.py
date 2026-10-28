@@ -1,3 +1,3 @@
-def final_basics_assessment(a, b):
-    """TODO: implement the behavior in the exercise instructions."""
-    raise NotImplementedError("เขียนฟังก์ชันนี้")
+# TODO: อ่าน buy, sell, quantity และ fee_percent
+# TODO: คำนวณ gross, fees และ net
+# TODO: พิมพ์ผลสามบรรทัดตามรูปแบบโจทย์

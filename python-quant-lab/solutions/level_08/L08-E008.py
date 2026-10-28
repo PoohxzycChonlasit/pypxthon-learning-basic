@@ -1,2 +1,2 @@
-def slippage_adjusted_exit(entry, exit, quantity):
-    return exit*(1-.001)
+def slippage_adjusted_exit(exit_price, slippage_rate):
+    return exit_price * (1 - slippage_rate)

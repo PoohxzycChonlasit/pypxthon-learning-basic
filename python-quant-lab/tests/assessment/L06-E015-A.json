@@ -1,0 +1,49 @@
+[
+  {
+    "args": [
+      [
+        100,
+        105,
+        null,
+        110,
+        90
+      ]
+    ],
+    "expected": {
+      "clean": [
+        100,
+        105,
+        110,
+        90
+      ],
+      "missing": 1
+    },
+    "tolerance": 1e-08
+  },
+  {
+    "args": [
+      []
+    ],
+    "expected": {
+      "clean": [],
+      "missing": 0
+    },
+    "tolerance": 1e-08
+  },
+  {
+    "args": [
+      [
+        5,
+        5
+      ]
+    ],
+    "expected": {
+      "clean": [
+        5,
+        5
+      ],
+      "missing": 0
+    },
+    "tolerance": 1e-08
+  }
+]

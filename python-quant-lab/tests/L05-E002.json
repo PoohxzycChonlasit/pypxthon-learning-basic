@@ -1,23 +1,10 @@
 [
   {
-    "args": [
-      "10.5,20"
-    ],
-    "expected": "10.5",
-    "tolerance": 1e-08
-  },
-  {
-    "args": [
-      ""
-    ],
-    "expected": "",
-    "tolerance": 1e-08
-  },
-  {
-    "args": [
-      "2,3,4"
-    ],
-    "expected": "2",
-    "tolerance": 1e-08
+    "args": [],
+    "expected": "7\n1",
+    "tolerance": 1e-08,
+    "name": "ยอดและจำนวนแถวเสีย",
+    "stdin": "",
+    "expected_stdout": "7\n1\n"
   }
 ]

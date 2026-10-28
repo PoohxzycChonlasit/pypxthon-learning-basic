@@ -4,23 +4,43 @@
       10,
       2
     ],
-    "expected": 4.0,
-    "tolerance": 1e-08
+    "expected": 5.0,
+    "tolerance": 1e-08,
+    "name": "หารปกติ",
+    "stdin": "10\n2\n",
+    "expected_stdout": "5.0\n"
   },
   {
     "args": [
       0,
-      1
+      5
     ],
-    "expected": 0.75,
-    "tolerance": 1e-08
+    "expected": 0.0,
+    "tolerance": 1e-08,
+    "name": "ตัวตั้งศูนย์",
+    "stdin": "0\n5\n",
+    "expected_stdout": "0.0\n"
   },
   {
     "args": [
       5,
-      5
+      0
     ],
-    "expected": 5.0,
-    "tolerance": 1e-08
+    "expected": null,
+    "tolerance": 1e-08,
+    "name": "ตัวหารศูนย์",
+    "stdin": "5\n0\n",
+    "expected_stdout": "NONE\n"
+  },
+  {
+    "args": [
+      5,
+      -2
+    ],
+    "expected": -2.5,
+    "tolerance": 1e-08,
+    "name": "negative denominator",
+    "stdin": "5\n-2\n",
+    "expected_stdout": "-2.5\n"
   }
 ]

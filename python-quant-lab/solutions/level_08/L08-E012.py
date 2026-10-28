@@ -1,2 +1,2 @@
-def exposure_fraction(entry, exit, quantity):
-    return entry*quantity/100 if 100 else None
+def exposure_fraction(price, quantity, equity):
+    return price * quantity / equity if equity else None

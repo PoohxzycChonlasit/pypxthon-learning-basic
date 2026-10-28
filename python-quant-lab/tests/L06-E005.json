@@ -1,22 +1,59 @@
 [
   {
     "args": [
+      [
+        {
+          "product": "tea",
+          "quantity": 2,
+          "unit_price": 30
+        },
+        {
+          "product": "rice",
+          "quantity": 1,
+          "unit_price": 25
+        },
+        {
+          "product": "tea",
+          "quantity": 1,
+          "unit_price": 30
+        }
+      ]
+    ],
+    "expected": {
+      "tea": 90.0,
+      "rice": 25.0
+    },
+    "tolerance": 1e-08,
+    "name": "สินค้าสองชนิด",
+    "stdin": "product,quantity,unit_price\ntea,2,30\nrice,1,25\ntea,1,30\n",
+    "expected_stdout": "rice:25.00\ntea:90.00\n"
+  },
+  {
+    "args": [
       []
     ],
-    "expected": [],
-    "tolerance": 1e-08
+    "expected": {},
+    "tolerance": 1e-08,
+    "name": "มีแต่ header",
+    "stdin": "product,quantity,unit_price\n",
+    "expected_stdout": "NONE\n"
   },
   {
     "args": [
       [
-        5,
-        5
+        {
+          "product": "tea",
+          "quantity": "3",
+          "unit_price": "40"
+        }
       ]
     ],
-    "expected": [
-      0.0,
-      0.0
-    ],
-    "tolerance": 1e-08
+    "expected": {
+      "tea": 120.0
+    },
+    "tolerance": 1e-08,
+    "name": "single product",
+    "stdin": "product,quantity,unit_price\ntea,3,40\n",
+    "expected_stdout": "tea:120.00\n"
   }
 ]

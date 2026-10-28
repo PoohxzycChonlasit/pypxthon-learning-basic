@@ -1,23 +1,68 @@
 [
   {
     "args": [
-      "10.5,20"
+      [
+        "2,10",
+        "bad,3",
+        "1,5"
+      ]
     ],
-    "expected": false,
-    "tolerance": 1e-08
+    "expected": {
+      "valid": 2,
+      "rejected": 1,
+      "revenue": 25.0
+    },
+    "tolerance": 1e-08,
+    "name": "สองแถวผ่านหนึ่งแถวเสีย",
+    "stdin": "2,10\nbad,3\n1,5\n",
+    "expected_stdout": "valid=2 rejected=1 revenue=25.00\n"
   },
   {
     "args": [
-      ""
+      [
+        "-1,8",
+        "3,4"
+      ]
     ],
-    "expected": false,
-    "tolerance": 1e-08
+    "expected": {
+      "valid": 1,
+      "rejected": 1,
+      "revenue": 12.0
+    },
+    "tolerance": 1e-08,
+    "name": "ปริมาณติดลบ",
+    "stdin": "-1,8\n3,4\n",
+    "expected_stdout": "valid=1 rejected=1 revenue=12.00\n"
   },
   {
     "args": [
-      "2,3,4"
+      []
     ],
-    "expected": false,
-    "tolerance": 1e-08
+    "expected": {
+      "valid": 0,
+      "rejected": 0,
+      "revenue": 0.0
+    },
+    "tolerance": 1e-08,
+    "name": "ไม่มีแถว",
+    "stdin": "",
+    "expected_stdout": "valid=0 rejected=0 revenue=0.00\n"
+  },
+  {
+    "args": [
+      [
+        "2,3.5",
+        "1,2,3"
+      ]
+    ],
+    "expected": {
+      "valid": 1,
+      "rejected": 1,
+      "revenue": 7.0
+    },
+    "tolerance": 1e-08,
+    "name": "extra field is rejected",
+    "stdin": "2,3.5\n1,2,3\n",
+    "expected_stdout": "valid=1 rejected=1 revenue=7.00\n"
   }
 ]

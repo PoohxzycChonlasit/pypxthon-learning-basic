@@ -1,26 +1,7 @@
 [
   {
-    "args": [
-      10,
-      2
-    ],
-    "expected": 12,
-    "tolerance": 1e-08
-  },
-  {
-    "args": [
-      0,
-      4
-    ],
-    "expected": 4,
-    "tolerance": 1e-08
-  },
-  {
-    "args": [
-      -3,
-      2
-    ],
-    "expected": -1,
-    "tolerance": 1e-08
+    "name": "ข้อความตรงตามโจทย์",
+    "stdin": "",
+    "expected_stdout": "สวัสดี Python\n"
   }
 ]

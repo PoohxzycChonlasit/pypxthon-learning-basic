@@ -1,2 +1,1 @@
-def sorted_observations(items):
-    return sorted(items)
+# คำตอบของข้อทำนายผลอยู่ใน L03-E002.txt

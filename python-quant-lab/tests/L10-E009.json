@@ -2,40 +2,49 @@
   {
     "args": [
       {
-        "cash": 100,
-        "quantity": 1,
-        "price": 10,
-        "side": "buy",
-        "id": "a"
+        "fee": 0.001
       }
     ],
+    "expected": 0.001,
+    "tolerance": 1e-08,
+    "name": "oracle 1"
+  },
+  {
+    "args": [
+      {}
+    ],
     "expected": 0.0,
-    "tolerance": 1e-08
+    "tolerance": 1e-08,
+    "name": "oracle 2"
   },
   {
     "args": [
       {
-        "cash": 0,
-        "quantity": 0,
-        "price": 10,
-        "side": "sell",
-        "id": "b"
+        "fee": -0.1
       }
     ],
     "expected": 0.0,
-    "tolerance": 1e-08
+    "tolerance": 1e-08,
+    "name": "oracle 3"
   },
   {
     "args": [
       {
-        "cash": 20,
-        "quantity": 2,
-        "price": 5,
-        "side": "buy",
-        "id": "c"
+        "fee": "0.01"
       }
     ],
     "expected": 0.0,
-    "tolerance": 1e-08
+    "tolerance": 1e-08,
+    "name": "oracle 4"
+  },
+  {
+    "args": [
+      {
+        "fee": true
+      }
+    ],
+    "expected": 0.0,
+    "tolerance": 1e-08,
+    "name": "oracle 5"
   }
 ]

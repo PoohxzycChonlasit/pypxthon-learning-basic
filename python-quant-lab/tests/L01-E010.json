@@ -1,26 +1,22 @@
 [
   {
-    "args": [
-      10,
-      2
-    ],
-    "expected": 20,
-    "tolerance": 1e-08
+    "name": "รายรับหนึ่งพัน",
+    "stdin": "1000\n400\n125.5\n",
+    "expected_stdout": "474.50\n"
   },
   {
-    "args": [
-      0,
-      4
-    ],
-    "expected": 0,
-    "tolerance": 1e-08
+    "name": "ไม่มีค่าใช้จ่าย",
+    "stdin": "10\n0\n0\n",
+    "expected_stdout": "10.00\n"
   },
   {
-    "args": [
-      -3,
-      2
-    ],
-    "expected": -6,
-    "tolerance": 1e-08
+    "name": "เงินคงเหลือติดลบ",
+    "stdin": "5\n8\n1\n",
+    "expected_stdout": "-4.00\n"
+  },
+  {
+    "name": "negative remainder",
+    "stdin": "50\n100\n25\n",
+    "expected_stdout": "-75.00\n"
   }
 ]

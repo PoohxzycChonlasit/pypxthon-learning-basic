@@ -1,0 +1,43 @@
+[
+  {
+    "args": [
+      [
+        -1,
+        0,
+        2,
+        4
+      ]
+    ],
+    "expected": {
+      "count": 4,
+      "positive": 2,
+      "net": 5
+    },
+    "tolerance": 1e-08
+  },
+  {
+    "args": [
+      []
+    ],
+    "expected": {
+      "count": 0,
+      "positive": 0,
+      "net": 0
+    },
+    "tolerance": 1e-08
+  },
+  {
+    "args": [
+      [
+        -3,
+        -2
+      ]
+    ],
+    "expected": {
+      "count": 2,
+      "positive": 0,
+      "net": -5
+    },
+    "tolerance": 1e-08
+  }
+]

@@ -1,2 +1,2 @@
-def absolute_difference(a, b):
-    return abs(a-b)
+count = int(input())
+print(count + 1)

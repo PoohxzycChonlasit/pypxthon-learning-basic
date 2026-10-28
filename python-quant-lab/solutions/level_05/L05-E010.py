@@ -1,2 +1,2 @@
 def detect_header_row(text):
-    return text.lower().startswith('date,')
+    return text.lstrip().lower().startswith("date,")

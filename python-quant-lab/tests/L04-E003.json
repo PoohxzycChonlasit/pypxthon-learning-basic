@@ -2,25 +2,49 @@
   {
     "args": [
       10,
-      2
+      2,
+      3
     ],
-    "expected": 2,
-    "tolerance": 1e-08
+    "expected": 23.0,
+    "tolerance": 1e-08,
+    "name": "คูณแล้วบวก",
+    "stdin": "10\n2\n3\n",
+    "expected_stdout": "23.0\n"
   },
   {
     "args": [
       0,
-      1
+      4,
+      -2
     ],
-    "expected": 0,
-    "tolerance": 1e-08
+    "expected": -2,
+    "tolerance": 1e-08,
+    "name": "ค่าเริ่มศูนย์",
+    "stdin": "0\n4\n-2\n",
+    "expected_stdout": "-2.0\n"
   },
   {
     "args": [
       5,
-      5
+      0,
+      7
     ],
-    "expected": 5,
-    "tolerance": 1e-08
+    "expected": 7,
+    "tolerance": 1e-08,
+    "name": "scale เป็นศูนย์",
+    "stdin": "5\n0\n7\n",
+    "expected_stdout": "7.0\n"
+  },
+  {
+    "args": [
+      3,
+      2.5,
+      -1
+    ],
+    "expected": 6.5,
+    "tolerance": 1e-08,
+    "name": "fractional scale and negative offset",
+    "stdin": "3\n2.5\n-1\n",
+    "expected_stdout": "6.5\n"
   }
 ]

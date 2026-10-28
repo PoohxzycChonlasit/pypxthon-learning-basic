@@ -1,0 +1,53 @@
+[
+  {
+    "args": [
+      {
+        "cash": 250,
+        "quantity": 3,
+        "price": 20,
+        "side": "buy",
+        "id": "stock-A"
+      }
+    ],
+    "expected": {
+      "orders": 1,
+      "cash_after": 190,
+      "live_trading": false
+    },
+    "tolerance": 1e-08
+  },
+  {
+    "args": [
+      {
+        "cash": 250,
+        "quantity": 0,
+        "price": 20,
+        "side": "buy",
+        "id": "stock-B"
+      }
+    ],
+    "expected": {
+      "orders": 0,
+      "cash_after": 250,
+      "live_trading": false
+    },
+    "tolerance": 1e-08
+  },
+  {
+    "args": [
+      {
+        "cash": 40,
+        "quantity": 2,
+        "price": 25,
+        "side": "buy",
+        "id": "stock-C"
+      }
+    ],
+    "expected": {
+      "orders": 0,
+      "cash_after": 40,
+      "live_trading": false
+    },
+    "tolerance": 1e-08
+  }
+]

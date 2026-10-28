@@ -1,31 +1,57 @@
 [
   {
     "args": [
-      [
-        1,
-        -2,
-        0,
-        3
-      ]
+      150,
+      "local"
     ],
-    "expected": 1,
-    "tolerance": 1e-08
+    "expected": 170.0,
+    "tolerance": 1e-08,
+    "name": "ยอดปกติโซนใกล้",
+    "stdin": "150\nlocal\n",
+    "expected_stdout": "170.00\n"
   },
   {
     "args": [
-      []
+      300,
+      "remote"
     ],
-    "expected": 0,
-    "tolerance": 1e-08
+    "expected": 300.0,
+    "tolerance": 1e-08,
+    "name": "ตรง threshold ส่งฟรี",
+    "stdin": "300\nremote\n",
+    "expected_stdout": "300.00\n"
   },
   {
     "args": [
-      [
-        5,
-        5
-      ]
+      100,
+      "remote"
     ],
-    "expected": 2,
-    "tolerance": 1e-08
+    "expected": 150.0,
+    "tolerance": 1e-08,
+    "name": "ยอดต่ำโซนไกล",
+    "stdin": "100\nremote\n",
+    "expected_stdout": "150.00\n"
+  },
+  {
+    "args": [
+      10,
+      "unknown"
+    ],
+    "expected": null,
+    "tolerance": 1e-08,
+    "name": "เขตที่ไม่รู้จัก",
+    "stdin": "10\nunknown\n",
+    "expected_stdout": "INVALID\n"
+  },
+  {
+    "args": [
+      299,
+      "remote"
+    ],
+    "expected": 349.0,
+    "tolerance": 1e-08,
+    "name": "remote just below free threshold",
+    "stdin": "299\nremote\n",
+    "expected_stdout": "349.00\n"
   }
 ]

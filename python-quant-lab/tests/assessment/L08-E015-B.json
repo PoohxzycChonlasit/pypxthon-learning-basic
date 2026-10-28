@@ -1,0 +1,44 @@
+[
+  {
+    "args": [
+      200,
+      195,
+      0.1
+    ],
+    "expected": {
+      "gross": -0.5,
+      "fee": 0.0395,
+      "net": -0.5395,
+      "live_trading": false
+    },
+    "tolerance": 1e-08
+  },
+  {
+    "args": [
+      200,
+      210,
+      0.05
+    ],
+    "expected": {
+      "gross": 0.5,
+      "fee": 0.0205,
+      "net": 0.4795,
+      "live_trading": false
+    },
+    "tolerance": 1e-08
+  },
+  {
+    "args": [
+      5,
+      5,
+      0
+    ],
+    "expected": {
+      "gross": 0,
+      "fee": 0,
+      "net": 0,
+      "live_trading": false
+    },
+    "tolerance": 1e-08
+  }
+]

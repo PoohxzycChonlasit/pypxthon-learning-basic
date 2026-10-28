@@ -1,2 +1,5 @@
-def round_to_cents(a, b):
-    return round(a*b, 2)
+income = float(input())
+housing = float(input())
+food = float(input())
+remaining = income - housing - food
+print(f"{remaining:.2f}")

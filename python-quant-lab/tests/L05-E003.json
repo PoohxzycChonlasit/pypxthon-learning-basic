@@ -1,30 +1,42 @@
 [
   {
     "args": [
-      "10.5,20"
+      "12.5"
     ],
-    "expected": [
-      10.5,
-      20.0
-    ],
-    "tolerance": 1e-08
+    "expected": 12.5,
+    "tolerance": 1e-08,
+    "name": "ยอดบวก",
+    "stdin": "12.5\n",
+    "expected_stdout": "12.50\n"
   },
   {
     "args": [
-      ""
+      "bad"
     ],
-    "expected": [],
-    "tolerance": 1e-08
+    "expected": null,
+    "tolerance": 1e-08,
+    "name": "ไม่ใช่ตัวเลข",
+    "stdin": "bad\n",
+    "expected_stdout": "INVALID\n"
   },
   {
     "args": [
-      "2,3,4"
+      "-4"
     ],
-    "expected": [
-      2.0,
-      3.0,
-      4.0
+    "expected": null,
+    "tolerance": 1e-08,
+    "name": "ยอดติดลบ",
+    "stdin": "-4\n",
+    "expected_stdout": "INVALID\n"
+  },
+  {
+    "args": [
+      "0"
     ],
-    "tolerance": 1e-08
+    "expected": 0.0,
+    "tolerance": 1e-08,
+    "name": "zero amount is valid",
+    "stdin": "0\n",
+    "expected_stdout": "0.00\n"
   }
 ]

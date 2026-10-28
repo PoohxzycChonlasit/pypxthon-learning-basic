@@ -1,2 +1,4 @@
-def safe_quotient(a, b):
-    return a / b if b else None
+price = 12
+quantity = 3
+total = price * quantity
+print(total)

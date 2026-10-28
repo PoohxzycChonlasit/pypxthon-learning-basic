@@ -1,0 +1,5 @@
+sku,product,quantity,reorder_level,unit_cost
+A101,tea,12,10,18
+B205,rice,4,8,15
+C310,coffee,0,5,29
+D402,cup,25,10,4

@@ -2,38 +2,57 @@
   {
     "args": [
       [
-        1,
-        -2,
-        0,
-        3
-      ]
+        4,
+        5,
+        10
+      ],
+      5
     ],
-    "expected": [
-      "profit",
-      "loss",
-      "flat",
-      "profit"
-    ],
-    "tolerance": 1e-08
+    "expected": 9,
+    "tolerance": 1e-08,
+    "name": "กรองค่าที่ไม่เกินห้า",
+    "stdin": "5\n4 5 10\n",
+    "expected_stdout": "9\n"
   },
   {
     "args": [
-      []
+      [],
+      5
     ],
-    "expected": [],
-    "tolerance": 1e-08
+    "expected": 0,
+    "tolerance": 1e-08,
+    "name": "ไม่มีรายการ",
+    "stdin": "5\n\n",
+    "expected_stdout": "0\n"
   },
   {
     "args": [
       [
-        5,
-        5
-      ]
+        0,
+        -1,
+        2
+      ],
+      0
     ],
-    "expected": [
-      "profit",
-      "profit"
+    "expected": -1,
+    "tolerance": 1e-08,
+    "name": "รวมค่าศูนย์และลบที่ผ่านเกณฑ์",
+    "stdin": "0\n0 -1 2\n",
+    "expected_stdout": "-1\n"
+  },
+  {
+    "args": [
+      [
+        20,
+        -2,
+        7
+      ],
+      6
     ],
-    "tolerance": 1e-08
+    "expected": -2,
+    "tolerance": 1e-08,
+    "name": "negative value under limit",
+    "stdin": "6\n20 -2 7\n",
+    "expected_stdout": "-2\n"
   }
 ]

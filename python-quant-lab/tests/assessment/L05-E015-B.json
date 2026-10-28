@@ -1,0 +1,32 @@
+[
+  {
+    "args": [
+      " west,central,east "
+    ],
+    "expected": {
+      "fields": 3,
+      "normalized": "WEST,CENTRAL,EAST"
+    },
+    "tolerance": 1e-08
+  },
+  {
+    "args": [
+      "approved"
+    ],
+    "expected": {
+      "fields": 1,
+      "normalized": "APPROVED"
+    },
+    "tolerance": 1e-08
+  },
+  {
+    "args": [
+      ""
+    ],
+    "expected": {
+      "fields": 1,
+      "normalized": ""
+    },
+    "tolerance": 1e-08
+  }
+]

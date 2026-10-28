@@ -1,2 +1,1 @@
-def drop_missing_values(values):
-    return [x for x in values if x is not None]
+# คำตอบอยู่ใน L06-E002.txt

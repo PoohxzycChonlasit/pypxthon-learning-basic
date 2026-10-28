@@ -1,30 +1,53 @@
 [
   {
     "args": [
-      "10.5,20"
+      "btc, ETH,btc, ,eth "
     ],
     "expected": {
-      "10.5": 1,
-      "20": 1
+      "BTC": 2,
+      "ETH": 2
     },
-    "tolerance": 1e-08
+    "tolerance": 1e-08,
+    "name": "oracle 1"
   },
   {
     "args": [
       ""
     ],
     "expected": {},
-    "tolerance": 1e-08
+    "tolerance": 1e-08,
+    "name": "oracle 2"
   },
   {
     "args": [
-      "2,3,4"
+      "x,x"
     ],
     "expected": {
-      "2": 1,
-      "4": 1,
-      "3": 1
+      "X": 2
     },
-    "tolerance": 1e-08
+    "tolerance": 1e-08,
+    "name": "oracle 3"
+  },
+  {
+    "args": [
+      " btc , eth "
+    ],
+    "expected": {
+      "BTC": 1,
+      "ETH": 1
+    },
+    "tolerance": 1e-08,
+    "name": "oracle 4"
+  },
+  {
+    "args": [
+      "A,a,B"
+    ],
+    "expected": {
+      "A": 2,
+      "B": 1
+    },
+    "tolerance": 1e-08,
+    "name": "oracle 5"
   }
 ]

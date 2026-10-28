@@ -2,36 +2,65 @@
   {
     "args": [
       [
-        100,
-        105,
+        5,
         null,
-        110,
-        90
+        8
       ]
     ],
     "expected": [
-      102.5,
-      100.0
+      5.0,
+      5.0,
+      8.0
     ],
-    "tolerance": 1e-08
+    "tolerance": 1e-08,
+    "name": "เติมจากค่าก่อนหน้า",
+    "stdin": "5,NA,8\n",
+    "expected_stdout": "[5.0, 5.0, 8.0]\n"
+  },
+  {
+    "args": [
+      [
+        null,
+        2,
+        null
+      ]
+    ],
+    "expected": [
+      null,
+      2.0,
+      2.0
+    ],
+    "tolerance": 1e-08,
+    "name": "missing ต้นข้อมูล",
+    "stdin": "NA,2,NA\n",
+    "expected_stdout": "[None, 2.0, 2.0]\n"
   },
   {
     "args": [
       []
     ],
     "expected": [],
-    "tolerance": 1e-08
+    "tolerance": 1e-08,
+    "name": "ไม่มีข้อมูล",
+    "stdin": "\n",
+    "expected_stdout": "[]\n"
   },
   {
     "args": [
       [
-        5,
-        5
+        null,
+        null,
+        3
       ]
     ],
     "expected": [
-      5.0
+      null,
+      null,
+      3.0
     ],
-    "tolerance": 1e-08
+    "tolerance": 1e-08,
+    "name": "leading values stay missing",
+    "stdin": "NA,NA,3\n",
+    "expected_stdout": "[None, None, 3.0]\n"
   }
 ]

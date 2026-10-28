@@ -1,41 +1,67 @@
 [
   {
     "args": [
-      {
-        "cash": 100,
-        "quantity": 1,
-        "price": 10,
-        "side": "buy",
-        "id": "a"
-      }
+      100,
+      1,
+      10,
+      25
     ],
-    "expected": 100,
-    "tolerance": 1e-08
+    "expected": true,
+    "tolerance": 1e-08,
+    "name": "คำสั่งผ่าน",
+    "stdin": "100\n1\n10\n25\n",
+    "expected_stdout": "True\n"
   },
   {
     "args": [
-      {
-        "cash": 0,
-        "quantity": 0,
-        "price": 10,
-        "side": "sell",
-        "id": "b"
-      }
+      100,
+      2,
+      20,
+      25
     ],
-    "expected": 0,
-    "tolerance": 1e-08
+    "expected": false,
+    "tolerance": 1e-08,
+    "name": "เกิน notional cap",
+    "stdin": "100\n2\n20\n25\n",
+    "expected_stdout": "False\n"
   },
   {
     "args": [
-      {
-        "cash": 20,
-        "quantity": 2,
-        "price": 5,
-        "side": "buy",
-        "id": "c"
-      }
+      10,
+      2,
+      10,
+      25
     ],
-    "expected": 20,
-    "tolerance": 1e-08
+    "expected": false,
+    "tolerance": 1e-08,
+    "name": "เงินสดไม่พอ",
+    "stdin": "10\n2\n10\n25\n",
+    "expected_stdout": "False\n"
+  },
+  {
+    "args": [
+      100,
+      1,
+      0,
+      25
+    ],
+    "expected": false,
+    "tolerance": 1e-08,
+    "name": "ราคาศูนย์",
+    "stdin": "100\n1\n0\n25\n",
+    "expected_stdout": "False\n"
+  },
+  {
+    "args": [
+      25,
+      1,
+      25,
+      25
+    ],
+    "expected": true,
+    "tolerance": 1e-08,
+    "name": "order exactly at cash and cap",
+    "stdin": "25\n1\n25\n25\n",
+    "expected_stdout": "True\n"
   }
 ]

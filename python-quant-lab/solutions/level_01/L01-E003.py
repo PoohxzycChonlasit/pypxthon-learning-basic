@@ -1,2 +1,4 @@
-def multiply_amounts(a, b):
-    return a * b
+price = 4
+quantity = 3
+total = price * quantity
+print(total)

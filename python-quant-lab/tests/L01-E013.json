@@ -1,26 +1,27 @@
 [
   {
-    "args": [
-      10,
-      2
-    ],
-    "expected": 20,
-    "tolerance": 1e-08
+    "name": "หักหนึ่งเปอร์เซ็นต์",
+    "stdin": "10\n1\n",
+    "expected_stdout": "9.90\n"
   },
   {
-    "args": [
-      0,
-      4
-    ],
-    "expected": 0,
-    "tolerance": 1e-08
+    "name": "อัตราศูนย์",
+    "stdin": "4.5\n0\n",
+    "expected_stdout": "4.50\n"
   },
   {
-    "args": [
-      -3,
-      2
-    ],
-    "expected": -6,
-    "tolerance": 1e-08
+    "name": "กำไรติดลบ",
+    "stdin": "-10\n1\n",
+    "expected_stdout": "-10.10\n"
+  },
+  {
+    "name": "zero gross",
+    "stdin": "0\n50\n",
+    "expected_stdout": "0.00\n"
+  },
+  {
+    "name": "fractional loss and fee",
+    "stdin": "-12.5\n2\n",
+    "expected_stdout": "-12.75\n"
   }
 ]

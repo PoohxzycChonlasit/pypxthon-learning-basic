@@ -1,31 +1,42 @@
 [
   {
     "args": [
-      [
-        1,
-        -2,
-        0,
-        3
-      ]
+      499
     ],
-    "expected": 3,
-    "tolerance": 1e-08
+    "expected": 40,
+    "tolerance": 1e-08,
+    "name": "ต่ำกว่าเกณฑ์",
+    "stdin": "499\n",
+    "expected_stdout": "40\n"
   },
   {
     "args": [
-      []
-    ],
-    "expected": -1,
-    "tolerance": 1e-08
-  },
-  {
-    "args": [
-      [
-        5,
-        5
-      ]
+      500
     ],
     "expected": 0,
-    "tolerance": 1e-08
+    "tolerance": 1e-08,
+    "name": "ตรงขอบเกณฑ์",
+    "stdin": "500\n",
+    "expected_stdout": "0\n"
+  },
+  {
+    "args": [
+      501
+    ],
+    "expected": 0,
+    "tolerance": 1e-08,
+    "name": "เหนือเกณฑ์",
+    "stdin": "501\n",
+    "expected_stdout": "0\n"
+  },
+  {
+    "args": [
+      0
+    ],
+    "expected": 40,
+    "tolerance": 1e-08,
+    "name": "zero order amount",
+    "stdin": "0\n",
+    "expected_stdout": "40\n"
   }
 ]

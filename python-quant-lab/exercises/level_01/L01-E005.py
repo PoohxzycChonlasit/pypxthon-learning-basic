@@ -1,3 +1,2 @@
-def remainder(a, b):
-    """TODO: implement the behavior in the exercise instructions."""
-    raise NotImplementedError("เขียนฟังก์ชันนี้")
+# TODO: สร้างตัวแปรราคาต่อชิ้นและจำนวน
+# TODO: คำนวณและแสดงยอดรวม

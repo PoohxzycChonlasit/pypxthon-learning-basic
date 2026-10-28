@@ -1,41 +1,10 @@
 [
   {
-    "args": [
-      {
-        "cash": 100,
-        "quantity": 1,
-        "price": 10,
-        "side": "buy",
-        "id": "a"
-      }
-    ],
-    "expected": 90,
-    "tolerance": 1e-08
-  },
-  {
-    "args": [
-      {
-        "cash": 0,
-        "quantity": 0,
-        "price": 10,
-        "side": "sell",
-        "id": "b"
-      }
-    ],
-    "expected": 0,
-    "tolerance": 1e-08
-  },
-  {
-    "args": [
-      {
-        "cash": 20,
-        "quantity": 2,
-        "price": 5,
-        "side": "buy",
-        "id": "c"
-      }
-    ],
-    "expected": 10,
-    "tolerance": 1e-08
+    "args": [],
+    "expected": "89.99\nFalse",
+    "tolerance": 1e-08,
+    "name": "เงินสดหลังซื้อและสถานะ live",
+    "stdin": "",
+    "expected_stdout": "89.99\nFalse\n"
   }
 ]

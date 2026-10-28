@@ -1,0 +1,7 @@
+order_id,date,product,quantity,unit_price
+S001,2026-01-02,tea,2,30
+S002,2026-01-02,rice,1,25
+S003,2026-01-03,coffee,1,45
+S004,2026-01-04,tea,1,30
+S005,2026-01-05,rice,2,25
+S006,2026-01-05,coffee,2,45

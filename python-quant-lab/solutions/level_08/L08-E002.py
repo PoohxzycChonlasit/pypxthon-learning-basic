@@ -1,2 +1,1 @@
-def long_return_fraction(entry, exit, quantity):
-    return (exit-entry)/entry if entry else None
+# คำตอบอยู่ใน L08-E002.txt

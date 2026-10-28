@@ -1,2 +1,1 @@
-def sum_losing_days(values):
-    return sum(x for x in values if x<0)
+# คำตอบของข้อทำนายผลอยู่ใน L02-E002.txt

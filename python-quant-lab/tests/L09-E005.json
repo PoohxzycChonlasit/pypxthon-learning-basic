@@ -2,35 +2,85 @@
   {
     "args": [
       [
-        100,
-        105,
-        103,
-        110,
-        108
+        0.02,
+        -0.01,
+        0.03
+      ],
+      [
+        0.01,
+        0.0,
+        0.01
       ]
     ],
-    "expected": [
-      true,
-      false,
-      true,
-      false
-    ],
-    "tolerance": 1e-08
-  },
-  {
-    "args": [
-      []
-    ],
-    "expected": [],
-    "tolerance": 1e-08
+    "expected": {
+      "strategy_net": 0.04,
+      "benchmark_net": 0.02,
+      "excess": 0.02,
+      "beats": true
+    },
+    "tolerance": 1e-08,
+    "name": "กลยุทธ์สูงกว่า benchmark",
+    "stdin": "[0.02,-0.01,0.03]\n[0.01,0.0,0.01]\n",
+    "expected_stdout": "strategy=0.0400 benchmark=0.0200 excess=0.0200 beats=True\n"
   },
   {
     "args": [
       [
-        1
+        0.01,
+        0.0
+      ],
+      [
+        0.02,
+        0.01
       ]
     ],
-    "expected": [],
-    "tolerance": 1e-08
+    "expected": {
+      "strategy_net": 0.01,
+      "benchmark_net": 0.03,
+      "excess": -0.02,
+      "beats": false
+    },
+    "tolerance": 1e-08,
+    "name": "benchmark สูงกว่า",
+    "stdin": "[0.01,0.0]\n[0.02,0.01]\n",
+    "expected_stdout": "strategy=0.0100 benchmark=0.0300 excess=-0.0200 beats=False\n"
+  },
+  {
+    "args": [
+      [
+        0.1
+      ],
+      [
+        0.1,
+        0.2
+      ]
+    ],
+    "expected": null,
+    "tolerance": 1e-08,
+    "name": "จำนวนช่วงไม่เท่ากัน",
+    "stdin": "[0.1]\n[0.1,0.2]\n",
+    "expected_stdout": "INVALID\n"
+  },
+  {
+    "args": [
+      [
+        0.01,
+        0.02
+      ],
+      [
+        0.01,
+        0.02
+      ]
+    ],
+    "expected": {
+      "strategy_net": 0.03,
+      "benchmark_net": 0.03,
+      "excess": 0.0,
+      "beats": false
+    },
+    "tolerance": 1e-08,
+    "name": "equal OOS results do not beat benchmark",
+    "stdin": "[0.01,0.02]\n[0.01,0.02]\n",
+    "expected_stdout": "strategy=0.0300 benchmark=0.0300 excess=0.0000 beats=False\n"
   }
 ]

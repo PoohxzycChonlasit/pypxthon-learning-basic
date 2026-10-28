@@ -1,31 +1,10 @@
 [
   {
-    "args": [
-      [
-        1,
-        -2,
-        0,
-        3
-      ]
-    ],
-    "expected": -2,
-    "tolerance": 1e-08
-  },
-  {
-    "args": [
-      []
-    ],
-    "expected": 0,
-    "tolerance": 1e-08
-  },
-  {
-    "args": [
-      [
-        5,
-        5
-      ]
-    ],
-    "expected": 0,
-    "tolerance": 1e-08
+    "args": [],
+    "expected": "5\n2",
+    "tolerance": 1e-08,
+    "name": "ผลจากการวนและ index สุดท้าย",
+    "stdin": "",
+    "expected_stdout": "5\n2\n"
   }
 ]

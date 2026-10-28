@@ -1,3 +1,1 @@
-def power_calculation(a, b):
-    """TODO: implement the behavior in the exercise instructions."""
-    raise NotImplementedError("เขียนฟังก์ชันนี้")
+# TODO: กำหนด asset และ price แล้วพิมพ์ป้ายราคาด้วย f-string

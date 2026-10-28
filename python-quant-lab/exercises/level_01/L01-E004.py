@@ -1,3 +1,4 @@
-def safe_quotient(a, b):
-    """TODO: implement the behavior in the exercise instructions."""
-    raise NotImplementedError("เขียนฟังก์ชันนี้")
+price = 12
+quantity = 3
+total = price + quantity  # BUG: คำนวณผิด
+print(total)

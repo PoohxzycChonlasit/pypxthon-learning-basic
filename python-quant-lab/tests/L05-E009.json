@@ -1,23 +1,51 @@
 [
   {
     "args": [
-      "10.5,20"
+      " mode = paper ; fee=0.1=extra;invalid;mode=offline "
     ],
-    "expected": {},
-    "tolerance": 1e-08
+    "expected": {
+      "mode": "offline",
+      "fee": "0.1=extra"
+    },
+    "tolerance": 1e-08,
+    "name": "oracle 1"
   },
   {
     "args": [
       ""
     ],
     "expected": {},
-    "tolerance": 1e-08
+    "tolerance": 1e-08,
+    "name": "oracle 2"
   },
   {
     "args": [
-      "2,3,4"
+      "a=1"
     ],
-    "expected": {},
-    "tolerance": 1e-08
+    "expected": {
+      "a": "1"
+    },
+    "tolerance": 1e-08,
+    "name": "oracle 3"
+  },
+  {
+    "args": [
+      "x=hello=there"
+    ],
+    "expected": {
+      "x": "hello=there"
+    },
+    "tolerance": 1e-08,
+    "name": "oracle 4"
+  },
+  {
+    "args": [
+      "a=1;a=2"
+    ],
+    "expected": {
+      "a": "2"
+    },
+    "tolerance": 1e-08,
+    "name": "oracle 5"
   }
 ]

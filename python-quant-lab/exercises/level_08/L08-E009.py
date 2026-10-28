@@ -1,3 +1,3 @@
-def risk_distance(entry, exit, quantity):
-    """TODO: implement the behavior in the exercise instructions."""
-    raise NotImplementedError("เขียนฟังก์ชันนี้")
+def risk_distance(entry, stop, quantity):
+    """TODO: implement the paper-only contract in the exercise."""
+    raise NotImplementedError("เติมโค้ดตามโจทย์")

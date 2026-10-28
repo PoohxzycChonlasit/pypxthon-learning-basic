@@ -1,3 +1,2 @@
-def population_variance(values):
-    """TODO: implement the behavior in the exercise instructions."""
-    raise NotImplementedError("เขียนฟังก์ชันนี้")
+# L07-E002: ตอบในไฟล์ answers/level_07/L07-E002.txt
+# ใช้คำสั่ง open เพื่อเปิดไฟล์ข้อความ

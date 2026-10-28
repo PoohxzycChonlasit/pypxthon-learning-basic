@@ -1,3 +1,2 @@
-def drop_missing_values(values):
-    """TODO: implement the behavior in the exercise instructions."""
-    raise NotImplementedError("เขียนฟังก์ชันนี้")
+# L06-E002: ตอบในไฟล์ answers/level_06/L06-E002.txt
+# ใช้คำสั่ง open เพื่อเปิดไฟล์ข้อความ

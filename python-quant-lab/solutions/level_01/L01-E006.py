@@ -1,2 +1,3 @@
-def power_calculation(a, b):
-    return a ** b
+asset = "BTC"
+price = 10
+print(f"{asset} price: {price}")

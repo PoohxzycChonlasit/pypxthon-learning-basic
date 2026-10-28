@@ -49,5 +49,56 @@
       "live_trading": false
     },
     "tolerance": 1e-08
+  },
+  {
+    "args": [
+      {
+        "cash": 40,
+        "quantity": 2,
+        "price": 25,
+        "side": "buy",
+        "id": "limit-C"
+      }
+    ],
+    "expected": {
+      "orders": 0,
+      "cash_after": 40,
+      "live_trading": false
+    },
+    "tolerance": 1e-08
+  },
+  {
+    "args": [
+      {
+        "cash": 100,
+        "quantity": 1,
+        "price": 0,
+        "side": "buy",
+        "id": "invalid-price"
+      }
+    ],
+    "expected": {
+      "orders": 0,
+      "cash_after": 100,
+      "live_trading": false
+    },
+    "tolerance": 1e-08
+  },
+  {
+    "args": [
+      {
+        "cash": 100,
+        "quantity": 1,
+        "price": 10,
+        "side": "sell",
+        "id": "unsupported-side"
+      }
+    ],
+    "expected": {
+      "orders": 0,
+      "cash_after": 100,
+      "live_trading": false
+    },
+    "tolerance": 1e-08
   }
 ]
