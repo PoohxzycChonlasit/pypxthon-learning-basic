@@ -55,12 +55,13 @@ class M006QualityRepairTests(unittest.TestCase):
             exercise = catalog[exercise_id]
             starter = ROOT / "exercises" / f"level_{level:02d}" / f"{exercise_id}.py"
             source = starter.read_text(encoding="utf-8")
+            lesson = (ROOT / "lessons" / f"{exercise_id}.md").read_text(encoding="utf-8")
             hints = json.loads((ROOT / "hints" / f"{exercise_id}.json").read_text(encoding="utf-8"))
             self.assertIn("variant", exercise["objective"].lower(), exercise_id)
             self.assertIn("variant ปัจจุบัน", exercise["lesson"], exercise_id)
             self.assertIn("variant", exercise["pitfall"].lower(), exercise_id)
-            self.assertIn("prompt ของ variant ปัจจุบัน", source, exercise_id)
-            self.assertIn("lesson ของ variant ที่ระบบเลือก", source, exercise_id)
+            self.assertIn("prompt ของ variant ปัจจุบัน", lesson, exercise_id)
+            self.assertIn(f"lessons/{exercise_id}.md", source, exercise_id)
             self.assertNotIn("ตัวอย่าง input:", source, exercise_id)
             self.assertEqual(exercise["hints"], hints, exercise_id)
             self.assertEqual(len(hints), 3, exercise_id)

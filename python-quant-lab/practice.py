@@ -110,15 +110,22 @@ def show_lesson(ex):
         problem = ex.get("variant_prompts", {}).get(variant, problem)
         sample = ex.get("variant_samples", {}).get(variant, sample)
         expected = ex.get("variant_expected", {}).get(variant, expected)
-    print(f"บทเรียน {ex['id']} — {ex['title']}\nเป้าหมาย: {ex['objective']}")
+    print(f"บทเรียน {ex['id']} - {ex['title']}\nเป้าหมาย: {ex['objective']}")
     if ex.get("difficulty_tier"):
-        print(f"ความยาก: Tier {ex['difficulty_tier']} — {ex['difficulty_label']}\n")
+        print(f"ความยาก: Tier {ex['difficulty_tier']} - {ex['difficulty_label']}\n")
     lesson_path = ROOT / "lessons" / f"{ex['id']}.md"
     if not lesson_path.is_file():
         lesson_path = ROOT / ex["lesson_file"]
     if lesson_path.is_file():
         print(f"บทเรียนแบบพิมพ์ตาม: {lesson_path}\n")
         print(lesson_path.read_text(encoding="utf-8"))
+        if ex.get("assessment"):
+            print(
+                f"\nโจทย์ assessment variant {variant}:\n{problem}\n"
+                f"ข้อมูลตัวอย่าง: {sample}\n"
+                "ใช้ Check เพื่อตรวจ; ผลคาดหวังจะไม่แสดงก่อนส่งคำตอบ"
+            )
+        return
     if variant:
         print(f"Assessment variant {variant}; ตัวอย่าง input: {sample}")
     print(ex["lesson"])
@@ -177,15 +184,15 @@ def run_check(ex, p):
                     detail = result.stderr.strip() if result.returncode else f"expected stdout {expected!r}; got {actual!r}"
                 if success:
                     passed_count += 1
-                    print(f"Test {number} — {case['name']}: PASS")
+                    print(f"Test {number} - {case['name']}: PASS")
                 else:
                     failures.append(detail or "คำตอบไม่ตรงกับที่กำหนด")
-                    print(f"Test {number} — {case['name']}: FAIL")
+                    print(f"Test {number} - {case['name']}: FAIL")
                     if detail and not ex.get("assessment"):
                         print(detail[-1200:])
             except subprocess.TimeoutExpired:
                 failures.append("โปรแกรมใช้เวลาเกิน 4 วินาที")
-                print(f"Test {number} — {case['name']}: TIMEOUT")
+                print(f"Test {number} - {case['name']}: TIMEOUT")
         passed = not failures and len(cases) > 0
         print(f"ผล: {passed_count}/{len(cases)} กรณีผ่าน")
         if ex.get("assessment"):
@@ -230,7 +237,7 @@ print("PASS",len(cases))
     except subprocess.TimeoutExpired:
         result = None
     passed = result is not None and result.returncode == 0
-    print(f"แบบฝึกหัด: {ex['id']} — {ex['title']}")
+    print(f"แบบฝึกหัด: {ex['id']} - {ex['title']}")
     if passed:
         if ex.get("assessment"):
             assisted = variant in st["revealed_assessments"] or variant in st["hinted_assessments"]
@@ -248,7 +255,7 @@ print("PASS",len(cases))
             st["assessment_results"][variant] = "NEEDS_REVIEW"
         st["status"] = "NEEDS_REVIEW"
         st.setdefault("results", []).append({"passed": False, "tests": len(cases), "variant": variant})
-        print("ผล: ยังไม่ผ่าน — ตรวจข้อผิดพลาดแล้วลองใหม่")
+        print("ผล: ยังไม่ผ่าน - อ่าน test ที่ไม่ผ่าน แก้ไฟล์คำตอบ แล้วใช้ check ซ้ำ")
         print("สถานะ: NEEDS_REVIEW")
         if result is None:
             print("โปรแกรมใช้เวลาเกิน 4 วินาที")
@@ -260,19 +267,34 @@ print("PASS",len(cases))
 
 
 def main():
-    ap = argparse.ArgumentParser(description="Python Quant Lab — ฝึก Python แบบออฟไลน์")
+    ap = argparse.ArgumentParser(description="Python Quant Lab - ฝึก Python แบบออฟไลน์")
     ap.add_argument("command", nargs="?", default="help", choices="help start lesson open next list status run check hint solution explain retry reset-progress".split())
     ap.add_argument("id", nargs="?")
     ap.add_argument("detail", nargs="?")
+    ap.add_argument("--level", type=int, choices=range(1, 11), help="กรองรายการแบบฝึกหัดตามระดับ เช่น list --level 1")
     ap.add_argument("--yes", action="store_true")
     args = ap.parse_args()
+    if args.level is not None and args.command != "list":
+        ap.error("--level ใช้กับคำสั่ง list เท่านั้น")
     all_ex = catalog(); p = read_progress()
     if args.command == "help":
-        print("คำสั่ง: start, lesson, open, next, list, status, run, check, hint [ID [1-3]], solution [ID] [--yes], explain [ID], retry ID, reset-progress")
+        print("เริ่มต้น: list --level 1 -> open L01-E001 -> แก้ไฟล์ที่เปิด -> check L01-E001")
+        print("คำสั่ง: start [ID], lesson [ID], open ID, next, list [--level 1-10], status")
+        print("         run ID, check ID, hint ID [1-3], solution ID [--yes], explain ID, retry ID")
+        print("VS Code Run รันไฟล์ตรง; practice.py run ทดลองกรณีแรก; check ตรวจทุกกรณีและบันทึกความคืบหน้า")
+        print("โจทย์ text_answer ให้เขียนคำทำนายในไฟล์ .txt แล้วใช้ check; ไม่ต้องรันไฟล์ Python")
         return
     if args.command == "list":
-        for ex in all_ex:
-            print(ex["id"], state(p, ex)["status"], ex["title"])
+        selected = [ex for ex in all_ex if args.level is None or ex["level"] == args.level]
+        if not selected:
+            print("ไม่พบแบบฝึกหัดในระดับที่เลือก")
+            return
+        for ex in selected:
+            submission = ex_path(ex, "exercises").relative_to(ROOT)
+            print(
+                ex["id"], state(p, ex)["status"],
+                f"[{ex['submission_mode']}]", ex["title"], f"-> {submission}"
+            )
         return
     if args.command == "status":
         print("แบบฝึกหัดปัจจุบัน:", p.get("current", all_ex[0]["id"]))
@@ -289,7 +311,9 @@ def main():
     elif args.command == "run":
         file=ex_path(ex,"exercises")
         if ex.get("submission_mode") in ("literal", "text_answer"):
-            print("ข้อนี้เป็นการทำนายผล: กรอกผลลัพธ์ในไฟล์คำตอบ แล้วใช้ check เพื่อตรวจ")
+            print("ข้อนี้เป็นโจทย์ทำนาย ไม่ต้องเขียนหรือรันโปรแกรม Python")
+            print("พิมพ์ผลลัพธ์ที่คาดลงในไฟล์คำตอบนี้:", file)
+            print(f"ตรวจคำตอบ: ใช้ check {ex['id']} ใน interpreter เดิม")
             return
         harness='import importlib.util,sys,json; s=importlib.util.spec_from_file_location("student",sys.argv[1]); m=importlib.util.module_from_spec(s); s.loader.exec_module(m); f=getattr(m,sys.argv[2]); c=json.loads(sys.stdin.read())[0]; print(repr(f(*c["args"])))'
         try:
@@ -304,10 +328,19 @@ def main():
     elif args.command == "open":
         path=ex_path(ex,"exercises")
         paths = [path]
+        lesson_path = ROOT / "lessons" / f"{ex['id']}.md"
+        if not lesson_path.is_file():
+            lesson_path = ROOT / ex["lesson_file"]
+        if lesson_path.is_file():
+            paths.append(lesson_path)
         if ex.get("submission_mode") == "text_answer":
             instruction_path = ROOT / "instructions" / f"level_{ex['level']:02d}" / f"{ex['id']}.md"
-            if instruction_path.is_file():
+            if instruction_path.is_file() and instruction_path not in paths:
                 paths.append(instruction_path)
+            print("ชนิดคำตอบ: ทำนายผลเป็นข้อความ - ไม่ต้องรันไฟล์ Python")
+            print("บันทึกเฉพาะผลลัพธ์ในไฟล์ .txt แล้วใช้ check")
+        else:
+            print(f"ชนิดคำตอบ: {ex['submission_mode']} - แก้ไฟล์ Python ที่ระบุ แล้วใช้ run/check")
         try:
             editor_command = ["code", "-r", *[str(item) for item in paths]]
             if sys.platform == "win32":

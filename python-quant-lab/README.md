@@ -1,12 +1,33 @@
 # Python Quant Lab — เรียน Python ด้วยการลงมือทำ
 
+## START HERE
+
+เริ่มจาก [Level 1 — Python พื้นฐาน](lessons/level_01.md) แล้วทำข้อ L01-E001 ก่อน. ถ้าใช้ VS Code ให้เปิดโฟลเดอร์ <code>python-quant-lab</code> แล้วเปิด Terminal ในโฟลเดอร์นั้น
+
+**Windows PowerShell**
+
+~~~powershell
+py -3.12 -B practice.py start
+~~~
+
+**macOS Terminal**
+
+~~~sh
+python3.12 -B practice.py start
+~~~
+
+อ่าน [คู่มือ VS Code สำหรับ Windows/macOS](docs/vscode-beginner-guide.md) หากยังไม่แน่ใจว่าเปิด project หรือเลือก Python interpreter อย่างไร. ดู [ชนิดคำตอบและ Run/Check](docs/submission-types.md) เพื่อเลือกวิธีส่งให้ถูกต้อง.
+
+สำหรับเริ่มเรียน L01-E001 ถึง L01-E003 ตามลำดับ ดู [คู่มือเริ่มบทเรียนแรก](docs/m008a-first-session-guide.md).
+
+
 Python Quant Lab เป็นหลักสูตรภาษาไทยสำหรับฝึก Python ตั้งแต่พื้นฐานไปจนถึงการวิเคราะห์ข้อมูล การเงินเชิงปริมาณ และการจำลอง paper trading แบบออฟไลน์ คุณไม่จำเป็นต้องรู้ Python มาก่อน ผู้ที่เคยใช้ JavaScript/TypeScript สามารถต่อยอดแนวคิดเดิมได้ ดู [ความแตกต่างระหว่าง Python กับ JavaScript](docs/python-vs-javascript.md)
 
 Python เป็นภาษาโปรแกรมที่อ่านง่ายและมีเครื่องมือหลากหลาย คนใช้เขียนสคริปต์อัตโนมัติ จัดการไฟล์ ทำรายงาน เว็บ และวิเคราะห์ข้อมูล ในงาน Quant เราใช้ Python เตรียมข้อมูล คำนวณสถิติและทดสอบสมมติฐาน ส่วน trading bot คือโปรแกรมที่อ่านข้อมูลและทำตามกฎที่กำหนด หลักสูตรนี้ใช้การจำลองออฟไลน์เท่านั้น ไม่มี exchange, wallet หรือคำสั่งซื้อขายจริง ผล backtest ไม่พิสูจน์ว่ามีกำไรหรือรับประกันผลในอนาคต
 
-แบบฝึกหัดเปิดดูคำสั่งและตำแหน่ง TODO ได้ในไฟล์ที่ต้องแก้ แต่ละข้อมีระดับความยาก Tier 1–5 ซึ่งเทียบภายใน Level เดียวกัน และมี checklist `☐` ให้ติดตามงาน ตัวอย่าง syntax ในกล่องเป็นตัวอย่างแยก ไม่ใช่คำตอบเต็ม ส่วนโจทย์ทำนายผลใช้ไฟล์คำแนะนำ Markdown แยกเพื่อให้ไฟล์ `.txt` คงรูปแบบที่ grader ต้องการ
+ไฟล์ starter มีหัวข้อสั้นเพื่อบอกเป้าหมาย ตำแหน่งที่แก้ และคำสั่งตรวจ; รายละเอียดอยู่ใน lesson เฉพาะข้อ. แต่ละข้อมี Tier 1–5 ซึ่งเทียบภายใน Level เดียวกันและ checklist; ตัวอย่าง syntax ใช้ค่าคนละชุดกับโจทย์. ข้อทำนายผลส่งไฟล์ .txt ตามที่ lesson ระบุ
 
-## เริ่มต้นบน Windows และ VS Code
+## เปิดโครงการใน VS Code (Windows และ macOS)
 
 ### 1. เปิดโฟลเดอร์โครงการ
 
@@ -18,7 +39,7 @@ Set-Location -LiteralPath ".\pypxthon-learning-basic\python-quant-lab"
 code .
 ~~~
 
-ถ้าใช้ checkout ที่มีอยู่แล้ว ให้เปิดโฟลเดอร์ `python-quant-lab` ใน VS Code หรือใช้ PowerShell:
+ถ้าใช้ checkout ที่มีอยู่แล้ว ให้เปิดโฟลเดอร์ <code>python-quant-lab</code> ใน VS Code หรือใช้ PowerShell:
 
 ตรวจโฟลเดอร์ปัจจุบันและเปิดโครงการจาก PowerShell ได้ด้วย:
 
@@ -146,17 +167,15 @@ python -B practice.py retry L01-E003
 
 อย่าจำโค้ดโดยไม่เข้าใจ ลองทำนายผลก่อนรัน อธิบายว่าแต่ละบรรทัดทำอะไร และสร้างกรณีทดสอบใหม่เพื่อดูว่าความเข้าใจยังใช้ได้เมื่อข้อมูลเปลี่ยนหรือไม่
 
-## อ่านกล่องคำสั่งและระดับความยาก
+## อ่าน starter และระดับความยาก
 
-กล่องในไฟล์โจทย์เรียงตามหัวข้อ: exercise header, เป้าหมายและเหตุผล, สถานการณ์/ผู้ใช้, checklist, input/output, syntax reference, จุด TODO, คำสั่ง verify และวิธีขอความช่วยเหลือ แต่ละข้อบอกความรู้ก่อนหน้าและเชื่อมไปยัง lesson, hint, solution และ explanation ที่ละเอียดกว่า
+ไฟล์ starter วาง implementation ไว้ใกล้ต้นไฟล์และมีหัวข้อสั้นเพื่อบอกเป้าหมาย ตำแหน่งแก้ และคำสั่งตรวจ. อ่าน lesson เฉพาะข้อเพื่อดู prerequisites, ตัวอย่างแยก, input/output และวิธีแก้ปัญหา; ไม่ต้องอ่าน comment ยาวก่อนเริ่มเขียน
 
-- `☐` คือ checklist item ที่ยังไม่ได้ทำ; ผู้เรียนทำเครื่องหมาย `☑` เองได้หลังตรวจงานแล้ว
-- Tier 1: แนวคิดเดียว; Tier 2: รวมแนวคิดที่คุ้นเคย; Tier 3: ทำโจทย์จริงหลายขั้น
-- Tier 4: จัดการเงื่อนไขและกรณีขอบ; Tier 5: ประยุกต์ความรู้เดิมกับโจทย์ใหม่ รวม E015 ของแต่ละ Level
-- ตัวอย่าง syntax เป็นตัวอย่างฝึกแยกจากโจทย์ ไม่ใช่เฉลยเต็ม; แก้เฉพาะตำแหน่ง TODO และคงรูปแบบคำตอบ
-- เปิดโจทย์ text-answer ด้วย `python -B practice.py open ID`; VS Code จะแสดงไฟล์ `.txt` และ companion Markdown พร้อมกัน
-
-ถ้า box drawing แสดงไม่ครบ ให้เปิดไฟล์เป็น UTF-8; ดู [ASCII fallback](docs/exercise-box-ascii-fallback.md) ได้โดยไม่เสียเนื้อหาคำสั่ง
+- <code>☐</code> คือ checklist ที่ผู้เรียนทำเครื่องหมายเองได้หลังตรวจงาน
+- Tier 1: แนวคิดเดียว; Tier 2: รวมแนวคิดที่คุ้นเคย; Tier 3: ทำงานหลายขั้น
+- Tier 4: จัดการเงื่อนไขและกรณีขอบ; Tier 5: ประยุกต์ความรู้เดิมกับโจทย์ใหม่
+- ตัวอย่างใน lesson ใช้คนละค่ากับโจทย์; แก้เฉพาะตำแหน่งที่ระบุและคง contract
+- ข้อ text_answer ส่งคำทำนายในไฟล์ .txt; ไม่รันไฟล์ Python. อ่าน [คู่มือคำตอบ 3 แบบ](docs/submission-types.md)
 
 ## แผนที่หลักสูตร
 
@@ -175,20 +194,11 @@ python -B practice.py retry L01-E003
 
 อ่าน prerequisites, งานตัวอย่าง และเกณฑ์จบแต่ละระดับใน [แผนที่การเรียนฉบับเต็ม](docs/learning-roadmap.md) บทเรียนแบบพิมพ์ตามอยู่ในดัชนีด้านล่าง
 
-## ดัชนีไฟล์แบบฝึกหัด
+## ไปยัง Level และบทเรียน
 
-- [Level 1 starters](exercises/level_01/) · [คำอธิบายข้อแรก](explanations/L01-E001.md)
-- [Level 2 starters](exercises/level_02/) · [คำอธิบายข้อแรก](explanations/L02-E001.md)
-- [Level 3 starters](exercises/level_03/) · [คำอธิบายข้อแรก](explanations/L03-E001.md)
-- [Level 4 starters](exercises/level_04/) · [คำอธิบายข้อแรก](explanations/L04-E001.md)
-- [Level 5 starters](exercises/level_05/) · [คำอธิบายข้อแรก](explanations/L05-E001.md)
-- [Level 6 starters](exercises/level_06/) · [คำอธิบายข้อแรก](explanations/L06-E001.md)
-- [Level 7 starters](exercises/level_07/) · [คำอธิบายข้อแรก](explanations/L07-E001.md)
-- [Level 8 starters](exercises/level_08/) · [คำอธิบายข้อแรก](explanations/L08-E001.md)
-- [Level 9 starters](exercises/level_09/) · [คำอธิบายข้อแรก](explanations/L09-E001.md)
-- [Level 10 starters](exercises/level_10/) · [คำอธิบายข้อแรก](explanations/L10-E001.md)
+เริ่มจาก Level overview ซึ่งลิงก์ต่อไปยัง lesson รายข้อและไฟล์ส่งจริง. เปิด starter directory เมื่อบทเรียนบอกให้แก้ไฟล์นั้น
 
-## เริ่ม Engineering Thinking ก่อนมอบหมายงานให้ AI
+- [Level 1 overview และ 15 บทเรียน](lessons/level_01.md) · [starter files](exercises/level_01/)\n- [Level 2 overview และ 15 บทเรียน](lessons/level_02.md) · [starter files](exercises/level_02/)\n- [Level 3 overview และ 15 บทเรียน](lessons/level_03.md) · [starter files](exercises/level_03/)\n- [Level 4 overview และ 15 บทเรียน](lessons/level_04.md) · [starter files](exercises/level_04/)\n- [Level 5 overview และ 15 บทเรียน](lessons/level_05.md) · [starter files](exercises/level_05/)\n- [Level 6 overview และ 15 บทเรียน](lessons/level_06.md) · [starter files](exercises/level_06/)\n- [Level 7 overview และ 15 บทเรียน](lessons/level_07.md) · [starter files](exercises/level_07/)\n- [Level 8 overview และ 15 บทเรียน](lessons/level_08.md) · [starter files](exercises/level_08/)\n- [Level 9 overview และ 15 บทเรียน](lessons/level_09.md) · [starter files](exercises/level_09/)\n- [Level 10 overview และ 15 บทเรียน](lessons/level_10.md) · [starter files](exercises/level_10/)\n\n## เริ่ม Engineering Thinking ก่อนมอบหมายงานให้ AI
 
 เส้นทางเสริม [Engineering Thinking and AI-Assisted Development](tracks/engineering_thinking/README.md) ฝึกเขียน requirements, input/output contract, data model, pseudocode, implementation plan และ test cases ก่อนขอให้ coding agent ทำงานย่อย เริ่มจากการคิดและเขียนข้อกำหนดด้วยตนเอง แล้วค่อยให้ agent ช่วยทำงานที่มีขอบเขตชัดเจน
 

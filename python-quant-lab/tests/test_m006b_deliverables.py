@@ -82,8 +82,10 @@ class M006BDeliverableTests(unittest.TestCase):
 
     def test_l05_e010_scenario_matches_csv_header_task(self):
         starter = (ROOT / "exercises" / "level_05" / "L05-E010.py").read_text(encoding="utf-8")
-        self.assertIn("ผู้ดูแลรายงานที่รับไฟล์ CSV", starter)
-        self.assertNotIn("นักวิจัย Quant ที่ทดสอบสูตร", starter)
+        lesson = (ROOT / "lessons" / "L05-E010.md").read_text(encoding="utf-8")
+        self.assertIn("lessons/L05-E010.md", starter)
+        self.assertIn("ระบบรายงานตรวจว่าบรรทัดแรกของไฟล์เป็น header", lesson)
+        self.assertNotIn("นักวิจัย Quant ที่ทดสอบสูตร", lesson)
 
 
 if __name__ == "__main__":

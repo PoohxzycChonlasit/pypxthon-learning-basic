@@ -1,2 +1,10 @@
-# L02-E002: ข้อนี้ตอบใน answers/level_02/L02-E002.txt
-# อย่าแก้ไฟล์นี้ ให้เขียน output ลงไฟล์ .txt ตามคำสั่ง open
+# L02-E002 เป็นไฟล์ Python รุ่นเก่า ไม่ใช่ไฟล์ส่งคำตอบของโจทย์ทำนาย
+# ให้เขียนเฉพาะผลที่คาดใน answers/level_02/L02-E002.txt
+# แล้วตรวจด้วย: py -3.12 -B practice.py check L02-E002
+# บทเรียน: lessons/L02-E002.md
+
+
+
+if __name__ == "__main__":
+    print("L02-E002 เป็นไฟล์ Python รุ่นเก่า ไม่ใช่ไฟล์ส่งคำตอบ")
+    print("เขียนผลที่คาดใน answers/level_02/L02-E002.txt แล้วใช้: py -3.12 -B practice.py check L02-E002")

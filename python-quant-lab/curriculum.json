@@ -663,7 +663,7 @@
       "คิดตามลำดับ: เริ่มตัวนับที่ศูนย์; วนค่าทีละวัน; เพิ่มตัวนับเมื่อกำไรเป็นบวก.",
       "ตรวจกรณีขอบ: รายการว่างคืน 0; จากนั้นคืนชนิดข้อมูลที่ระบุ"
     ],
-    "lesson_file": "lessons/level_02.md",
+    "lesson_file": "lessons/L02-E001.md",
     "cases": [
       {
         "args": [
@@ -715,7 +715,7 @@
       "เมื่อ value เป็นศูนย์ คำสั่งใดในรอบนั้นถูกข้าม",
       "ติดตาม index -1 แยกจากผลรวม"
     ],
-    "lesson_file": "lessons/level_02.md",
+    "lesson_file": "lessons/L02-E002.md",
     "cases": [
       {
         "args": [],
@@ -756,7 +756,7 @@
       "เปรียบเทียบแต่ละ value กับ limit",
       "ถ้า value <= limit ให้เพิ่ม value เข้า total"
     ],
-    "lesson_file": "lessons/level_02.md",
+    "lesson_file": "lessons/L02-E003.md",
     "cases": [
       {
         "args": [
@@ -831,7 +831,7 @@
       "ทดสอบค่าต่ำกว่า เท่ากับ และสูงกว่า 500",
       "กรณีฟรีควรคืน 0 ส่วนกรณีอื่นคืน 40"
     ],
-    "lesson_file": "lessons/level_02.md",
+    "lesson_file": "lessons/L02-E004.md",
     "cases": [
       {
         "args": [
@@ -895,7 +895,7 @@
       "กำหนดค่า fee ตามเขต",
       "ใช้ threshold >= 300 ตั้ง fee เป็นศูนย์ก่อนรวมยอด"
     ],
-    "lesson_file": "lessons/level_02.md",
+    "lesson_file": "lessons/L02-E005.md",
     "cases": [
       {
         "args": [
@@ -975,7 +975,7 @@
       "คิดตามลำดับ: เริ่ม list ผลลัพธ์; อ่านค่าทีละตัว; เพิ่มเมื่อค่าไม่เท่ากับศูนย์.",
       "ตรวจกรณีขอบ: list ว่างคืน []; จากนั้นคืนชนิดข้อมูลที่ระบุ"
     ],
-    "lesson_file": "lessons/level_02.md",
+    "lesson_file": "lessons/L02-E006.md",
     "cases": [
       {
         "args": [
@@ -1034,7 +1034,7 @@
       "คิดตามลำดับ: วนพร้อม index; ใช้เศษจากการหาร index ด้วย 2 เพื่อเลือกเครื่องหมาย.",
       "ตรวจกรณีขอบ: list ว่างคืน 0; สมาชิกแรกใช้เครื่องหมายบวก; จากนั้นคืนชนิดข้อมูลที่ระบุ"
     ],
-    "lesson_file": "lessons/level_02.md",
+    "lesson_file": "lessons/L02-E007.md",
     "cases": [
       {
         "args": [
@@ -1088,7 +1088,7 @@
       "คิดตามลำดับ: จับคู่ยอดแต่ละวันกับวันถัดไป; ข้ามตัวหารศูนย์; เลือกสัดส่วนการเปลี่ยนแปลงที่ต่ำสุด.",
       "ตรวจกรณีขอบ: รายการสั้นกว่าสองค่าและกรณีไม่มีค่าลดลงคืน 0; จากนั้นคืนชนิดข้อมูลที่ระบุ"
     ],
-    "lesson_file": "lessons/level_02.md",
+    "lesson_file": "lessons/L02-E008.md",
     "cases": [
       {
         "args": [
@@ -1141,7 +1141,7 @@
       "คิดตามลำดับ: เริ่มยอดสะสมที่ 0; บวกจำนวนเงินแต่ละบรรทัด; บันทึกยอดหลังบวก.",
       "ตรวจกรณีขอบ: list ว่างคืน []; รวมค่าลบตามจริง; จากนั้นคืนชนิดข้อมูลที่ระบุ"
     ],
-    "lesson_file": "lessons/level_02.md",
+    "lesson_file": "lessons/L02-E009.md",
     "cases": [
       {
         "args": [
@@ -1198,7 +1198,7 @@
       "คิดตามลำดับ: เลือกผลลัพธ์ด้วย if/else สำหรับแต่ละค่า; ไม่กรองสมาชิกออก.",
       "ตรวจกรณีขอบ: รักษาลำดับและสมาชิกทุกตำแหน่ง; จากนั้นคืนชนิดข้อมูลที่ระบุ"
     ],
-    "lesson_file": "lessons/level_02.md",
+    "lesson_file": "lessons/L02-E010.md",
     "cases": [
       {
         "args": [
@@ -1257,7 +1257,7 @@
       "คิดตามลำดับ: ไล่จากซ้ายไปขวา; หยุดเมื่อพบค่าต่ำกว่า 0; คืนส่วนก่อนจุดหยุด.",
       "ตรวจกรณีขอบ: ศูนย์ไม่ใช่ขาดทุน; ถ้าค่าแรกติดลบคืน []; จากนั้นคืนชนิดข้อมูลที่ระบุ"
     ],
-    "lesson_file": "lessons/level_02.md",
+    "lesson_file": "lessons/L02-E011.md",
     "cases": [
       {
         "args": [
@@ -1314,7 +1314,7 @@
       "คิดตามลำดับ: สร้างคู่ติดกัน; เพิ่มตัวนับเฉพาะเมื่อค่าที่สองมากกว่าค่าแรก.",
       "ตรวจกรณีขอบ: ค่าซ้ำไม่นับ; มีน้อยกว่าสองค่าคืน 0; จากนั้นคืนชนิดข้อมูลที่ระบุ"
     ],
-    "lesson_file": "lessons/level_02.md",
+    "lesson_file": "lessons/L02-E012.md",
     "cases": [
       {
         "args": [
@@ -1368,7 +1368,7 @@
       "คิดตามลำดับ: ตรวจ total + amount ก่อนบวก; หยุดถ้าเกิน 10; มิฉะนั้นเพิ่มเข้า total.",
       "ตรวจกรณีขอบ: รายการจำนวนไม่ติดลบ; ถ้ารายการแรกเกินงบคืน 0; จากนั้นคืนชนิดข้อมูลที่ระบุ"
     ],
-    "lesson_file": "lessons/level_02.md",
+    "lesson_file": "lessons/L02-E013.md",
     "cases": [
       {
         "args": [
@@ -1421,7 +1421,7 @@
       "คิดตามลำดับ: กรองรายการเดียวกันด้วยสองเงื่อนไข strict เพื่อสร้างสองกลุ่ม.",
       "ตรวจกรณีขอบ: ศูนย์ถูกละเว้น; กลุ่มที่ไม่พบเป็น []; จากนั้นคืนชนิดข้อมูลที่ระบุ"
     ],
-    "lesson_file": "lessons/level_02.md",
+    "lesson_file": "lessons/L02-E014.md",
     "cases": [
       {
         "args": [
@@ -1486,7 +1486,7 @@
       "วนสมาชิกแต่ละตัวหนึ่งครั้ง แล้วอัปเดตแต่ละช่องตามเงื่อนไขของ prompt โดยแยกเงื่อนไขออกจากกัน",
       "ตรวจ input ว่าง ค่าลบ ศูนย์ และค่าบวก; เทียบชื่อและชนิด output กับโจทย์"
     ],
-    "lesson_file": "lessons/level_02.md",
+    "lesson_file": "lessons/L02-E015.md",
     "cases": [
       {
         "args": [
@@ -1573,7 +1573,7 @@
       "คิดตามลำดับ: ตรวจว่ามีข้อมูล; ใช้ items[-1] เมื่อมี และคืน None เมื่อไม่มี.",
       "ตรวจกรณีขอบ: ต้องตรวจ list ว่างก่อน index -1; จากนั้นคืนชนิดข้อมูลที่ระบุ"
     ],
-    "lesson_file": "lessons/level_03.md",
+    "lesson_file": "lessons/L03-E001.md",
     "cases": [
       {
         "args": [
@@ -1624,7 +1624,7 @@
       "ลบค่าซ้ำเพื่อคิดขนาด set",
       "index 0 คือสมาชิกแรก"
     ],
-    "lesson_file": "lessons/level_03.md",
+    "lesson_file": "lessons/L03-E002.md",
     "cases": [
       {
         "args": [],
@@ -1665,7 +1665,7 @@
       "ถ้า tag ยังไม่อยู่ให้เริ่มที่ศูนย์",
       "พิมพ์ sorted(result.items()) เพื่อให้ผลแน่นอน"
     ],
-    "lesson_file": "lessons/level_03.md",
+    "lesson_file": "lessons/L03-E003.md",
     "cases": [
       {
         "args": [
@@ -1742,7 +1742,7 @@
       "วนตาม input เดิม",
       "เพิ่มเมื่อยังไม่เคยอยู่ใน seen"
     ],
-    "lesson_file": "lessons/level_03.md",
+    "lesson_file": "lessons/L03-E004.md",
     "cases": [
       {
         "args": [
@@ -1812,7 +1812,7 @@
       "เลือกเมื่อ quantity <= threshold",
       "เรียง SKU แล้วเชื่อมด้วย comma"
     ],
-    "lesson_file": "lessons/level_03.md",
+    "lesson_file": "lessons/L03-E005.md",
     "cases": [
       {
         "args": [
@@ -1909,7 +1909,7 @@
       "คิดตามลำดับ: เริ่ม dict ว่าง; ใช้ get(key,0) แล้วเพิ่มตัวนับหนึ่งเมื่อพบสมาชิก.",
       "ตรวจกรณีขอบ: list ว่างคืน {}; key ที่พบหนึ่งครั้งมีค่า 1; จากนั้นคืนชนิดข้อมูลที่ระบุ"
     ],
-    "lesson_file": "lessons/level_03.md",
+    "lesson_file": "lessons/L03-E006.md",
     "cases": [
       {
         "args": [
@@ -1965,7 +1965,7 @@
       "คิดตามลำดับ: จับคู่ items กับ items[1:] ด้วย zip; zip หยุดเมื่อรายการที่สั้นกว่าหมด.",
       "ตรวจกรณีขอบ: น้อยกว่าสองสมาชิกให้คืน []; จากนั้นคืนชนิดข้อมูลที่ระบุ"
     ],
-    "lesson_file": "lessons/level_03.md",
+    "lesson_file": "lessons/L03-E007.md",
     "cases": [
       {
         "args": [
@@ -2032,7 +2032,7 @@
       "คิดตามลำดับ: คัดสมาชิกด้วยเงื่อนไข > 0 และ <= 0 แยกกัน.",
       "ตรวจกรณีขอบ: ศูนย์อยู่ rest; ค่าซ้ำและลำดับต้องคงเดิม; จากนั้นคืนชนิดข้อมูลที่ระบุ"
     ],
-    "lesson_file": "lessons/level_03.md",
+    "lesson_file": "lessons/L03-E008.md",
     "cases": [
       {
         "args": [
@@ -2098,7 +2098,7 @@
       "คิดตามลำดับ: ใช้ enumerate แล้วแปลงผลให้เป็น list.",
       "ตรวจกรณีขอบ: list ว่างคืน []; ค่าซ้ำยังคงมี index แยกกัน; จากนั้นคืนชนิดข้อมูลที่ระบุ"
     ],
-    "lesson_file": "lessons/level_03.md",
+    "lesson_file": "lessons/L03-E009.md",
     "cases": [
       {
         "args": [
@@ -2164,7 +2164,7 @@
       "คิดตามลำดับ: เก็บค่าที่เคยเห็นและเพิ่มเข้าผลลัพธ์เฉพาะครั้งแรก.",
       "ตรวจกรณีขอบ: list ว่างคืน []; สมาชิกต้อง hashable; จากนั้นคืนชนิดข้อมูลที่ระบุ"
     ],
-    "lesson_file": "lessons/level_03.md",
+    "lesson_file": "lessons/L03-E010.md",
     "cases": [
       {
         "args": [
@@ -2223,7 +2223,7 @@
       "คิดตามลำดับ: จับคู่ list กับ list ที่เริ่ม index 1; บวกแล้วหารสอง.",
       "ตรวจกรณีขอบ: น้อยกว่าสองค่าให้คืน []; ผลลัพธ์ยอมเป็น float; จากนั้นคืนชนิดข้อมูลที่ระบุ"
     ],
-    "lesson_file": "lessons/level_03.md",
+    "lesson_file": "lessons/L03-E011.md",
     "cases": [
       {
         "args": [
@@ -2279,7 +2279,7 @@
       "คิดตามลำดับ: ใช้ slice เริ่ม index 0 พร้อม step 2.",
       "ตรวจกรณีขอบ: รวมสมาชิกแรก; list ว่างคืน []; จากนั้นคืนชนิดข้อมูลที่ระบุ"
     ],
-    "lesson_file": "lessons/level_03.md",
+    "lesson_file": "lessons/L03-E012.md",
     "cases": [
       {
         "args": [
@@ -2338,7 +2338,7 @@
       "คิดตามลำดับ: คำนวณ sum แล้วต่อเป็น list หนึ่งสมาชิก.",
       "ตรวจกรณีขอบ: list ว่างคืน [0]; ต้องไม่แก้ list ต้นฉบับ; จากนั้นคืนชนิดข้อมูลที่ระบุ"
     ],
-    "lesson_file": "lessons/level_03.md",
+    "lesson_file": "lessons/L03-E013.md",
     "cases": [
       {
         "args": [
@@ -2398,7 +2398,7 @@
       "คิดตามลำดับ: วน row ด้านนอกและ value ด้านใน; เพิ่ม value ทีละตัว.",
       "ตรวจกรณีขอบ: แถวว่างไม่มีผล; input ว่างคืน []; ไม่ทำ recursive flatten; จากนั้นคืนชนิดข้อมูลที่ระบุ"
     ],
-    "lesson_file": "lessons/level_03.md",
+    "lesson_file": "lessons/L03-E014.md",
     "cases": [
       {
         "args": [
@@ -2460,7 +2460,7 @@
       "ถ้าต้องรักษาลำดับ ให้เก็บรายการผลลัพธ์แยกจากตัวช่วยตรวจว่าค่าเคยพบหรือยัง",
       "ตรวจ list ว่าง รายการซ้ำ และค่าแรกตามข้อตกลงของ variant"
     ],
-    "lesson_file": "lessons/level_03.md",
+    "lesson_file": "lessons/L03-E015.md",
     "cases": [
       {
         "args": [
@@ -2546,7 +2546,7 @@
       "คิดตามลำดับ: หาผลต่าง; หารด้วย start; แยก start==0 ก่อนหาร.",
       "ตรวจกรณีขอบ: ราคาเท่ากันคืน 0; ศูนย์ห้ามเป็นตัวหาร; จากนั้นคืนชนิดข้อมูลที่ระบุ"
     ],
-    "lesson_file": "lessons/level_04.md",
+    "lesson_file": "lessons/L04-E001.md",
     "cases": [
       {
         "args": [
@@ -2595,7 +2595,7 @@
       "จับคู่ positional arguments กับ parameters",
       "คำนวณ amount - fee ของแต่ละ call"
     ],
-    "lesson_file": "lessons/level_04.md",
+    "lesson_file": "lessons/L04-E002.md",
     "cases": [
       {
         "args": [],
@@ -2636,7 +2636,7 @@
       "คูณ amount ด้วย scale ก่อน",
       "บวก offset แล้ว return"
     ],
-    "lesson_file": "lessons/level_04.md",
+    "lesson_file": "lessons/L04-E003.md",
     "cases": [
       {
         "args": [
@@ -2706,7 +2706,7 @@
       "ทดสอบ 0/5 และ 5/0 แยกกัน",
       "ถ้าตัวหารเป็นศูนย์ให้คืน None"
     ],
-    "lesson_file": "lessons/level_04.md",
+    "lesson_file": "lessons/L04-E004.md",
     "cases": [
       {
         "args": [
@@ -2773,7 +2773,7 @@
       "หายอดหลังส่วนลด",
       "คูณด้วย 1 + tax_rate แล้วจัดรูปแบบสองตำแหน่ง"
     ],
-    "lesson_file": "lessons/level_04.md",
+    "lesson_file": "lessons/L04-E005.md",
     "cases": [
       {
         "args": [
@@ -2845,7 +2845,7 @@
       "คิดตามลำดับ: ลบราคาสองค่าและใช้ abs กับผลต่าง.",
       "ตรวจกรณีขอบ: ระยะไม่ขึ้นกับทิศทาง; ราคาเท่ากันคืน 0; จากนั้นคืนชนิดข้อมูลที่ระบุ"
     ],
-    "lesson_file": "lessons/level_04.md",
+    "lesson_file": "lessons/L04-E006.md",
     "cases": [
       {
         "args": [
@@ -2896,7 +2896,7 @@
       "คิดตามลำดับ: สร้าง growth factor 1+r; ยกกำลัง n; ลบ 1.",
       "ตรวจกรณีขอบ: สมมติ r > -1 และ n เป็นจำนวนเต็มไม่ติดลบ; จากนั้นคืนชนิดข้อมูลที่ระบุ"
     ],
-    "lesson_file": "lessons/level_04.md",
+    "lesson_file": "lessons/L04-E007.md",
     "cases": [
       {
         "args": [
@@ -2947,7 +2947,7 @@
       "คิดตามลำดับ: คูณราคาต่อหน่วยด้วยจำนวนหน่วย.",
       "ตรวจกรณีขอบ: จำนวนหน่วยศูนย์ให้มูลค่า 0; รองรับเศษส่วน; จากนั้นคืนชนิดข้อมูลที่ระบุ"
     ],
-    "lesson_file": "lessons/level_04.md",
+    "lesson_file": "lessons/L04-E008.md",
     "cases": [
       {
         "args": [
@@ -2998,7 +2998,7 @@
       "คิดตามลำดับ: หาความเสี่ยงต่อหน่วย; ตรวจศูนย์; หารงบด้วยระยะ.",
       "ตรวจกรณีขอบ: risk budget ศูนย์คืน 0; ระยะใช้ค่าสัมบูรณ์; จากนั้นคืนชนิดข้อมูลที่ระบุ"
     ],
-    "lesson_file": "lessons/level_04.md",
+    "lesson_file": "lessons/L04-E009.md",
     "cases": [
       {
         "args": [
@@ -3049,7 +3049,7 @@
       "คิดตามลำดับ: ใช้ precision แบบ dynamic ใน f-string; format % คูณค่า 100 ให้เอง.",
       "ตรวจกรณีขอบ: 0.125 กับ 1 หลักต้องได้ 12.5%; digits เป็นจำนวนเต็ม; จากนั้นคืนชนิดข้อมูลที่ระบุ"
     ],
-    "lesson_file": "lessons/level_04.md",
+    "lesson_file": "lessons/L04-E010.md",
     "cases": [
       {
         "args": [
@@ -3100,7 +3100,7 @@
       "คิดตามลำดับ: คูณพารามิเตอร์แรกด้วย 2 แล้วบวกพารามิเตอร์ที่สอง.",
       "ตรวจกรณีขอบ: offset ติดลบใช้ลดผลลัพธ์ได้; จากนั้นคืนชนิดข้อมูลที่ระบุ"
     ],
-    "lesson_file": "lessons/level_04.md",
+    "lesson_file": "lessons/L04-E011.md",
     "cases": [
       {
         "args": [
@@ -3151,7 +3151,7 @@
       "คิดตามลำดับ: บันทึก input/output ตามลำดับ; ใช้ and กับเงื่อนไขไม่ติดลบ.",
       "ตรวจกรณีขอบ: ศูนย์ถูกต้อง; ค่าลบตัวใดตัวหนึ่งทำให้ valid=False; จากนั้นคืนชนิดข้อมูลที่ระบุ"
     ],
-    "lesson_file": "lessons/level_04.md",
+    "lesson_file": "lessons/L04-E012.md",
     "cases": [
       {
         "args": [
@@ -3210,7 +3210,7 @@
       "คิดตามลำดับ: ใช้ min กันค่าเกินเพดาน แล้วใช้ max กันค่าต่ำกว่า -1.",
       "ตรวจกรณีขอบ: สมมติ y >= -1; ค่าภายในช่วงไม่เปลี่ยน; จากนั้นคืนชนิดข้อมูลที่ระบุ"
     ],
-    "lesson_file": "lessons/level_04.md",
+    "lesson_file": "lessons/L04-E013.md",
     "cases": [
       {
         "args": [
@@ -3261,7 +3261,7 @@
       "คิดตามลำดับ: เปรียบเทียบสองประมาณการแล้วคืนตัวที่น้อยกว่า.",
       "ตรวจกรณีขอบ: ค่าที่เท่ากันคืนค่านั้น; รองรับจำนวนลบ; จากนั้นคืนชนิดข้อมูลที่ระบุ"
     ],
-    "lesson_file": "lessons/level_04.md",
+    "lesson_file": "lessons/L04-E014.md",
     "cases": [
       {
         "args": [
@@ -3312,7 +3312,7 @@
       "คำนวณค่าระหว่างทางที่ใช้ร่วมกัน แล้วคืนเฉพาะค่าที่ variant ปัจจุบันขอ",
       "ทดสอบค่าที่เท่ากัน ค่าเป็นศูนย์ และ input ที่ทำให้ต้องจัดการกรณีขอบ"
     ],
-    "lesson_file": "lessons/level_04.md",
+    "lesson_file": "lessons/L04-E015.md",
     "cases": [
       {
         "args": [
@@ -3391,7 +3391,7 @@
       "ทำตามลำดับนี้: ใช้ strip เพื่อสร้างข้อความใหม่โดยไม่แก้ข้อความเดิม.",
       "ทดสอบกรณีขอบนี้ด้วย: ข้อความว่างหรือมีแต่ช่องว่างคืน \"\""
     ],
-    "lesson_file": "lessons/level_05.md",
+    "lesson_file": "lessons/L05-E001.md",
     "cases": [
       {
         "args": [
@@ -3438,7 +3438,7 @@
       "แถวใดจะเข้าบล็อก except",
       "รวมเฉพาะ valid แล้วดู rejected แยก"
     ],
-    "lesson_file": "lessons/level_05.md",
+    "lesson_file": "lessons/L05-E002.md",
     "cases": [
       {
         "args": [],
@@ -3479,7 +3479,7 @@
       "จับ ValueError",
       "หลังแปลงแล้วตรวจ amount < 0"
     ],
-    "lesson_file": "lessons/level_05.md",
+    "lesson_file": "lessons/L05-E003.md",
     "cases": [
       {
         "args": [
@@ -3543,7 +3543,7 @@
       "ใช้โมดูล csv กับบรรทัดเดียว",
       "นับจำนวนค่าที่ reader คืน"
     ],
-    "lesson_file": "lessons/level_05.md",
+    "lesson_file": "lessons/L05-E004.md",
     "cases": [
       {
         "args": [
@@ -3607,7 +3607,7 @@
       "แปลง quantity กับ price แล้วตรวจไม่ติดลบ",
       "บวก revenue เฉพาะแถวที่ผ่านและนับแถวอื่นเป็น rejected"
     ],
-    "lesson_file": "lessons/level_05.md",
+    "lesson_file": "lessons/L05-E005.md",
     "cases": [
       {
         "args": [
@@ -3692,7 +3692,7 @@
       "ทำตามลำดับนี้: แยก comma; ตรวจจำนวน field; แปลง field ที่สองใน try/except ValueError.",
       "ทดสอบกรณีขอบนี้ด้วย: ตัดช่องว่างรอบยอดก่อนแปลง; input เสียต้องไม่ทำให้โปรแกรมล้ม"
     ],
-    "lesson_file": "lessons/level_05.md",
+    "lesson_file": "lessons/L05-E006.md",
     "cases": [
       {
         "args": [
@@ -3741,7 +3741,7 @@
       "ทำตามลำดับนี้: วนทุก field ที่ split; strip; join ด้วย comma.",
       "ทดสอบกรณีขอบนี้ด้วย: ไม่ลบ field ว่างและไม่แยก comma ที่อยู่ใน quoted field; รูปแบบนี้ไม่รองรับ quoted CSV"
     ],
-    "lesson_file": "lessons/level_05.md",
+    "lesson_file": "lessons/L05-E007.md",
     "cases": [
       {
         "args": [
@@ -3790,7 +3790,7 @@
       "ทำตามลำดับนี้: กรอง field หลัง strip แล้วสร้าง list.",
       "ทดสอบกรณีขอบนี้ด้วย: input ว่างคืน []; คงลำดับและค่าซ้ำ"
     ],
-    "lesson_file": "lessons/level_05.md",
+    "lesson_file": "lessons/L05-E008.md",
     "cases": [
       {
         "args": [
@@ -3843,7 +3843,7 @@
       "ทำตามลำดับนี้: วนส่วนที่แบ่งด้วย semicolon; แบ่งแต่ละส่วนด้วย = หนึ่งครั้ง; strip และกำหนดค่าใน dict.",
       "ทดสอบกรณีขอบนี้ด้วย: value อาจมีเครื่องหมาย = ภายใน; split ที่เครื่องหมายแรกเท่านั้น"
     ],
-    "lesson_file": "lessons/level_05.md",
+    "lesson_file": "lessons/L05-E009.md",
     "cases": [
       {
         "args": [
@@ -3895,7 +3895,7 @@
       "ทำตามลำดับนี้: strip แล้วแปลงเป็นตัวพิมพ์เล็ก; ตรวจ prefix date,.",
       "ทดสอบกรณีขอบนี้ด้วย: date ต้องตามด้วย comma; บรรทัดข้อมูลที่เริ่มด้วยวันที่จริงไม่ถือเป็น header"
     ],
-    "lesson_file": "lessons/level_05.md",
+    "lesson_file": "lessons/L05-E010.md",
     "cases": [
       {
         "args": [
@@ -3944,7 +3944,7 @@
       "ทำตามลำดับนี้: ตรวจ text.strip(); เลือกคืน None หรือข้อความ input เดิม.",
       "ทดสอบกรณีขอบนี้ด้วย: เมื่อข้อความไม่ว่างต้องคืนข้อความเดิมรวมช่องว่างเดิม"
     ],
-    "lesson_file": "lessons/level_05.md",
+    "lesson_file": "lessons/L05-E011.md",
     "cases": [
       {
         "args": [
@@ -3993,7 +3993,7 @@
       "ทำตามลำดับนี้: ตรวจข้อความว่างก่อน; strip รอบนอก; splitlines.",
       "ทดสอบกรณีขอบนี้ด้วย: ข้อความว่างคืน []; blank line ที่อยู่กลางข้อมูลยังคงอยู่"
     ],
-    "lesson_file": "lessons/level_05.md",
+    "lesson_file": "lessons/L05-E012.md",
     "cases": [
       {
         "args": [
@@ -4045,7 +4045,7 @@
       "ทำตามลำดับนี้: นับจำนวนส่วนที่ได้จาก split comma และเทียบกับ 3.",
       "ทดสอบกรณีขอบนี้ด้วย: รองรับ field ว่างได้หากยังมีสามช่อง; ไม่รองรับ comma ที่ quote ครอบ"
     ],
-    "lesson_file": "lessons/level_05.md",
+    "lesson_file": "lessons/L05-E013.md",
     "cases": [
       {
         "args": [
@@ -4094,7 +4094,7 @@
       "ทำตามลำดับนี้: normalize แต่ละ token ก่อนนับและเพิ่มค่าความถี่ใน dict.",
       "ทดสอบกรณีขอบนี้ด้วย: ticker ที่ต่างกันแค่ตัวพิมพ์นับรวม; ไม่แสดง key ว่าง"
     ],
-    "lesson_file": "lessons/level_05.md",
+    "lesson_file": "lessons/L05-E014.md",
     "cases": [
       {
         "args": [
@@ -4146,7 +4146,7 @@
       "ตัดช่องว่างของแต่ละ field แล้วแปลงเฉพาะค่าที่โจทย์กำหนด; คงลำดับ field",
       "ตรวจช่องว่าง ตัวคั่น และชนิดข้อมูลของแต่ละ field ตาม prompt"
     ],
-    "lesson_file": "lessons/level_05.md",
+    "lesson_file": "lessons/L05-E015.md",
     "cases": [
       {
         "args": [
@@ -4222,7 +4222,7 @@
       "ทำตามลำดับนี้: จับคู่ราคาติดกัน; ตรวจ missing และตัวหาร; คำนวณ return แบบสัดส่วน.",
       "ทดสอบกรณีขอบนี้ด้วย: ข้ามคู่ที่มี None หรือ previous=0; current=0 ให้ผล -1"
     ],
-    "lesson_file": "lessons/level_06.md",
+    "lesson_file": "lessons/L06-E001.md",
     "cases": [
       {
         "args": [
@@ -4276,7 +4276,7 @@
       "จำนวนที่หายคือความยาวเดิมลบความยาว clean",
       "คำนวณค่าเฉลี่ยจาก clean"
     ],
-    "lesson_file": "lessons/level_06.md",
+    "lesson_file": "lessons/L06-E002.md",
     "cases": [
       {
         "args": [],
@@ -4317,7 +4317,7 @@
       "วน start ตั้งแต่ 0 ถึง len(values)-window",
       "คำนวณ sum ของ slice แล้วหารด้วย window"
     ],
-    "lesson_file": "lessons/level_06.md",
+    "lesson_file": "lessons/L06-E003.md",
     "cases": [
       {
         "args": [
@@ -4394,7 +4394,7 @@
       "ค่าจริงให้อัปเดต previous",
       "NA ให้เพิ่ม previous โดยไม่เปลี่ยนค่าเดิม"
     ],
-    "lesson_file": "lessons/level_06.md",
+    "lesson_file": "lessons/L06-E004.md",
     "cases": [
       {
         "args": [
@@ -4472,7 +4472,7 @@
       "รายได้ต่อแถวคือ quantity * unit_price",
       "เรียงชื่อสินค้าก่อนพิมพ์"
     ],
-    "lesson_file": "lessons/level_06.md",
+    "lesson_file": "lessons/L06-E005.md",
     "cases": [
       {
         "args": [
@@ -4547,7 +4547,7 @@
       "ทำตามลำดับนี้: วนค่าและนับเฉพาะค่า is None.",
       "ทดสอบกรณีขอบนี้ด้วย: list ว่างคืน 0; zero เป็นข้อมูลจริง"
     ],
-    "lesson_file": "lessons/level_06.md",
+    "lesson_file": "lessons/L06-E006.md",
     "cases": [
       {
         "args": [
@@ -4601,7 +4601,7 @@
       "ทำตามลำดับนี้: กรอง None เพื่อหาค่าเฉลี่ย; วนต้นฉบับเพื่อเลือกค่าที่มากกว่า mean.",
       "ทดสอบกรณีขอบนี้ด้วย: ถ้าไม่มีค่าที่ใช้ได้คืน []; ค่าเท่าค่าเฉลี่ยไม่ผ่าน"
     ],
-    "lesson_file": "lessons/level_06.md",
+    "lesson_file": "lessons/L06-E007.md",
     "cases": [
       {
         "args": [
@@ -4657,7 +4657,7 @@
       "ทำตามลำดับนี้: เริ่ม total ที่ 0; เพิ่มแต่ละค่าแล้วบันทึก total.",
       "ทดสอบกรณีขอบนี้ด้วย: list ว่างคืน []; รองรับค่าติดลบตามข้อมูลปรับปรุงยอด"
     ],
-    "lesson_file": "lessons/level_06.md",
+    "lesson_file": "lessons/L06-E008.md",
     "cases": [
       {
         "args": [
@@ -4714,7 +4714,7 @@
       "ทำตามลำดับนี้: ใช้ slicing step 2 ที่เริ่ม index 0.",
       "ทดสอบกรณีขอบนี้ด้วย: ไม่สุ่มและไม่แก้ list เดิม; list ว่างคืน []"
     ],
-    "lesson_file": "lessons/level_06.md",
+    "lesson_file": "lessons/L06-E009.md",
     "cases": [
       {
         "args": [
@@ -4773,7 +4773,7 @@
       "ทำตามลำดับนี้: สร้างชุดค่าที่ไม่ใช่ None; ถ้ามีให้ลบ min ออกจาก max.",
       "ทดสอบกรณีขอบนี้ด้วย: ค่าเดียวมี range 0; zero เป็นข้อมูลจริง"
     ],
-    "lesson_file": "lessons/level_06.md",
+    "lesson_file": "lessons/L06-E010.md",
     "cases": [
       {
         "args": [
@@ -4827,7 +4827,7 @@
       "ทำตามลำดับนี้: หาค่าเฉลี่ยของทุกค่า; ลบ mean ออกจากแต่ละสมาชิก.",
       "ทดสอบกรณีขอบนี้ด้วย: list ว่างคืน []; ค่าผลรวมหลัง demean ควรใกล้ศูนย์เมื่อคำนวณด้วย float"
     ],
-    "lesson_file": "lessons/level_06.md",
+    "lesson_file": "lessons/L06-E011.md",
     "cases": [
       {
         "args": [
@@ -4884,7 +4884,7 @@
       "ทำตามลำดับนี้: ตรวจแต่ละค่าด้วยเงื่อนไข not None และ > 0.",
       "ทดสอบกรณีขอบนี้ด้วย: None และ 0 ไม่นับ; list ว่างคืน 0"
     ],
-    "lesson_file": "lessons/level_06.md",
+    "lesson_file": "lessons/L06-E012.md",
     "cases": [
       {
         "args": [
@@ -4939,7 +4939,7 @@
       "ทำตามลำดับนี้: จับคู่ adjacent values; กรองคู่ที่มี None; เพิ่ม max ของคู่ที่เหลือ.",
       "ทดสอบกรณีขอบนี้ด้วย: ใช้หน้าต่างกว้าง 2; ข้อมูลน้อยกว่าสองค่าคืน []"
     ],
-    "lesson_file": "lessons/level_06.md",
+    "lesson_file": "lessons/L06-E013.md",
     "cases": [
       {
         "args": [
@@ -4997,7 +4997,7 @@
       "ทำตามลำดับนี้: ใช้ enumerate เพื่อสร้างคู่ index/value.",
       "ทดสอบกรณีขอบนี้ด้วย: ข้อมูลว่างคืน []; ไม่กรอง missing"
     ],
-    "lesson_file": "lessons/level_06.md",
+    "lesson_file": "lessons/L06-E014.md",
     "cases": [
       {
         "args": [
@@ -5058,7 +5058,7 @@
       "ประมวลผลตามลำดับและเก็บค่าก่อนหน้าเฉพาะเมื่อโจทย์ต้องใช้",
       "ลอง None ที่ต้น กลาง ท้าย และนับเฉพาะค่าที่เปลี่ยนตามความหมายในโจทย์"
     ],
-    "lesson_file": "lessons/level_06.md",
+    "lesson_file": "lessons/L06-E015.md",
     "cases": [
       {
         "args": [
@@ -5151,7 +5151,7 @@
       "ทำตามลำดับนี้: หาผลรวม; หารด้วยจำนวนสมาชิก; แยกกรณีว่างก่อนหาร.",
       "ทดสอบกรณีขอบนี้ด้วย: list ว่างคืน None; แต่ละค่ามีน้ำหนักเท่ากัน"
     ],
-    "lesson_file": "lessons/level_07.md",
+    "lesson_file": "lessons/L07-E001.md",
     "cases": [
       {
         "args": [
@@ -5202,7 +5202,7 @@
       "ตำแหน่งกลางของ list ที่เรียงแล้วคือ index ใด",
       "round เฉพาะค่าที่พิมพ์บรรทัดแรก"
     ],
-    "lesson_file": "lessons/level_07.md",
+    "lesson_file": "lessons/L07-E002.md",
     "cases": [
       {
         "args": [],
@@ -5243,7 +5243,7 @@
       "สะสม squared deviation ของทุกค่า",
       "หารด้วยจำนวนสมาชิก ไม่ใช่จำนวนสมาชิก - 1"
     ],
-    "lesson_file": "lessons/level_07.md",
+    "lesson_file": "lessons/L07-E003.md",
     "cases": [
       {
         "args": [
@@ -5314,7 +5314,7 @@
       "ทดสอบ 4 signups จาก 100 visits",
       "ตรวจ visits == 0 ก่อนหาร"
     ],
-    "lesson_file": "lessons/level_07.md",
+    "lesson_file": "lessons/L07-E004.md",
     "cases": [
       {
         "args": [
@@ -5381,7 +5381,7 @@
       "เปรียบเทียบ rates",
       "ถ้าเท่ากันให้รายงาน tie"
     ],
-    "lesson_file": "lessons/level_07.md",
+    "lesson_file": "lessons/L07-E005.md",
     "cases": [
       {
         "args": [
@@ -5464,7 +5464,7 @@
       "ทำตามลำดับนี้: นับ x>0; หารด้วย len(values).",
       "ทดสอบกรณีขอบนี้ด้วย: ข้อมูลว่างคืน None; ผลลัพธ์อยู่ระหว่าง 0 ถึง 1"
     ],
-    "lesson_file": "lessons/level_07.md",
+    "lesson_file": "lessons/L07-E006.md",
     "cases": [
       {
         "args": [
@@ -5518,7 +5518,7 @@
       "ทำตามลำดับนี้: คำนวณโอกาสแพ้ 1-p; คูณผลลัพธ์แต่ละกรณีด้วยโอกาส; รวมสองส่วน.",
       "ทดสอบกรณีขอบนี้ด้วย: p อยู่ระหว่าง 0 ถึง 1; p=0 คืน average_loss; p=1 คืน average_win"
     ],
-    "lesson_file": "lessons/level_07.md",
+    "lesson_file": "lessons/L07-E007.md",
     "cases": [
       {
         "args": [
@@ -5571,7 +5571,7 @@
       "ทำตามลำดับนี้: หา max และ min แล้วลบค่าต่ำสุดออกจากค่าสูงสุด.",
       "ทดสอบกรณีขอบนี้ด้วย: list ว่างคืน 0; ค่าซ้ำทั้งหมดให้ช่วง 0"
     ],
-    "lesson_file": "lessons/level_07.md",
+    "lesson_file": "lessons/L07-E008.md",
     "cases": [
       {
         "args": [
@@ -5624,7 +5624,7 @@
       "ทำตามลำดับนี้: คำนวณ mean; หารผลรวมกำลังสองด้วย n แล้ว sqrt; เทียบค่าสุดท้าย.",
       "ทดสอบกรณีขอบนี้ด้วย: ทุกค่าคงที่ให้ None เพราะหารด้วยศูนย์; ใช้ population variance หารด้วย n"
     ],
-    "lesson_file": "lessons/level_07.md",
+    "lesson_file": "lessons/L07-E009.md",
     "cases": [
       {
         "args": [
@@ -5677,7 +5677,7 @@
       "ทำตามลำดับนี้: ตรวจราคาทั้งสองเป็นบวก; ใช้ natural log ของอัตราส่วน.",
       "ทดสอบกรณีขอบนี้ด้วย: ข้ามคู่ที่ราคาใดไม่มากกว่า 0; ค่าผลลัพธ์เป็น log return ไม่ใช่เปอร์เซ็นต์อย่างง่าย"
     ],
-    "lesson_file": "lessons/level_07.md",
+    "lesson_file": "lessons/L07-E010.md",
     "cases": [
       {
         "args": [
@@ -5733,7 +5733,7 @@
       "ทำตามลำดับนี้: คูณ growth factor ของแต่ละช่วง; ลบ 1 เมื่อได้ factor สุดท้าย.",
       "ทดสอบกรณีขอบนี้ด้วย: list ว่างคืน 0; ถ้า return เป็น -1 เงินลงทุนหมดและผลรวมจะเป็น -1"
     ],
-    "lesson_file": "lessons/level_07.md",
+    "lesson_file": "lessons/L07-E011.md",
     "cases": [
       {
         "args": [
@@ -5785,7 +5785,7 @@
       "ทำตามลำดับนี้: เรียงข้อมูลเพื่อหา median; นับสมาชิกเดิมที่มากกว่า median.",
       "ทดสอบกรณีขอบนี้ด้วย: ข้อมูลว่างคืน 0; ค่าที่เท่ามัธยฐานไม่นับ"
     ],
-    "lesson_file": "lessons/level_07.md",
+    "lesson_file": "lessons/L07-E012.md",
     "cases": [
       {
         "args": [
@@ -5839,7 +5839,7 @@
       "ทำตามลำดับนี้: หาค่าเฉลี่ย; หาค่าเบี่ยงเบนสัมบูรณ์แต่ละตัว; เฉลี่ยค่าคลาดเคลื่อน.",
       "ทดสอบกรณีขอบนี้ด้วย: ข้อมูลว่างคืน 0; นี่คือ mean absolute deviation ไม่ใช่ standard deviation"
     ],
-    "lesson_file": "lessons/level_07.md",
+    "lesson_file": "lessons/L07-E013.md",
     "cases": [
       {
         "args": [
@@ -5892,7 +5892,7 @@
       "ทำตามลำดับนี้: เลือกสามค่าที่ index i-1,i,i+1; รวมแล้วหาร 3.",
       "ทดสอบกรณีขอบนี้ด้วย: น้อยกว่าสามค่าให้คืน []; ผลลัพธ์ยาว n-2"
     ],
-    "lesson_file": "lessons/level_07.md",
+    "lesson_file": "lessons/L07-E014.md",
     "cases": [
       {
         "args": [
@@ -5949,7 +5949,7 @@
       "เลือกสูตรตามสถิติใน prompt; ถ้าต้องเรียง ให้เรียงสำเนาเพื่อรักษาข้อมูลเดิม",
       "ตรวจ list คี่/คู่ ค่าซ้ำ ค่าลบ และผลเมื่อว่างตาม contract"
     ],
-    "lesson_file": "lessons/level_07.md",
+    "lesson_file": "lessons/L07-E015.md",
     "cases": [
       {
         "args": [
@@ -6039,7 +6039,7 @@
       "เรียงการคำนวณดังนี้: คำนวณการเปลี่ยนแปลงต่อหน่วยแล้วคูณจำนวนหน่วย.",
       "ลองกรณีขอบ: ราคาออกเท่าราคาเข้าให้กำไร 0"
     ],
-    "lesson_file": "lessons/level_08.md",
+    "lesson_file": "lessons/L08-E001.md",
     "cases": [
       {
         "args": [
@@ -6090,7 +6090,7 @@
       "รวม notional ตอนเข้าและออก",
       "หัก fee จาก gross"
     ],
-    "lesson_file": "lessons/level_08.md",
+    "lesson_file": "lessons/L08-E002.md",
     "cases": [
       {
         "args": [],
@@ -6131,7 +6131,7 @@
       "คำนวณ equity * risk_percent / 100",
       "หารด้วย stop_distance"
     ],
-    "lesson_file": "lessons/level_08.md",
+    "lesson_file": "lessons/L08-E003.md",
     "cases": [
       {
         "args": [
@@ -6201,7 +6201,7 @@
       "กำไรสุทธิหัก fee",
       "ทดสอบ exit=entry"
     ],
-    "lesson_file": "lessons/level_08.md",
+    "lesson_file": "lessons/L08-E004.md",
     "cases": [
       {
         "args": [
@@ -6274,7 +6274,7 @@
       "คำนวณ equity * max_fraction",
       "เทียบ exposure รวมกับ limit"
     ],
-    "lesson_file": "lessons/level_08.md",
+    "lesson_file": "lessons/L08-E005.md",
     "cases": [
       {
         "args": [
@@ -6358,7 +6358,7 @@
       "เรียงการคำนวณดังนี้: คำนวณ gross ก่อน; หัก fee ของ notional ทั้งสองขา.",
       "ลองกรณีขอบ: ราคาไม่เปลี่ยนยังขาดทุนค่าธรรมเนียม; quantity 0 ให้ผล 0"
     ],
-    "lesson_file": "lessons/level_08.md",
+    "lesson_file": "lessons/L08-E006.md",
     "cases": [
       {
         "args": [
@@ -6411,7 +6411,7 @@
       "เรียงการคำนวณดังนี้: ลบ exit ออกจาก entry แล้วคูณจำนวนหน่วย.",
       "ลองกรณีขอบ: ราคาซื้อต่ำกว่าราคาขายทำให้กำไรบวก; ยังไม่รวม fee"
     ],
-    "lesson_file": "lessons/level_08.md",
+    "lesson_file": "lessons/L08-E007.md",
     "cases": [
       {
         "args": [
@@ -6464,7 +6464,7 @@
       "เรียงการคำนวณดังนี้: หาส่วนราคาที่เสียไปแล้วหักออกจากราคาขาย.",
       "ลองกรณีขอบ: slippage เป็นสัดส่วน เช่น 0.01 คือ 1%"
     ],
-    "lesson_file": "lessons/level_08.md",
+    "lesson_file": "lessons/L08-E008.md",
     "cases": [
       {
         "args": [
@@ -6515,7 +6515,7 @@
       "เรียงการคำนวณดังนี้: หาความเสี่ยงต่อหน่วยก่อน; คูณจำนวนหน่วย.",
       "ลองกรณีขอบ: quantity ไม่ติดลบ; ราคาเท่ากันเสี่ยง 0"
     ],
-    "lesson_file": "lessons/level_08.md",
+    "lesson_file": "lessons/L08-E009.md",
     "cases": [
       {
         "args": [
@@ -6568,7 +6568,7 @@
       "เรียงการคำนวณดังนี้: คำนวณ reward และ risk distance แยกกัน; ตรวจตัวหารก่อนหาร.",
       "ลองกรณีขอบ: ทิศทาง long/short ไม่เปลี่ยนระยะ; ห้ามหารด้วยศูนย์"
     ],
-    "lesson_file": "lessons/level_08.md",
+    "lesson_file": "lessons/L08-E010.md",
     "cases": [
       {
         "args": [
@@ -6621,7 +6621,7 @@
       "เรียงการคำนวณดังนี้: คำนวณกำไรสุทธิของสถานะซื้อ; บวก bankroll.",
       "ลองกรณีขอบ: bankroll คงที่ 100; fee คิดจาก entry และ exit notional"
     ],
-    "lesson_file": "lessons/level_08.md",
+    "lesson_file": "lessons/L08-E011.md",
     "cases": [
       {
         "args": [
@@ -6674,7 +6674,7 @@
       "เรียงการคำนวณดังนี้: คูณ price กับ quantity; ตรวจ equity; หารด้วย equity.",
       "ลองกรณีขอบ: fraction เกิน 1 หมายถึง exposure มากกว่า equity; ไม่จำกัดอัตโนมัติ"
     ],
-    "lesson_file": "lessons/level_08.md",
+    "lesson_file": "lessons/L08-E012.md",
     "cases": [
       {
         "args": [
@@ -6727,7 +6727,7 @@
       "เรียงการคำนวณดังนี้: คำนวณสัดส่วนที่ลดจาก peak; clamp ค่าลบเป็น 0.",
       "ลองกรณีขอบ: equity เหนือ peak ไม่ใช่ drawdown; คืน 0"
     ],
-    "lesson_file": "lessons/level_08.md",
+    "lesson_file": "lessons/L08-E013.md",
     "cases": [
       {
         "args": [
@@ -6778,7 +6778,7 @@
       "เรียงการคำนวณดังนี้: ใช้ระยะสัมบูรณ์; ตรวจศูนย์; หาร budget ด้วยระยะ.",
       "ลองกรณีขอบ: risk budget ไม่ติดลบ; quantity ที่คืนไม่ติดลบ"
     ],
-    "lesson_file": "lessons/level_08.md",
+    "lesson_file": "lessons/L08-E014.md",
     "cases": [
       {
         "args": [
@@ -6831,7 +6831,7 @@
       "ตรวจ entry เป็นศูนย์ก่อนหาร; คำนวณ fee เฉพาะเมื่อ variant ระบุให้ทำ",
       "ทดสอบ gain, loss, flat และ entry เป็นศูนย์; ตรวจ live_trading เป็น False"
     ],
-    "lesson_file": "lessons/level_08.md",
+    "lesson_file": "lessons/L08-E015.md",
     "cases": [
       {
         "args": [
@@ -6919,7 +6919,7 @@
       "ทำตามขั้นตอน: จับคู่ราคาก่อนหน้ากับราคาปัจจุบัน; บวกแล้วหาร 2.",
       "ตรวจกรณีขอบ: น้อยกว่าสองค่าคืน []; ผลลัพธ์ยาว n-1"
     ],
-    "lesson_file": "lessons/level_09.md",
+    "lesson_file": "lessons/L09-E001.md",
     "cases": [
       {
         "args": [
@@ -6973,7 +6973,7 @@
       "ตำแหน่ง stop ของ slice ไม่ถูกรวม",
       "คำนวณค่าเฉลี่ยสองราคาก่อนหน้าของแต่ละรอบ"
     ],
-    "lesson_file": "lessons/level_09.md",
+    "lesson_file": "lessons/L09-E002.md",
     "cases": [
       {
         "args": [],
@@ -7014,7 +7014,7 @@
       "ช่วงที่ใช้จบที่ index แต่ไม่รวม index",
       "หารด้วยจำนวนค่าที่อยู่ในช่วง"
     ],
-    "lesson_file": "lessons/level_09.md",
+    "lesson_file": "lessons/L09-E003.md",
     "cases": [
       {
         "args": [
@@ -7095,7 +7095,7 @@
       "slice stop ไม่รวม stop",
       "เปลี่ยนค่าที่ index แล้ว mean ก่อนหน้าไม่ควรเปลี่ยน"
     ],
-    "lesson_file": "lessons/level_09.md",
+    "lesson_file": "lessons/L09-E004.md",
     "cases": [
       {
         "args": [
@@ -7177,7 +7177,7 @@
       "รวมผลตอบแทนของแต่ละชุดตามข้อกำหนดแบบ simple sum",
       "excess คือ strategy_net - benchmark_net"
     ],
-    "lesson_file": "lessons/level_09.md",
+    "lesson_file": "lessons/L09-E005.md",
     "cases": [
       {
         "args": [
@@ -7319,7 +7319,7 @@
       "ทำตามขั้นตอน: ใช้ len(values)*2//3 เป็น split index แล้ว slice สองช่วง.",
       "ตรวจกรณีขอบ: รักษาลำดับ; test อาจว่างในชุดเล็ก"
     ],
-    "lesson_file": "lessons/level_09.md",
+    "lesson_file": "lessons/L09-E006.md",
     "cases": [
       {
         "args": [
@@ -7389,7 +7389,7 @@
       "ทำตามขั้นตอน: จับคู่ราคาก่อน/หลังกับ signal; คำนวณ current/previous-1; คูณ signal.",
       "ตรวจกรณีขอบ: signals ยาว n-1; ข้ามช่วงที่ราคาเริ่มต้นไม่บวก"
     ],
-    "lesson_file": "lessons/level_09.md",
+    "lesson_file": "lessons/L09-E007.md",
     "cases": [
       {
         "args": [
@@ -7457,7 +7457,7 @@
       "ทำตามขั้นตอน: ลบต้นทุนเดียวกันออกจากทุก return.",
       "ตรวจกรณีขอบ: cost เป็นสัดส่วนไม่ใช่เงินสด; cost=0 ใช้ได้"
     ],
-    "lesson_file": "lessons/level_09.md",
+    "lesson_file": "lessons/L09-E008.md",
     "cases": [
       {
         "args": [
@@ -7514,7 +7514,7 @@
       "ทำตามขั้นตอน: ตรวจทุกคู่เวลา; feature ต้องมาก่อน decision อย่างเคร่งครัด.",
       "ตรวจกรณีขอบ: ความเท่ากันถูก flag; รายการว่างหรือ feature เก่าทั้งหมดคืน False"
     ],
-    "lesson_file": "lessons/level_09.md",
+    "lesson_file": "lessons/L09-E009.md",
     "cases": [
       {
         "args": [
@@ -7572,7 +7572,7 @@
       "ทำตามขั้นตอน: เริ่ม start=0 แล้วเพิ่มสอง; stop=min(start+2,n).",
       "ตรวจกรณีขอบ: stop ไม่รวม; fold สุดท้ายอาจมีแถวเดียว"
     ],
-    "lesson_file": "lessons/level_09.md",
+    "lesson_file": "lessons/L09-E010.md",
     "cases": [
       {
         "args": [
@@ -7640,7 +7640,7 @@
       "ทำตามขั้นตอน: คำนวณ simple return แต่ละคู่; เปรียบเทียบแบบ strict greater-than.",
       "ตรวจกรณีขอบ: เท่ากับ threshold ไม่ผ่าน; output ยาว n-1; previous<=0 ให้ 0"
     ],
-    "lesson_file": "lessons/level_09.md",
+    "lesson_file": "lessons/L09-E011.md",
     "cases": [
       {
         "args": [
@@ -7698,7 +7698,7 @@
       "ทำตามขั้นตอน: หาค่าเฉลี่ยเมื่อมีข้อมูล; เลือก continue เฉพาะกรณีบวก.",
       "ตรวจกรณีขอบ: ค่าเฉลี่ยศูนย์และข้อมูลว่างให้ reject"
     ],
-    "lesson_file": "lessons/level_09.md",
+    "lesson_file": "lessons/L09-E012.md",
     "cases": [
       {
         "args": [
@@ -7750,7 +7750,7 @@
       "ทำตามขั้นตอน: ใช้ len กับรายการต้นฉบับ.",
       "ตรวจกรณีขอบ: list ว่างคืน 0"
     ],
-    "lesson_file": "lessons/level_09.md",
+    "lesson_file": "lessons/L09-E013.md",
     "cases": [
       {
         "args": [
@@ -7803,7 +7803,7 @@
       "ทำตามขั้นตอน: รวมต้นทุนสามส่วนแล้วหักจากแต่ละ return.",
       "ตรวจกรณีขอบ: fee/slippage ไม่ติดลบ; funding อาจติดลบ"
     ],
-    "lesson_file": "lessons/level_09.md",
+    "lesson_file": "lessons/L09-E014.md",
     "cases": [
       {
         "args": [
@@ -7864,7 +7864,7 @@
       "ทำตามเกณฑ์จำนวนข้อมูลหรือสูตร growth factor ที่ prompt ระบุ; อย่ารวมแบบอื่นแทน",
       "ตรวจ list ว่าง ค่าลบ และ threshold หรือ worst period ตามข้อตกลงของ variant"
     ],
-    "lesson_file": "lessons/level_09.md",
+    "lesson_file": "lessons/L09-E015.md",
     "cases": [
       {
         "args": [
@@ -7951,7 +7951,7 @@
       "ทำตามขั้นตอน: ตรวจชนิด event; ตรวจ side; ตรวจตัวเลขและ isfinite; เช็ก notional เทียบ cash เฉพาะ buy.",
       "ตรวจกรณีขอบ: ขายไม่ลด cash ล่วงหน้า; bool ไม่ถือเป็นจำนวนเงิน; ไม่มีการส่ง order จริง"
     ],
-    "lesson_file": "lessons/level_10.md",
+    "lesson_file": "lessons/L10-E001.md",
     "cases": [
       {
         "args": [
@@ -8008,7 +8008,7 @@
       "fee คิดจาก notional",
       "เงินสดหลังซื้อหักทั้งสองค่า"
     ],
-    "lesson_file": "lessons/level_10.md",
+    "lesson_file": "lessons/L10-E002.md",
     "cases": [
       {
         "args": [],
@@ -8049,7 +8049,7 @@
       "ทุกข้อจำกัดต้องผ่านพร้อมกัน",
       "คำสั่งที่เกิน limit ต้องคืน False"
     ],
-    "lesson_file": "lessons/level_10.md",
+    "lesson_file": "lessons/L10-E003.md",
     "cases": [
       {
         "args": [
@@ -8135,7 +8135,7 @@
       "เทียบ high กับทั้ง open และ close",
       "ตรวจ low กับ min(open, close) และ volume >= 0"
     ],
-    "lesson_file": "lessons/level_10.md",
+    "lesson_file": "lessons/L10-E004.md",
     "cases": [
       {
         "args": [
@@ -8217,7 +8217,7 @@
       "คำนวณ notional และ fee",
       "ตรวจ side/เงินสด/หน่วย/limit ก่อนเปลี่ยน state"
     ],
-    "lesson_file": "lessons/level_10.md",
+    "lesson_file": "lessons/L10-E005.md",
     "cases": [
       {
         "args": [
@@ -8353,7 +8353,7 @@
       "ทำตามขั้นตอน: อ่าน cash และ risk_floor; เปรียบเทียบด้วย <=.",
       "ตรวจกรณีขอบ: ค่าเท่ากับ floor ต้องหยุด; cash สูงกว่า floor ยังทำต่อ"
     ],
-    "lesson_file": "lessons/level_10.md",
+    "lesson_file": "lessons/L10-E006.md",
     "cases": [
       {
         "args": [
@@ -8406,7 +8406,7 @@
       "ทำตามขั้นตอน: อ่าน quantity/price ด้วย default 0; คูณกัน.",
       "ตรวจกรณีขอบ: quantity หรือ price ศูนย์ให้ exposure 0"
     ],
-    "lesson_file": "lessons/level_10.md",
+    "lesson_file": "lessons/L10-E007.md",
     "cases": [
       {
         "args": [
@@ -8458,7 +8458,7 @@
       "ทำตามขั้นตอน: อ่าน symbol ด้วย default; แปลงค่าที่มีเป็น str; strip แล้ว upper.",
       "ตรวจกรณีขอบ: ไม่มี symbol หรือ None คืน \"\"; None ไม่กลายเป็น \"NONE\""
     ],
-    "lesson_file": "lessons/level_10.md",
+    "lesson_file": "lessons/L10-E008.md",
     "cases": [
       {
         "args": [
@@ -8509,7 +8509,7 @@
       "ทำตามขั้นตอน: ตรวจชนิด; ตรวจ finite; ยอมรับเฉพาะค่าที่ไม่ติดลบ.",
       "ตรวจกรณีขอบ: ปฏิเสธ string, bool, NaN, infinity และค่าติดลบ"
     ],
-    "lesson_file": "lessons/level_10.md",
+    "lesson_file": "lessons/L10-E009.md",
     "cases": [
       {
         "args": [
@@ -8560,7 +8560,7 @@
       "ทำตามขั้นตอน: คัด id; เพิ่ม status คงที่; กำหนด live เป็น False.",
       "ตรวจกรณีขอบ: id หายคืน None; live เป็น boolean False เสมอ"
     ],
-    "lesson_file": "lessons/level_10.md",
+    "lesson_file": "lessons/L10-E010.md",
     "cases": [
       {
         "args": [
@@ -8619,7 +8619,7 @@
       "ทำตามขั้นตอน: ตรวจ quantity; ตรวจ side; ใส่เครื่องหมายตาม buy/sell.",
       "ตรวจกรณีขอบ: quantity ต้อง finite และไม่ติดลบ; ไม่มีการเปิดสถานะจริง"
     ],
-    "lesson_file": "lessons/level_10.md",
+    "lesson_file": "lessons/L10-E011.md",
     "cases": [
       {
         "args": [
@@ -8674,7 +8674,7 @@
       "ทำตามขั้นตอน: แปลง limit เป็นขนาดบวก; เทียบ PnL กับค่าลบของ limit.",
       "ตรวจกรณีขอบ: ขาดทุนเท่าขีดจำกัดต้องหยุด; day_pnl=0 và limit=0 cũng stop"
     ],
-    "lesson_file": "lessons/level_10.md",
+    "lesson_file": "lessons/L10-E012.md",
     "cases": [
       {
         "args": [
@@ -8729,7 +8729,7 @@
       "ทำตามขั้นตอน: ตรวจชนิดและ isfinite; รับค่าที่ไม่ติดลบ; fallback เป็น 100.0 เมื่อผิดเงื่อนไข.",
       "ตรวจกรณีขอบ: cash=0 เป็นค่าถูกต้อง; ปฏิเสธ bool, string, NaN, infinity และค่าลบ"
     ],
-    "lesson_file": "lessons/level_10.md",
+    "lesson_file": "lessons/L10-E013.md",
     "cases": [
       {
         "args": [
@@ -8780,7 +8780,7 @@
       "ทำตามขั้นตอน: คัด id และ side; เพิ่ม paper_only=True เสมอ.",
       "ตรวจกรณีขอบ: field ที่หายคืน None; paper_only ต้อง boolean True"
     ],
-    "lesson_file": "lessons/level_10.md",
+    "lesson_file": "lessons/L10-E014.md",
     "cases": [
       {
         "args": [
@@ -8840,7 +8840,7 @@
       "ตรวจ side, quantity, price และ cash/position เฉพาะตาม prompt ปัจจุบัน",
       "ทำตามกติกา accept/reject ก่อนเปลี่ยนยอด; live_trading ต้อง False"
     ],
-    "lesson_file": "lessons/level_10.md",
+    "lesson_file": "lessons/L10-E015.md",
     "cases": [
       {
         "args": [
